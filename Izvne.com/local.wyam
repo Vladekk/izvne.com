@@ -187,7 +187,6 @@ Pipelines.Add ("NewPostsImages",
                                      )
                                  ), 
     Meta("ImageFullPath",Path.Combine("..\\files",@doc["ImagePath"].ToString())),
-    Image().SetJpegQuality(70),
     If((doc,c)=>!File.Exists(Path.Combine(filesPath,doc["ImagePath"].ToString())),
               WriteFiles(@doc["ImageFullPath"].ToString()).UseWriteMetadata(false))
     

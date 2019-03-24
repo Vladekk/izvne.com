@@ -213,6 +213,12 @@
 <script src="/js/jplayer/run.js"></script>
 <script>
     $(function() {
+        $('img').each(function(i,el)
+            {
+            var src=$(this).attr('data-src');
+            $(this).attr('data-src',src+"?nf_resize=fit&w=725");
+            $(this).attr('data-src-retina',src);
+        });
         $('img[data-src]').unveil(0);
     });
     $(document).keydown(function (e){

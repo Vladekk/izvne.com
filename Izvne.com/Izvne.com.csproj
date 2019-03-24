@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <DockerComposeProjectPath>..\docker-compose.dcproj</DockerComposeProjectPath>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="input\posts\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="input\posts\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="input\posts\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="wwwroot\files\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="wwwroot\files\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="input\node_modules\.yarn-integrity" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="input\files\u\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="input\files\u\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="input\files\u\**" />
+  </ItemGroup>
+  <Target Name="MyPostCompileTarget" BeforeTargets="Build">
+    <Exec Command="wyam build --noclean  -o ..\wwwroot" ConsoleToMSBuild="true">
+    <Output TaskParameter="ConsoleOutput" PropertyName="OutputOfExec" />
+  </Exec>
+</Target>
+<ItemGroup>
+<Compile Remove="wwwroot\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="wwwroot\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="wwwroot\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="input\post\files\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="input\post\files\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="input\post\files\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="files\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="files\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="files\**" />
+  </ItemGroup>
+</Project>

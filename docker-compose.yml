@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  izvne.com:
+    image: izvne.com
+    build:
+      context: .
+      dockerfile: Izvne.com/Dockerfile

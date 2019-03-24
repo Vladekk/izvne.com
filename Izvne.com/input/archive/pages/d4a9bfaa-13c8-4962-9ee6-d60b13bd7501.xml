@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<page>
+  <title>7. Snowdrop live</title>
+  <description />
+  <content>&lt;p&gt;Snowdrop live! &lt;br /&gt; &lt;!-- BEGIN INSTAMAPPER CODE --&gt; GPS tracking powered by &lt;a href="http://www.instamapper.com"&gt;InstaMapper.com&lt;/a&gt; &lt;br /&gt;&lt;br /&gt; &lt;iframe style="border: 1px solid;" src="http://www.instamapper.com/ext?key=7654746842998639557&amp;amp;width=800&amp;amp;height=800&amp;amp;zoom=13&amp;amp;type=roadmap&amp;amp;units=metric&amp;amp;coords=d" frameborder="0" scrolling="no" width="1000" height="835"&gt; &lt;/iframe&gt; &lt;br /&gt; &lt;!-- Google Public Location Badge --&gt; &lt;iframe src="http://www.google.com/latitude/apps/badge/api?user=7132231665780996834&amp;amp;type=iframe&amp;amp;maptype=roadmap" frameborder="0" width="1000" height="835"&gt;&lt;/iframe&gt; &lt;!-- To disable location sharing, you *must* visit https://www.google.com/latitude/apps/badge and disable the Google Public Location badge. Removing this code snippet is not enough! --&gt;&lt;/p&gt;</content>
+  <keywords />
+  <slug>Snowdrop</slug>
+  <parent>00000000-0000-0000-0000-000000000000</parent>
+  <isfrontpage>False</isfrontpage>
+  <showinlist>False</showinlist>
+  <ispublished>True</ispublished>
+  <isdeleted>False</isdeleted>
+  <datecreated>2010-12-02 08:27:27</datecreated>
+  <datemodified>2013-12-08 19:42:38</datemodified>
+</page>

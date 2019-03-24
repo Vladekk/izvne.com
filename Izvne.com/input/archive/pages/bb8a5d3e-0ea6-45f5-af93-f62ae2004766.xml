@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<page>
+  <title>Проекты</title>
+  <description>Я люблю очень сильно разное, поэтому ничего не довожу до конца. Но что-то всё-таки дошло до каких-то</description>
+  <content>&lt;p&gt;Я люблю очень сильно разное, поэтому ничего не довожу до конца. Но что-то всё-таки дошло до каких-то полезных, или хотя бы интересных людям стадий, и список его приводится тут.&lt;/p&gt;
+&lt;h3&gt;Живое и обновляемое&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://radar.lv"&gt;Радиоархив&lt;/a&gt; &lt;/strong&gt;-&amp;nbsp; архив музыкальных радиопередач, находится в живом состоянии, обновляется (с некоторыми задержаками) каждую неделю. Делаем его вместе с Кириллом aka Deadbook.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href="http://www.openstreetmap.org/user/Vladekk/edits"&gt;OpenStreetMaps&lt;/a&gt;&lt;/strong&gt; - я улучшаю и пополняю бесплатные карты, сделанные по принципу Википедии.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href="http://izvne.com/page/tentacli2" target="_blank" style="font-weight: bold;"&gt;Карта велопрогулок&lt;/a&gt;&amp;nbsp;- тепловая карта велопрогулок до 2015 года (те, которые записывались на трекеры), без тренировок&lt;/p&gt;</content>
+  <keywords />
+  <slug>Проекты</slug>
+  <parent>00000000-0000-0000-0000-000000000000</parent>
+  <isfrontpage>False</isfrontpage>
+  <showinlist>True</showinlist>
+  <ispublished>True</ispublished>
+  <isdeleted>False</isdeleted>
+  <sortorder>3</sortorder>
+  <datecreated>2008-12-24 22:16:00</datecreated>
+  <datemodified>2016-03-26 16:30:34</datemodified>
+</page>

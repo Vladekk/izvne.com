@@ -1,0 +1,56 @@
+@using System.Text.RegularExpressions
+@{
+
+    var travelNames = (string[]) Document["Keywords"];
+    var allTravels = ((IEnumerable<IDocument>) Documents["Posts"]
+            .Where(_ => 
+                       travelNames.Any(t => _["Title"].ToString().Contains(t) &&  Regex.IsMatch(_["Title"].ToString(),"\\d+"))
+             )
+            .OrderBy(_ => (DateTime) _["Date"])
+            .ToList());
+    var travelGroups = allTravels.GroupBy(_ => travelNames.FirstOrDefault(t => _["Title"].ToString().ToLower().StartsWith(t.ToLower()))??
+                                               travelNames.First(t => _["Title"].ToString().Contains(t))
+                                                )
+                                 .OrderBy(_ => _.Key).ToList();
+    foreach (var travelGroup in travelGroups)
+    {
+        <h2>
+            <a href="#@travelGroup.Key">@travelGroup.Key</a>
+        </h2>
+    }
+    foreach (var travelGroup in travelGroups)
+    {
+        <h3 class="text-center">
+            <a id="@travelGroup.Key">@travelGroup.Key</a>
+        </h3>
+        foreach (var doc in travelGroup)
+        {
+            <text>
+                <article class="post post-home" id="@doc.Get("id")??Guid.NewGuid().ToString()">
+
+                    <header>
+                        <h4>
+                            <a href="@doc["Url"]">@doc["Title"]</a>
+                            @*                            <a href="/post/%D0%90%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%B1%D0%B0%D0%BD%D0%BA%D0%B5-%D0%A1%D0%B2%D0%B5%D0%B4%D0%B1%D0%B0%D0%BD%D0%BA%D0%B0-2-%D0%B2%D1%81%D0%B5-%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%B8%D0%BB%D0%B8">Авторизация в интернет-банке Сведбанка–2 : всё починили</a>*@
+                        </h4>
+                        <div class="post-info clearfix">
+                            <span class="post-date">
+                                <i class="glyphicon glyphicon-calendar">&nbsp;</i>@doc["Published"]</span>
+                            @*                            <span class="post-author">*@
+                            @*                                <i class=" icon-user"></i><a href="/author/Vladekk">Vladekk</a>*@
+                            @*                            </span>*@
+                            @*                            <span class="post-category">*@
+                            @*                                <i class=" icon-folder"></i><a href="/category/%D0%9D%D0%B0%D1%83%D0%BA%D0%B0-%D0%B8-%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0">Наука и техника</a>*@
+                            @*                            </span>*@
+
+                        </div>
+                    </header>
+                    @*                <section class="post-body text">*@
+                    @*$1$                   @Html.Raw(@doc["Content"].ToString().Substring(0,Math.Min(600,@doc["Content"].ToString().Length)))#1#*@
+                    @*                </section>*@
+
+                </article>
+            </text>
+        }
+    }
+}

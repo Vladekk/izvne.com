@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<page>
+  <title>tv</title>
+  <description />
+  <content>&lt;p&gt;&lt;a href="http://izvne.com/lj/tv.exe"&gt;VLC TV&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://izvne.com/themes/Vladekk/tv.ashx"&gt;TURN ON/OFF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://izvne.com/themes/Vladekk/tv.ashx?status=status"&gt;CHECK STATUS&lt;/a&gt;&lt;/p&gt;</content>
+  <keywords />
+  <slug>tv</slug>
+  <parent>00000000-0000-0000-0000-000000000000</parent>
+  <isfrontpage>False</isfrontpage>
+  <showinlist>False</showinlist>
+  <ispublished>True</ispublished>
+  <isdeleted>False</isdeleted>
+  <datecreated>2014-02-07 21:08:19</datecreated>
+  <datemodified>2014-02-08 20:47:14</datemodified>
+</page>

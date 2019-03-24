@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    @*    <link rel="contents" title="Archive" href="/archive">*@
+    <link rel="start" title="Цифровой скиталец" href="/">
+    @*    <link type="application/rsd+xml" rel="edituri" title="RSD" href="/rsd.axd">*@
+    @*    <link type="application/rdf+xml" rel="meta" title="SIOC" href="/sioc.axd">*@
+    @*    <link type="application/apml+xml" rel="meta" title="APML" href="/apml.axd">*@
+    @*    <link type="application/rdf+xml" rel="meta" title="FOAF" href="/foaf.axd">*@
+    @*    <link type="application/rss+xml" rel="alternate" title="Горящий человек" href="http://feeds2.feedburner.com/izvne_com">*@
+    @*    <link type="application/opensearchdescription+xml" rel="search" title="Горящий человек" href="/opensearch.axd">*@
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    @*    <link rel="shortcut icon" href="/Content/images/blog/blogengine.ico" type="image/x-icon">*@
+    <meta name="description" content="Горящий человек - Мы живём, пока мы летаем">
+    <meta name="keywords" content="private,twitter crosspost,Вылазки,Еда,Жизнь и байки,Коротко,Культура,Наука и техника,Общество,Спорт и здоровье">
+    <meta name="author" content="Vladekk">
+     @if (Document.Get("PreviewImage")!=null) 
+     { 
+            <meta property="og:image" content='https://izvne.com/@Document.Get("PreviewImage").ToString().TrimStart('/')' /> 
+     } 
+    
+    @*    <link type="text/css" href="./index.chtml_files/prettyPhoto.css" rel="stylesheet"><script type="text/javascript" src="./index.chtml_files/jquery-migrate-1.0.0.js.download"></script><script type="text/javascript" src="./index.chtml_files/jquery.prettyPhoto.js.download"></script><script type="text/javascript" src="./index.chtml_files/PrettyPhotoStarter.js.download"></script>*@
+    <title>
+        Цифровой скиталец | @Document.Get("Title")?.ToString()
+    </title>
+</head>
+<body class="ltr">
+<div class="wrapper">
+    <header class="header text-uppercase">
+        <div class="container">
+            <div class="header-title float-left">
+                <h1>
+                    <a href="/">Цифровой скиталец</a>
+                </h1>
+                <p>Мы живём, пока мы летаем</p>
+            </div>
+            <div class="hamburger" >☰</div>
+@*            <nav class="header-nav float-right">*@
+@*                <ul>*@
+@*                    <li>*@
+@*                        <nav class="navbar navbar-inverse widgetZone2 ">*@
+@*                            <div class="container-fluid">*@
+@*                                <div class="navbar-header">*@
+@*                                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">*@
+@*                                        <span class="icon-bar"></span>*@
+@*                                        <span class="icon-bar"></span>*@
+@*                                        <span class="icon-bar"></span>*@
+@*                                    </button>*@
+@*                                </div>*@
+@*                                <div class="collapse" id="myNavbar">*@
+@*                                </div>*@
+@*                            </div>*@
+@*                        </nav>*@
+@*                    </li>*@
+@*                </ul>*@
+@*            </nav>*@
+        </div>
+    </header>
+    <div class="container">
+        <div class="content-wrapper float-left">
+            <div id="ctl00_cphBody_divError"></div>
+            <div id="ctl00_cphBody_PostList1_posts" class="posts">
+                
+                @{
+                    var prev = Documents.OrderByDescending(_=>_.Get<DateTime>("Date")).FirstOrDefault(_ => _.Get<DateTime>("Date") < Document.Get<DateTime>("Date"));
+                    var next = Documents.OrderBy(_=>_.Get<DateTime>("Date")).FirstOrDefault(_ => _.Get<DateTime>("Date") > Document.Get<DateTime>("Date"));
+                    if (Document.Get("IsIndex") == null)
+                    {
+                        if (prev != null && prev.Get("Url")!=null)
+                        {
+                            <div class="pull-left"><a id="prev" href='@prev.Get("Url")'>Ctrl + &larr;</a></div>
+                        }
+                        
+                        if (next != null && next.Get("Url")!=null)
+                        {
+                            <div class="pull-right"><a id='next' href='@next.Get("Url")'>Ctrl + &rarr;</a></div>
+                        }
+                        <article class="post post-home">
+
+                            <header class="post-header">
+                                <h2 class="post-title">
+                                    @*                            <a href="/post/%D0%90%D0%B2%D1%82%D0%BE%D1%80%D0%B8%D0%B7%D0%B0%D1%86%D0%B8%D1%8F-%D0%B2-%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82-%D0%B1%D0%B0%D0%BD%D0%BA%D0%B5-%D0%A1%D0%B2%D0%B5%D0%B4%D0%B1%D0%B0%D0%BD%D0%BA%D0%B0-2-%D0%B2%D1%81%D0%B5-%D0%BF%D0%BE%D1%87%D0%B8%D0%BD%D0%B8%D0%BB%D0%B8">Авторизация в интернет-банке Сведбанка–2 : всё починили</a>*@
+                                    @Document.Get("Title")
+                                </h2>
+                                <div class="post-info clearfix">
+                                    <span class="post-date">
+                                        <i class="glyphicon glyphicon-calendar"></i>@Document.Get("Published")</span>
+                                    @*                            <span class="post-author">*@
+                                    @*                                <i class=" icon-user"></i><a href="/author/Vladekk">Vladekk</a>*@
+                                    @*                            </span>*@
+                                    @*                            <span class="post-category">*@
+                                    @*                                <i class=" icon-folder"></i><a href="/category/%D0%9D%D0%B0%D1%83%D0%BA%D0%B0-%D0%B8-%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0">Наука и техника</a>*@
+                                    @*                            </span>*@
+
+                                </div>
+                            </header>
+                            <section class="post-body text">
+                                @RenderBody()
+                            </section>
+                            @{
+                                var tn = Document.Get<string>("TravelName");
+                                if (tn!=null)
+                                {
+                                    <section>
+                                        <a id="toc" href="/page/Путешествия#@tn">К оглавлению Ctrl + &uarr;</a>
+                                    </section>
+                                }
+                            }   
+                        </article>
+                    }
+                    else
+                    {
+                        @RenderBody()
+                    }
+                }
+            </div>
+
+
+        </div>
+        <aside class="sidebar-wrapper float-right">
+            <div id="widgetzone_be_WIDGET_ZONE" class="widgetzone">
+                <div class="Widget widget textbox">
+                    <div class="content">
+                        <ul id="pagelist" class="pagelist">
+                            <li>
+                                <strong>
+                                    <div>
+                                        <a title="Путешествия" href="/page/Путешествия">Путешествия</a>
+                                    </div>
+                                    <div>
+                                        <a title="Серии" href="/page/Серии">Серии</a>
+                                    </div>
+                                    <div>
+                                        <a title="Стихи" href="/page/Стихи">Стихи</a>
+                                    </div>
+                                    <div>
+                                        <a title="Проекты" href="/page/Проекты">Проекты</a>
+                                    </div>
+                                </strong>
+                            </li>
+                            @*                                                    <li>*@
+                            @*                                                        <a title="Здесь собрано всякие большие наборы букв моего авторства, на которые имеет смысл указать вам отдельн" href="/page/Articles">Статьи</a>*@
+                            @*                                                    </li>*@
+                            @*                                                    <li>*@
+                            @*                                                        <a title="Я люблю очень сильно разное, поэтому ничего не довожу до конца. Но что-то всё-таки дошло до каких-то" href="/page/%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%8B">Проекты</a>*@
+                            @*                                                    </li>*@
+                            @*                                                    <li>*@
+                            @*                                                        <a title="Главная часть сайта - блог, то есть онлайн-журнал, где я публикую свои мысли разной степени увлекате" href="/page/About">О сайте</a>*@
+                            @*                                                    </li>*@
+                            @*                                                    <li>*@
+                            @*                                                        <a title="Смотри также:Что я люблю" href="/page/About-Me">Про меня</a>*@
+                            @*                                                    </li>*@
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </aside>
+    </div>
+</div>
+<footer class="footer">
+    <div class="container">
+        <p class="copyright float-left">
+            <span>Copyright © - <a href="/">Горящий человек</a></span>
+            @*            <span>Powered by <a href="http://dotnetblogengine.net/" target="_blank" title="BlogEgine.NET 3.3.5.0">BlogEngine.NET</a> </span>*@
+        </p>
+        <ul class="float-right list-unstyled social-network">
+            @*            <li>*@
+            @*                <a href="/BlogEngine.NET" rel="external nofollow">*@
+            @*                    <i class="icon-facebook"></i>*@
+            @*                </a>*@
+            @*            </li>*@
+            @*            <li>*@
+            @*                <a href="/blogenginenet" rel="external nofollow">*@
+            @*                    <i class="icon-twitter"></i>*@
+            @*                </a>*@
+            @*            </li>*@
+            @*            <li>*@
+            @*                <a href="/" rel="external nofollow">*@
+            @*                    <i class="icon-gplus"></i>*@
+            @*                </a>*@
+            @*            </li>*@
+            @*            <li>*@
+            @*                <a href="/" rel="external nofollow">*@
+            @*                    <i class="icon-linkedin"></i>*@
+            @*                </a>*@
+            @*            </li>*@
+            @*            <li>*@
+            @*                <a href="/syndication.axd" rel="external nofollow">*@
+            @*                    <i class="icon-rss"></i>*@
+            @*                </a>*@
+            @*            </li>*@
+            @**@
+
+        </ul>
+    </div>
+</footer>
+
+
+<link href="/css/bundle.css" rel="stylesheet" type="text/css">
+<link href="/css/rtl.css" rel="stylesheet" type="text/css">
+<link href="/css/styles.css" rel="stylesheet" type="text/css">
+<link href="/css/vladekk.css" rel="stylesheet" type="text/css">
+
+<link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="/node_modules/jquery-unveil/jquery.unveil.js"></script>
+@*<script src="/Vladekk2/js/bundle.min.js"></script>*@
+<script src="/js/jplayer/run.js"></script>
+<script>
+    $(function() {
+        $('img[data-src]').unveil(0);
+    });
+    $(document).keydown(function (e){
+        if(e.which === 37 && e.ctrlKey && $('#prev').length) // left arrow
+        {
+            window.location.href = 
+                $('#prev').attr("href");
+            // your action here, for example
+                    
+        }
+        else if(e.which === 39 && e.ctrlKey && $('#next').length)    // right arrow
+        {
+            window.location.href =
+                $('#next').attr("href");
+            // your action here, for example
+                    
+        } else if(e.which === 38 && e.ctrlKey && $('#toc').length)    // right arrow
+        {
+            window.location.href =
+                $('#toc').attr("href");
+            // your action here, for example
+                    
+        }
+    });
+</script>
+
+
+</body>
+</html>

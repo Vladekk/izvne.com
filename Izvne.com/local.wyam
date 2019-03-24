@@ -1,0 +1,242 @@
+// Customize your settings and add new ones here
+
+//Pipelines["BlogPosts"].Clear();
+//Pipelines["BlogPosts"].Add(
+//    ReadFiles("posts/*.html"),
+//    WriteFiles("posts/")
+//    // ... more modules
+//);
+// Add any pipeline customizations here
+  
+#n -p Wyam.Html
+#n -p Wyam.Less
+#n -p Wyam.Markdown
+#n -p Wyam.Minification
+#n -p Wyam.Razor
+#n -p Wyam.Images
+#n -p Wyam.Yaml
+//#a obj/**
+
+#a "System.Collections, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
+#a "System.ServiceModel, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+#a "System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089"
+#a "Izvne.Lib.dll"
+
+
+using System.Web;
+using  Izvne.Lib;
+using System.IO;
+using System.Text;
+using System.Security.Cryptography;
+using System.Text.RegularExpressions;
+using System.Net;
+Settings[Keys.Host] = "izvne.com";
+//Settings[BlogKeys.Title] = "Горящий человек";
+//Settings[BlogKeys.Description] = "Блог в процессе переезда";
+
+
+var filesPath = Path.GetDirectoryName(Directory.GetCurrentDirectory())+"/files";
+//throw new Exception(filesPath);
+              
+
+var travelNames = new[] {"Иордания", "Кипр", "Исландия", "США", "Германия", "Крит", "Черногория", "Крым", "Вьетнам", "Амстерадам", "Путешествие в Турцию", "Израиль","Цифровой скиталец"};
+
+Pipelines.Add ("Yarn",
+ CopyFiles ("node_modules/**")
+); 
+
+Pipelines.Add ("Assets",
+ CopyFiles ("images/**/*.{png,gif,jpg,svg,ico,txt,pdf}")
+); 
+
+
+//Pipelines.Add ("Gallery",
+// ReadFiles ("images/**/*.jpg")
+//);
+
+
+Pipelines.Add ("JsFolder",
+ ReadFiles ("js/!**.js"),
+ WriteFiles ("js/")
+);
+
+Pipelines.Add ("Js",
+ ReadFiles ("js/**.js"),
+ MinifyJs (),
+ WriteFiles ("js/")
+);
+
+Pipelines.Add ("old_theme",
+ ReadFiles ("Vladekk2/!**.js"),
+ WriteFiles ()
+);
+
+Pipelines.Add ("old_theme_js",
+ ReadFiles ("Vladekk2/**.js"),
+ MinifyJs (),
+ WriteFiles ()
+);
+
+
+Pipelines.Add ("Redirects",
+ CopyFiles ("_redirects") 
+);
+
+Pipelines.Add ("CssLang",
+ReadFiles ("css/**/*.css"),
+   MinifyCss (),
+   WriteFiles ("css/")
+);
+
+
+
+
+public string ToBase64(string src){
+
+
+    using (var md5 = MD5.Create())
+    {
+        return BitConverter.ToString(md5.ComputeHash(Encoding.UTF8.GetBytes(src))).Replace("-","");
+    }
+    //return Convert.ToBase64String(Encoding.UTF8.GetBytes(src));
+}
+
+Pipelines.Add ("Posts",
+            ReadFiles (
+// ONLYLOCAL
+//            "post/*.cshtml", // uncomment to regenerate old posts 
+            "post/**.md"),            
+            FrontMatter (Yaml ()),                                    
+            Meta ("Published",@doc.Get("Published")??System.IO.File.GetCreationTime(@doc["SourceFilePath"].ToString().Replace("file:///","")).ToString("yyyy-MM-dd")),
+            Meta ("Date",
+                DateTime.ParseExact(@doc ["Published"].ToString(),"yyyy-MM-dd",System.Globalization.CultureInfo.InvariantCulture)                
+            ),
+            
+            OrderBy((DateTime)@doc ["Date"]).Descending(),
+            Meta ("Title",@doc.Get("Title")??@doc["SourceFileBase"].ToString().Replace("file:///","")),
+            Meta("TravelName",travelNames.FirstOrDefault(tn=>@doc["Title"].ToString().Contains(tn))),      
+            Meta ("Slug",@doc.Get("Slug")??(@doc["Published"]+" "+@doc["Title"])),                    
+            Meta ("Url","/post/"+(@doc["Slug"]).ToString()),
+        
+            Meta ("ImagesSubfolder","/files/"+ToBase64(Path.GetFileName(@doc["SourceFileDir"].ToString()))),
+            If((c,d)=>c["SourceFileExt"].ToString()==".md",
+                Replace(@"!\[[^\]]*\]\(([^)]+)\)" ,
+                        $"[![]({@doc["ImagesSubfolder"].ToString()}/1920x1440/$1)]({@doc["ImagesSubfolder"].ToString()}/$1)")
+                .IsRegex(), // for fixing markdown image urls
+            Markdown(),
+       Meta ("PreviewImage",
+      
+           Regex.Replace(
+              Regex.Match(WebUtility.HtmlDecode(@doc.Content),@"<img\s+src=['""][^'^""]+['""]").Value,
+              @"<img\s+src=['""]([^'^""]+)['""]",
+              "$1"
+              )
+       
+       ),
+            Replace("<img src=\"","<img data-src=\""),
+            Replace(".jpeg",".jpg")),
+            Replace("\\[more( text=(?<text>[^\\]]*))*\\]","").IsRegex(),     
+            Razor ().WithLayout("/_layout.cshtml"),
+            //WithLayout ("/_layout.cshtml"),         
+            WriteFiles ((doc,context)=>@doc["Url"].ToString().TrimStart('/')+".html"),                               
+            
+            OrderBy((DateTime)@doc ["Date"]).Descending()
+
+);
+ 
+
+ Pipelines.Add ("NewPostsImageThumbs",
+    ReadFiles ( "post/**.JPG","post/**.jpg","post/**.jpeg","post/**.JPEG"),
+    Meta("DestFileName",@doc["SourceFileName"].ToString().Replace(".jpeg",".jpg")),
+    Meta("ImagePath",
+                                         Path.Combine(
+                                             Path.Combine(
+                                                 ToBase64(Path.GetFileName(@doc["SourceFileDir"].ToString())),
+                                                 "1920x1440"),
+                                             @doc["DestFileName"].ToString()
+                                         )
+                                     ),
+    Meta("ImageFullPath",Path.Combine("..\\files",@doc["ImagePath"].ToString())),
+        
+    If((doc,c)=>!File.Exists(Path.Combine(filesPath,doc["ImagePath"].ToString())),
+        Image()
+            .Resize(0,1440),
+        WriteFiles((doc,context)=>
+            Path.Combine("..\\files",
+                Path.Combine(
+                    Path.Combine(
+                        ToBase64(Path.GetFileName(@doc["SourceFileDir"].ToString())),
+                        "1920x1440"),@doc["DestFileName"].ToString()
+                    
+            )
+        )
+    )
+    .UseWriteMetadata(false))
+    
+);
+
+
+Pipelines.Add ("NewPostsImages",
+    ReadFiles ( "post/**.JPG","post/**.jpg","post/**.jpeg","post/**.JPEG,post/**.webm"),
+    Meta("DestFileName",@doc["SourceFileName"].ToString().Replace(".jpeg",".jpg")),
+    Meta("ImagePath",
+                                     Path.Combine(                                      
+                                             ToBase64(Path.GetFileName(@doc["SourceFileDir"].ToString()))
+                                            ,
+                                           @doc["DestFileName"].ToString()
+                                     )
+                                 ), 
+    Meta("ImageFullPath",Path.Combine("..\\files",@doc["ImagePath"].ToString())),
+    Image().SetJpegQuality(70),
+    If((doc,c)=>!File.Exists(Path.Combine(filesPath,doc["ImagePath"].ToString())),
+              WriteFiles(@doc["ImageFullPath"].ToString()).UseWriteMetadata(false))
+    
+        
+);
+
+
+
+Pipelines.Add ("Pages", // uncomment to regenerate old pages
+            ReadFiles ("page/*.cshtml"),            
+            FrontMatter (Yaml ()),
+            Meta ("Date",DateTime.ParseExact(@doc ["Published"].ToString(),"yyyy-MM-dd",System.Globalization.CultureInfo.InvariantCulture)),            
+            Meta ("Content",@doc.Content),                    
+            Meta ("Url","/page/"+@doc["Slug"].ToString()),
+            Razor ().WithLayout ("/_layout.cshtml"),                              
+            WriteFiles(".html") ,
+            OrderBy((DateTime)@doc ["Date"]).Descending()
+
+);
+/*
+Pipelines.Add ("Travels",
+        ReadFiles ("series.cshtml"),
+        Meta("Keywords", travelNames),             
+        Razor().WithLayout("/_layout.cshtml"), 
+        WriteFiles ((doc,context)=>"page/Путешествия.html")        
+);
+ 
+
+Pipelines.Add ("Серии",
+        ReadFiles ("series.cshtml"),
+        Meta("Keywords",new[] {"Интересные статьи", 
+                                "Тренируем мозг",
+                                "Сон",
+                                "Почему у меня нет прав",
+                                "Хорошее кино"}),        
+        Razor().WithLayout("/_layout.cshtml"),    
+        //MinifyHtml (),
+        WriteFiles ((doc,context)=>"page/Серии.html")        
+);
+    
+  */
+
+Pipelines.Add ("Index",
+        ReadFiles ("index.cshtml"),
+        Paginate(20,Documents("Posts")),
+        Meta("IsIndex",true),
+        Razor().WithLayout("/_layout.cshtml"),       
+       
+        WriteFiles ( (int)@doc["CurrentPage"]==1?"index.html":string.Format("archive-{0}.html", @doc["CurrentPage"]))
+);
+
+

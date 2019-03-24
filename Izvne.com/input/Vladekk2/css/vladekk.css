@@ -1,0 +1,28 @@
+.videoWrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.videoWrapper iframe {
+	position: absolute;
+	left: 0;
+	width: 80%;
+	height: 80%;
+}
+.cite {
+  background-color:#EEFFFF;
+  border:1px solid black;
+  display:block;
+  font-style:normal;
+  margin:20px;padding:20px;
+}
+
+
+blockquote {
+  background-color:#EEFFFF;
+  border:1px solid black;
+  display:block;
+  font-style:normal;
+  margin:20px;padding:20px;
+}

@@ -1,0 +1,640 @@
+Id: 4e6b0160-e4c2-476d-90b3-454768c797ab
+Title: "История Мэла"
+Published: "2008-12-23"
+Slug: "2008-12-23 История Мэла"
+-
+<h4 align="center">&nbsp;Введение</h4>
+<p>
+Это один из величайших хакерских эпосов.В нескольких ярких
+образах он проясняет больше в этике и психологии хакеров, чем куча
+томов исследований,сложенных вместе.<br />
+Тем, кто знает английский, желательно читать оригинал, для остальных я сделал перевод. <a href="#rus">(Внизу)</a><br />
+<strong>Если
+вы хотите понять, что представляет собой настоящий хакер, а не хамкать
+жалкие потуги журналистов, очерняющих светлый образ, читайте,это для
+Вас.</strong> 
+</p>
+<p>
+The Story of Mel, a Real Programmer<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+This was posted to Usenet by its author, Ed Nather (utastro!nather), on
+May 21, 1983. 
+</p>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A recent article devoted to the macho side of programming<br />
+made the bald and unvarnished statement:
+</p>
+<p>
+<br />
+Real Programmers write in FORTRAN.
+</p>
+<p>
+<br />
+Maybe they do now,<br />
+in this decadent era of<br />
+Lite beer, hand calculators, and &quot;user-friendly&quot; software<br />
+but back in the Good Old Days,<br />
+when the term &quot;software&quot; sounded funny<br />
+and Real Computers were made out of drums and vacuum tubes,<br />
+Real Programmers wrote in machine code.<br />
+Not FORTRAN. Not RATFOR. Not, even, assembly language.<br />
+Machine Code.<br />
+Raw, unadorned, inscrutable hexadecimal numbers.<br />
+Directly.
+</p>
+<p>
+Lest a whole new generation of programmers<br />
+grow up in ignorance of this glorious past,<br />
+I feel duty-bound to describe,<br />
+as best I can through the generation gap,<br />
+how a Real Programmer wrote code.<br />
+I&#39;ll call him Mel,<br />
+because that was his name.
+</p>
+<p>
+I first met Mel when I went to work for Royal McBee Computer Corp.,<br />
+a now-defunct subsidiary of the typewriter company.<br />
+The firm manufactured the LGP-30,<br />
+a small, cheap (by the standards of the day)<br />
+drum-memory computer,<br />
+and had just started to manufacture<br />
+the RPC-4000, a much-improved,<br />
+bigger, better, faster -- drum-memory computer.<br />
+Cores cost too much,<br />
+and weren&#39;t here to stay, anyway.<br />
+(That&#39;s why you haven&#39;t heard of the company,<br />
+or the computer.)
+</p>
+<p>
+I had been hired to write a FORTRAN compiler<br />
+for this new marvel and Mel was my guide to its wonders.<br />
+Mel didn&#39;t approve of compilers.
+</p>
+<p>
+&quot;If a program can&#39;t rewrite its own code&quot;,<br />
+he asked, &quot;what good is it?&quot;
+</p>
+<p>
+Mel had written,<br />
+in hexadecimal,<br />
+the most popular computer program the company owned.<br />
+It ran on the LGP-30<br />
+and played blackjack with potential customers<br />
+at computer shows.<br />
+Its effect was always dramatic.<br />
+The LGP-30 booth was packed at every show,<br />
+and the IBM salesmen stood around<br />
+talking to each other.<br />
+Whether or not this actually sold computers<br />
+was a question we never discussed.
+</p>
+<p>
+Mel&#39;s job was to re-write<br />
+the blackjack program for the RPC-4000.<br />
+(Port? What does that mean?)<br />
+The new computer had a one-plus-one<br />
+addressing scheme,<br />
+in which each machine instruction,<br />
+in addition to the operation code<br />
+and the address of the needed operand,<br />
+had a second address that indicated where, on the revolving drum,<br />
+the next instruction was located.
+</p>
+<p>
+In modern parlance,<br />
+every single instruction was followed by a GO TO!<br />
+Put that in Pascal&#39;s pipe and smoke it.
+</p>
+<p>
+Mel loved the RPC-4000<br />
+because he could optimize his code:<br />
+that is, locate instructions on the drum<br />
+so that just as one finished its job,<br />
+the next would be just arriving at the &quot;read head&quot;<br />
+and available for immediate execution.<br />
+There was a program to do that job,<br />
+an &quot;optimizing assembler&quot;,<br />
+but Mel refused to use it.
+</p>
+<p>
+&quot;You never know where it&#39;s going to put things&quot;,<br />
+he explained, &quot;so you&#39;d have to use separate constants&quot;.
+</p>
+<p>
+It was a long time before I understood that remark.<br />
+Since Mel knew the numerical value<br />
+of every operation code,<br />
+and assigned his own drum addresses,<br />
+every instruction he wrote could also be considered<br />
+a numerical constant.<br />
+He could pick up an earlier &quot;add&quot; instruction, say,<br />
+and multiply by it,<br />
+if it had the right numeric value.<br />
+His code was not easy for someone else to modify.
+</p>
+<p>
+I compared Mel&#39;s hand-optimized programs<br />
+with the same code massaged by the optimizing assembler program,<br />
+and Mel&#39;s always ran faster.<br />
+That was because the &quot;top-down&quot; method of program design<br />
+hadn&#39;t been invented yet,<br />
+and Mel wouldn&#39;t have used it anyway.<br />
+He wrote the innermost parts of his program loops first,<br />
+so they would get first choice<br />
+of the optimum address locations on the drum.<br />
+The optimizing assembler wasn&#39;t smart enough to do it that way.
+</p>
+<p>
+Mel never wrote time-delay loops, either,<br />
+even when the balky Flexowriter<br />
+required a delay between output characters to work right.<br />
+He just located instructions on the drum<br />
+so each successive one was just past the read head<br />
+when it was needed;<br />
+the drum had to execute another complete revolution<br />
+to find the next instruction.<br />
+He coined an unforgettable term for this procedure.<br />
+Although &quot;optimum&quot; is an absolute term,<br />
+like &quot;unique&quot;, it became common verbal practice<br />
+to make it relative:<br />
+&quot;not quite optimum&quot; or &quot;less optimum&quot;<br />
+or &quot;not very optimum&quot;.<br />
+Mel called the maximum time-delay locations<br />
+the &quot;most pessimum&quot;.
+</p>
+<p>
+After he finished the blackjack program<br />
+and got it to run<br />
+(&quot;Even the initializer is optimized&quot;,<br />
+he said proudly),<br />
+he got a Change Request from the sales department.<br />
+The program used an elegant (optimized)<br />
+random number generator<br />
+to shuffle the &quot;cards&quot; and deal from the &quot;deck&quot;,<br />
+and some of the salesmen felt it was too fair,<br />
+since sometimes the customers lost.<br />
+They wanted Mel to modify the program<br />
+so, at the setting of a sense switch on the console,<br />
+they could change the odds and let the customer win.
+</p>
+<p>
+Mel balked.<br />
+He felt this was patently dishonest,<br />
+which it was,<br />
+and that it impinged on his personal integrity as a programmer,<br />
+which it did,<br />
+so he refused to do it.<br />
+The Head Salesman talked to Mel,<br />
+as did the Big Boss and, at the boss&#39;s urging,<br />
+a few Fellow Programmers.<br />
+Mel finally gave in and wrote the code,<br />
+but he got the test backwards,<br />
+and, when the sense switch was turned on,<br />
+the program would cheat, winning every time.<br />
+Mel was delighted with this,<br />
+claiming his subconscious was uncontrollably ethical,<br />
+and adamantly refused to fix it.
+</p>
+<p>
+After Mel had left the company for greener pa$ture$,<br />
+the Big Boss asked me to look at the code<br />
+and see if I could find the test and reverse it.<br />
+Somewhat reluctantly, I agreed to look.<br />
+Tracking Mel&#39;s code was a real adventure.
+</p>
+<p>
+I have often felt that programming is an art form,<br />
+whose real value can only be appreciated<br />
+by another versed in the same arcane art;<br />
+there are lovely gems and brilliant coups<br />
+hidden from human view and admiration, sometimes forever,<br />
+by the very nature of the process.<br />
+You can learn a lot about an individual<br />
+just by reading through his code,<br />
+even in hexadecimal.<br />
+Mel was, I think, an unsung genius.
+</p>
+<p>
+Perhaps my greatest shock came<br />
+when I found an innocent loop that had no test in it.<br />
+No test. None.<br />
+Common sense said it had to be a closed loop,<br />
+where the program would circle, forever, endlessly.<br />
+Program control passed right through it, however,<br />
+and safely out the other side.<br />
+It took me two weeks to figure it out.
+</p>
+<p>
+The RPC-4000 computer had a really modern facility<br />
+called an index register.<br />
+It allowed the programmer to write a program loop<br />
+that used an indexed instruction inside;<br />
+each time through,<br />
+the number in the index register<br />
+was added to the address of that instruction,<br />
+so it would refer<br />
+to the next datum in a series.<br />
+He had only to increment the index register<br />
+each time through.<br />
+Mel never used it.
+</p>
+<p>
+Instead, he would pull the instruction into a machine register,<br />
+add one to its address,<br />
+and store it back.<br />
+He would then execute the modified instruction<br />
+right from the register.<br />
+The loop was written so this additional execution time<br />
+was taken into account -<br />
+just as this instruction finished,<br />
+the next one was right under the drum&#39;s read head,<br />
+ready to go.<br />
+But the loop had no test in it.
+</p>
+<p>
+The vital clue came when I noticed<br />
+the index register bit,<br />
+the bit that lay between the address<br />
+and the operation code in the instruction word,<br />
+was turned on -<br />
+yet Mel never used the index register,<br />
+leaving it zero all the time.<br />
+When the light went on it nearly blinded me.
+</p>
+<p>
+He had located the data he was working on<br />
+near the top of memory -<br />
+the largest locations the instructions could address -<br />
+so, after the last datum was handled,<br />
+incrementing the instruction address<br />
+would make it overflow.<br />
+The carry would add one to the<br />
+operation code, changing it to the next one in the instruction set:<br />
+a jump instruction.<br />
+Sure enough, the next program instruction was<br />
+in address location zero,<br />
+and the program went happily on its way.
+</p>
+<p>
+I haven&#39;t kept in touch with Mel,<br />
+so I don&#39;t know if he ever gave in to the flood of<br />
+change that has washed over programming techniques<br />
+since those long-gone days.<br />
+I like to think he didn&#39;t.<br />
+In any event,<br />
+I was impressed enough that I quit looking for the<br />
+offending test,<br />
+telling the Big Boss I couldn&#39;t find it.<br />
+He didn&#39;t seem surprised.
+</p>
+<p>
+When I left the company,<br />
+the blackjack program would still cheat<br />
+if you turned on the right sense switch,<br />
+and I think that&#39;s how it should be.<br />
+I didn&#39;t feel comfortable<br />
+hacking up the code of a Real Programmer.
+</p>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; This is one of
+hackerdom&#39;s great heroic epics, free verse or no. In a few spare images
+it captures more about the esthetics and psychology of hacking than all
+the scholarly volumes on the subject put together.
+</p>
+<p>
+[1992 postscript -- the author writes: &quot;The original submission to
+the net was not in free verse, nor any approximation to it -- it was
+straight prose style, in non-justified paragraphs. In bouncing around
+the net it apparently got modified into the `free verse&#39; form now
+popular. In other words, it got hacked on the net. That seems
+appropriate, somehow.&quot; The author adds that he likes the `free-verse&#39;
+version better...] 
+</p>
+<p>
+&nbsp;
+</p>
+<h4 id="rus">История Мэла, Настоящего Программиста</h4>
+Это было отправлено в Сеть 21 мая 1983 года автором, человеком по имени Ed Nather.Перевод, 2002(с) Vladislav Kugelevich
+<p>
+&nbsp;
+</p>
+<p>
+В недавней статье про &quot;крутые&quot; стороны программирования был высказан прямой как бревно, неприкрытый ничем тезис:
+</p>
+<p>
+Настоящие Программисты пишут на Фортране.
+</p>
+<p>
+Быть может, сейчас это так,<br />
+В эту упадочную эру<br />
+Безалкогольного пива<br />
+Карманных калькуляторов<br />
+И дружественных интерфейсов.
+</p>
+<p>
+Но в старые добрые времена,<br />
+Когда само слово &quot;программа&quot; звучало смешно,<br />
+И Настоящие Компьютеры были сделаны на барабанах и вакуумных лампах,<br />
+Настоящие программисты писали в машинном коде.<br />
+Не на Паскале.Не на Фортране.И даже не на Ассемблере.<br />
+В машинном коде.<br />
+Сырые, неприукрашенные, непонятные шестнадцатеричные числа.<br />
+Напрямую.
+</p>
+<p>
+И чтобы новое поколение программистов<br />
+Не выросло в неведении об этом великом прошлом<br />
+Я чувствую нужду описать,<br />
+Настолько хорошо, насколько смогу <br />
+Сквозь пропасть между поколениями,<br />
+Как Настоящий Программист писал код.
+</p>
+<p>
+Я буду называть его Мэл,<br />
+Ибо таково было его имя.
+</p>
+<p>
+Впервые я встретил его,<br />
+Когда пришёл работать в Royal McBee Computer Corp.,<br />
+Ныне покойную дочернюю фирму <br />
+Компании по производству печатных машинок.<br />
+Фирма производила LGP-30,<br />
+Небольшой, дешёвый(по тем временам)<br />
+Компьютер на барабанной памяти,<br />
+И только что начала проиводить<br />
+RPC-4000, значительно улучшенный,<br />
+Больший, лучший и более быстрый - компьютер на барабанной памяти.<br />
+Ферритовые сердечники стоили слишком дорого,<br />
+Да и в любом случае, их время прошло.<br />
+(Вот почему вы никогда не слышали,<br />
+Ни об этой компании, ни о её детище)
+</p>
+<p>
+Я был нанят,чтобы создать компилятор Фортрана<br />
+Для этого удивительного устройства<br />
+И Мэл был моим проводником к его тайнам.<br />
+Мэл не одобрял компиляторов.
+</p>
+<p>
+&quot;Если программа не может переписать свой собственный код&quot;,<br />
+говаривал он, - &quot;Что в ней хорошего?&quot;
+</p>
+<p>
+Мел написал,<br />
+В шестнадцатиричной системе,<br />
+Самую популярную программу из тех,<br />
+Какими владела компания.<br />
+Она работала на LGP-30<br />
+И играла в Блек-Джек с потенциальными покупателями<br />
+На компьютерных шоу.<br />
+Эффект был сногсшибательным.<br />
+LGP-30 была всегда занята на всех шоу,<br />
+И продавцы IBM стояли вокруг,<br />
+Разговаривая друг с другом.
+</p>
+<p>
+Помогало ли это на самом деле продавать компьютеры<br />
+Вопрос, который мы никогда не обсуждали.
+</p>
+<p>
+Работой Мела было переписать<br />
+Блек-Джек для RPC-4000<br />
+(Портирование?Что это значит?)<br />
+Новый компьютер имел схему адресации один-плюс-один,<br />
+В которой каждая машинная инструкция<br />
+В добавление к коду операции<br />
+И адресу рабочего операнда<br />
+Имела второй адрес, который показывал где, на вращающемся барабане,<br />
+Располагалась следующая инструкция.
+</p>
+<p>
+Говоря современым языком,<br />
+Каждая отдельная инструкция<br />
+Сопровождалась командой перехода.<br />
+Прочувствуйте это, структурные программисты!
+</p>
+<p>
+Мел любил RPC-4000<br />
+Потому что он мог оптимизировать свой код:<br />
+То есть, так располагать инструкции на барабане,<br />
+Что как только одна закончит работу,<br />
+Следующая как будет как раз под &quot;читающей головкой&quot;<br />
+И доступна для немедленного исполнения.<br />
+Была программа для выполнения этой работы,<br />
+&quot;Оптимизирующий ассемблер&quot;,<br />
+Но Мел отказывался использовать её.
+</p>
+<p>
+&quot;Никогда не знаешь, где он собирается поместить команду&quot;,<br />
+Объяснял он, &quot;и тебе приходится использовать отдельные константы&quot;.
+</p>
+<p>
+Прошло много времени, прежде чем я понял это замечание.<br />
+Поскольку Мел знал числовое значение<br />
+Кода каждой операции,<br />
+И назначал свои собственные адреса на барабане,<br />
+Каждая инструкция, написанная им,<br />
+также могла считаться<br />
+Числовой константой.<br />
+Скажем, он мог взять инструкцию &quot;ADD&quot;,<br />
+И умножить на неё.<br />
+Если она имела нужное числовое значение.<br />
+Другим нелегко было изменять его код.
+</p>
+<p>
+<br />
+Я сравнивал программы Мэла, оптимизированные вручную,<br />
+С тем кодом, что создавал оптимизирующий ассемблер,<br />
+И программы Мэла всегда работали быстрее.<br />
+Это потому, что метод программирования &quot;сверху-вниз&quot; ещё не был изобретён,<br />
+И Мэл всё равно не использовал бы его.<br />
+Он писал самые внутренние части своих программ сначала,<br />
+Чтобы они получили первый выбор <br />
+В оптимальных адресах размещений на барабане.<br />
+Оптимизирующий ассеблер не был достаточно хорош, чтобы делать так.
+</p>
+<p>
+Мел также никогда не писал циклов-задержек,<br />
+Даже когда упрямый Флексорайтер<br />
+Требовал задержки между выводимыми символами<br />
+Он просто так размещал инструкции на барабане<br />
+Чтобы следующая была уже после читающей головки<br />
+Когда она требовалась;<br />
+И барабану приходилось совершать полный оборот<br />
+Чтобы найти следующую инструкцию.<br />
+Он выпестовал незабываемый термин для этой процедуры.<br />
+Хотя &quot;оптимальный&quot; и является абсолютным определением,<br />
+Так же как и &quot;уникальный&quot;,<br />
+Стало общепринятым в речи<br />
+Делать его относительным:<br />
+&quot;недостаточно оптимальный&quot;, или &quot;менее оптимальный&quot;,<br />
+или &quot;не очень оптимальный&quot;.<br />
+Мэл называл расположения с максимальной задержекой<br />
+&quot;Наиболее пессимальными&quot;.
+</p>
+<p>
+После того, как он закончил писать Блек-Джек<br />
+И заставил его работать,<br />
+(&quot;Даже инициализатор оптимизирован&quot;, <br />
+гордо сказал Мел),<br />
+Он получил Просьбу Об Изменении от отдела продаж.<br />
+Программа использовала элегантный(оптимизированный)<br />
+Генератор случайных чисел<br />
+Чтобы тасовать &quot;карты&quot; и совершать раздачу из &quot;колоды&quot;,<br />
+И некоторые Продавцы чувствовали, это слишком честно,<br />
+Поскольку иногда покупатели проигрывали.<br />
+Они хотели, чтобы Мэл исправил программу так,<br />
+Чтобы с помощью сенсорного выключателя на консоли<br />
+Они могли изменить расклад, и позволить покупателю выиграть.
+</p>
+<p>
+Мэл упрямился.<br />
+Он чувствовал, что это было явно нечестно.<br />
+И это было так.<br />
+И что это задевает его честность как программиста<br />
+И это было так.<br />
+Поэтому он отказался сделать это.<br />
+Главный Продавец поговорил с Мэлом<br />
+Так же сделал и Большой Босс и, под давлением босса,<br />
+Несколько коллег-программистов.<br />
+Мэл в конце концов сдался и написал код,<br />
+Но получилось всё наоборот,<br />
+И, когда сенсорный переключатель был включен,<br />
+Программа жульничала, всё время выигрывая.<br />
+Мел был восхищён этим,<br />
+Провозгласив своё подсознание неподконтрольно этичным,<br />
+И непоколебимо отказался исправлять это.
+</p>
+<p>
+После того как Мэл покинул компанию ради более зелёных пастбищ,<br />
+Большой Босс попросил меня глянуть код<br />
+И посмотреть, могу ли я найти тест и исправить его.<br />
+Как-то неохотно, я согласился посмотреть.<br />
+Отслеживать код Мэла было настоящим приключением.
+</p>
+<p>
+Я часто чувствовал, что программирование - форма искусства,<br />
+Чья настоящая ценность может быть понята<br />
+Только другим посвящённым в то же таинственное искусство;<br />
+Здесь есть прелестные драгоценности и удачные ходы<br />
+Спрятанные от глаз человеческих и восхищения, иногда навечно<br />
+Из-за самой природы процесса.<br />
+Можно узнать многое и человеке, <br />
+Просто читая его код,<br />
+Даже шестнадцатиричный.<br />
+Мэл был, как я полагаю, невоспетым гением.
+</p>
+<p>
+Возможно наибольший шок я получил<br />
+Когда я нашёл невинный цикл без условия.<br />
+Без всякого условия.Без.<br />
+Первая мысль была, что это должен быть замкнутый цикл,<br />
+Где программа зациклилась бы навечно, без конца.<br />
+Однако,программа проходила свозь него,<br />
+И благополучно выходила на другой стороне.<br />
+Мне потребовалось две недели, чтобы раскусить это.
+</p>
+<p>
+Компьютер RPC-4000 был оснащён очень современным устройством<br />
+Называвшимся &quot;Индексный регистр&quot;.<br />
+Оно позволяло программисту написать цикл,<br />
+Который использовал индексированную инструкцию;<br />
+При каждом проходе,<br />
+Число в индексном регистре<br />
+Добавлялось к адресу этой инструкции,<br />
+Так,что она указывала<br />
+На следующий элемент последовательности.<br />
+Надо было всего лишь увеличивать <br />
+Индексный регистр <br />
+При каждом проходе.<br />
+Мел не использовал его.
+</p>
+<p>
+Вместо этого<br />
+Он загонял инструкцию в машинный регистр<br />
+Добавлял единицу к её адресу<br />
+И сохранял её обратно.<br />
+Затем он исполнял модифицированную инструкцию <br />
+Прямо из регистра.<br />
+Цикл был написан<br />
+С учётом этого лишнего времени -<br />
+Как только одна инструкция завершалась<br />
+Следующая была прямо под считывающей головкой<br />
+Готовая к запуску.<br />
+Но цикл не имел условия.
+</p>
+<p>
+Решающей уликой стало когда я заметил,<br />
+Что бит индексного регистра<br />
+Бит находящийся между адресом <br />
+И кодом операции<br />
+В слове инструкции<br />
+Был установлен -<br />
+Несмотря на то<br />
+Что Мэл никогда не использовал индексный регистр<br />
+Всегда оставляя его равным нулю.<br />
+Когда меня озарило,я почти ослеп.
+</p>
+<p>
+Он размещал данные<br />
+Над которыми работал<br />
+Около конца памяти -<br />
+Самые последние ячейки, которые могли адресовать инструкции -<br />
+И, после обработки последнего элемента,<br />
+Увеличение адреса инструкции <br />
+Приводило к её переполнению.<br />
+Перенос прибавлял единицу к коду операции<br />
+Превращяя инструкцию в следующию в наборе инструкций:<br />
+Инструкцию перехода.<br />
+Разумеется, следующая инструкция находилась по адресу ноль,<br />
+И программа шла дальше своим путём.
+</p>
+<p>
+<br />
+Я не поддерживал связи с Мэлом<br />
+И не знаю, уступил ли он тому морю перемен<br />
+Что меняло технику программирования<br />
+С тех давно ушедших дней.<br />
+Хочется думать, что нет.<br />
+В любом случае<br />
+Я был достаточно впечатлён <br />
+Чтобы перестать искать<br />
+Раздражающую проверку,<br />
+Сказав Большому Боссу<br />
+Что не могу её найти.<br />
+Он не был удивлён.
+</p>
+<p>
+Когда я покинул компанию<br />
+Игра в Блек-Джек<br />
+Всё ещё жульничала, <br />
+Если вы дотрагивались до нужного переключателя.<br />
+Я думаю так и должно быть.<br />
+Я не чувствовал себя уютно,<br />
+Правя код Настоящего Программиста.
+</p>
+<p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Это один из величайших
+хакерских эпосов, в какой бы форме он не был, белого стиха, или иной.В
+нескольких ярких образах он проясняет больше в этике и психологии
+хакеров, чем куча томов исследований,сложенных вместе.<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; [Примечание 1992 года -- автор пишет <em>&quot;Оригинал
+не был выполнен в форме белого стиха, и даже ничего близко к этому --
+обычная проза, с невыровненными абзацами.Во время странствий по сети,
+она превратилась в &quot;белый стих&quot;, столь популярный ныне.Иными словами,
+её &quot;взломали&quot; в сети.Так или иначе, это выглядит честным.&quot;<br />
+</em>Автор добавляет, что такая форма ему самому нравится больше.]
+</p>
+<p>
+Перевод,(c) 2003, Владислав Кугелевич.
+</p>
+<p>
+&nbsp;Смотри также: 
+</p>
+<div style="border: 1px solid black; margin: 20px; background-color: #eeffff">
+<ul>
+	<li><a href="http://en.wikipedia.org/wiki/Mel_Kaye">Познавательная запись в Википедии</a> (англ.)</li>
+</ul>
+</div>
+
+	

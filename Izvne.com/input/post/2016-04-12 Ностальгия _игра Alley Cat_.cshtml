@@ -1,0 +1,31 @@
+Id: 81d43a47-ffec-4e8f-b3e2-84cdfa428ef5
+Title: "Ностальгия (игра Alley Cat)"
+Published: "2016-04-12"
+Slug: "2016-04-12 Ностальгия _игра Alley Cat_"
+-
+До сих пор затягивает, а ведь сделана в 1984!
+Ещё удивляюсь, до чего прогресс дошёл - досовские игры в браузере запускаются.<br/><br/>
+    <style type="text/css">
+      .dosbox-container { width: 640px; height: 400px; }
+      .dosbox-container > .dosbox-overlay { background: url(http://js-dos.com/cdn/alley_cat.png); }
+      .dosbox-start { font-size: 35px !important; }
+    </style>
+
+    <div id="dosbox"></div>
+    <br/>
+    
+    
+    <script type="text/javascript" src="/files/lj/js-dos-api.js"></script>
+    <script type="text/javascript">
+      var dosbox = new Dosbox({
+        id: "dosbox",
+        onload: function (dosbox) {
+          dosbox.run("/files/lj/alley_cat.zip", "./CAT.EXE");
+        },
+        onrun: function (dosbox, app) {
+          console.log("App '" + app + "' is runned");
+        }
+      });
+    </script>
+
+	

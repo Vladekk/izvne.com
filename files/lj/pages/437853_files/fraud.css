@@ -1,0 +1,339 @@
+/* Common form */
+.block {
+	margin-bottom:13px;
+}
+.block_semi {
+	margin-bottom:7px;
+}
+.wide {
+	width:100%;
+}
+.wide_semi {
+	width:70%;
+}
+.wide_half {
+	width:50%;
+}
+.wide_small {
+	width:30%;
+}
+.a_center {
+	text-align:center;
+}
+.a_left {
+	text-align:left;
+}
+.a_right {
+	text-align:right;
+}
+.hidden {
+	display:none;
+}
+.pos_hidden {
+	position:absolute;
+	left:-10000px;
+	top:-10000px;
+}
+.button_image {
+	border:none;
+}
+
+.midi_input {
+	background-color:#fff;
+	color:000;
+	font-size:16px;
+}
+.midi_input_disabled {
+	background-color:#fff;
+	color:#545480;
+	font-size:16px;
+}
+.maxi_input {
+	background-color:#fff;
+	color:000;
+	font-size:26px;
+}
+
+
+/* Fraud */
+
+/* header */
+.fraud_inner h2 {
+	font-size:1.7em;
+	color:#3D3D3D;
+	padding:0 0 0 15px;
+	margin:0;
+}
+/* submenu */
+.fraud_submenu {
+	padding:0 0 0 13px;
+	font-size:0.85em;
+	line-height:2em;
+}
+.fraud_submenu a {
+	color:#4b4b4b;
+	padding:3px;
+	margin-right:3px;
+	white-space:nowrap;
+}
+
+.fraud_submenu span, .fraud_submenu a:hover {
+	background-color:#3d3d3d;
+	color:#fff !important;
+	padding:3px;
+	margin-right:3px;
+	white-space:nowrap;
+	text-decoration:none;
+}
+/* errors */
+.fraud_no_money {
+	color:#ff0000;
+	font-size:18px;
+}
+.fraud_no_money a {
+	color:#ff0000;
+	font-size:18px;
+}
+.fraud_no_money a:hover {
+	color:#ff7474 !important;
+}
+.fft_error {
+	color:#ff0000;
+}
+
+/* cols */
+.fraud_table .fraud_table_left, .fraud_table2 .fraud_table_left {
+	vertical-align:top;
+	width:70%;
+	padding-right:10px;
+}
+.fraud_table .fraud_table_right, .fraud_table2 .fraud_table_right {
+	vertical-align:top;
+	padding-left:10px;
+	background:url(../i/fraud/table_line.gif) no-repeat top left;
+}
+.fraud_table2 .fraud_table_left {
+	width:30%;
+	padding-top:18px;
+}
+.fraud_table2 .fraud_table_right {
+	padding-top:18px;
+}
+
+
+/* form table */
+.fraud_form_table td {
+	vertical-align:top;
+}
+
+/* form table caption */
+.fraud_form_table .fft_caption {
+	white-space:nowrap;
+	text-align:right;
+}
+.fraud_form_table .fft_caption_username .fft_caption_inner {
+	padding-top:8px;
+}
+.fraud_form_table .fft_caption_currency .fft_caption_inner {
+	padding-top:2px;
+}
+.fraud_form_table .fft_caption_money .fft_caption_inner {
+	padding-top:8px;
+}
+
+.fraud_form_table .fft_caption_new_username .fft_caption_inner {
+	padding-top:16px;
+}
+
+.fraud_form_table .fft_caption_midi .fft_caption_inner {
+	padding-top:5px;
+}
+
+/* form table description */
+.fraud_table .description, .fraud_table2 .description, .fraud_form_table .description {
+	margin-top:0;
+	padding-left:0;
+}
+
+/* form table value */
+.fft_gray_inner {
+	background-color:#f8f8f8;
+	padding:5px 5px;
+}
+
+.fft_gray_text_inner {
+	background-color:#f8f8f8;
+	padding:8px 5px;
+}
+
+.fft_inner {
+	padding:0 5px;
+}
+
+
+
+/* price */
+.fraud_price, .fraud_price_header {
+	background-color:#3d3d3d;
+	color:#fff;
+	padding:5px 15px;
+	font-size:36px;
+	float:left;
+}
+.fraud_price_header {
+	margin-right:18px;
+}
+.fraud_price span {
+	font-size:12px;
+}
+.fraud_price i {
+	font-style:normal;
+}
+
+/* words header */
+.fraud_table h3 {
+	font-size:18px;
+	font-weight:normal;
+	color:#3d3d3d;
+	margin-top:0;
+	margin-bottom:13px;
+}
+/* words add form */
+.fraud_words_add_form {
+	background:url(../i/fraud/words_add_form_bg.jpg) repeat-x top left;
+	border:1px solid #d6d4d4;
+	padding:12px 10px;
+}
+.fwaf_table_words, .fwaf_table_time {
+	width:80%;
+}
+.fwaf_table_word td {
+	width:45%;
+}
+.fwaf_table_words input {
+	width:100%;
+}
+.fwaf_table_words_text {
+	padding:0 4px;
+}
+.fwaf_text_td {
+	white-space:nowrap;
+	padding-right:10px;
+	padding-top:10px;
+}
+.fwaf_slider_td {
+	padding-right:10px;
+}
+.fwaf_yar_td {
+	text-align:right;
+	padding-top:10px;
+}
+
+/* fraud words category */
+.fraud_category {
+	margin-top: 3px;
+	font-size: 11px;
+	padding-bottom: 4px;
+}
+.fraud_category a {
+	color: #000000;
+	margin-right: 6px
+}
+.fraud_category span {
+	background-color: #e8e8e8;
+	padding: 3px 4px;
+	margin-right: 6px
+}
+
+
+/* one word design */
+.fow_word, .fow_to_word {
+	width:45%;
+	text-align:center;
+}
+.fow_word {
+	padding-right:20px;
+	background:url(../i/fraud/arrow.gif) no-repeat right center;
+}
+.fow_to_word {
+	padding-left:7px;
+}
+.fraud_one_word_cellar {
+	padding:7px 0 9px;
+	border-bottom:1px solid #cccccc;
+	margin-bottom:28px;
+}
+/* one pic design */
+.fraud_one_pic_holder {
+	border-bottom:1px solid #cccccc;
+	margin-bottom:28px;
+	padding-bottom:10px;
+}
+.fop_word {
+	width:90%;
+	padding-left:5px;
+	text-align:left;
+}
+.fop_word strong {
+	font-size:1.1em;
+}
+
+
+/* words voting */
+.fraud_voting .vote {
+	z-index:1;
+	width:90px;
+	background:#fff;
+}
+
+.fraud_voting .vote div {
+	width:50px;
+	position:relative;
+		
+}
+
+.fraud_voting .vote div a {
+	display:block;
+	float:right;
+	margin-right:5px;
+	width:18px;
+	height:18px;
+	cursor:pointer;
+	cursor:hand;
+	text-decoration:none;
+	color:#cecece !important;
+	background:url(http://img.dirty.ru/lepro/vote_button.gif) no-repeat 0 0;
+}
+
+.fraud_voting .vote div a:hover,
+.fraud_voting .vote div a.voted {
+	color:#666 !important;
+	background-image:url(http://img.dirty.ru/lepro/vote_button_hover.gif);
+}
+.fraud_voting .vote div a.voted {
+	cursor:default !important;
+}
+.fraud_voting .vote div em {
+	display:block;
+	top:50%;
+	margin-top:-0.6em;
+	text-align:center;
+	font-style:normal;
+	font-weight:normal;
+	position:relative;
+	line-height:120%;
+}
+.fraud_voting .vote div span {
+	position:absolute;
+	right:-30px;
+	top:0;
+	width:32px;
+	height:21px;
+	overflow:hidden;
+	text-align:center;
+	color:#9c9c9c;
+	background:url(http://img.dirty.ru/lepro/gray.gif) no-repeat 50% 50%;
+	margin:0;
+	height:18px;
+	cursor:default;
+}

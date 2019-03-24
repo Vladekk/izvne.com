@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Gorod.lv SilverScreen formatter</title>
+
+    <script type="text/javascript" src="jquery-1.4.min.js"></script>
+
+    <script type="text/javascript" src="jquery-ui-1.7.2.custom.min.js"></script>
+
+    <link type="text/css" href="smoothness/jquery-ui-1.7.2.custom.css" rel="stylesheet" />
+    <style type="text/css">
+        .style1
+        {
+            width: 209px;
+        }
+    </style>
+</head>
+
+<script type="text/javascript">
+
+    /*
+    * Date Format 1.2.3
+    * (c) 2007-2009 Steven Levithan <stevenlevithan.com>
+    * MIT license
+    *
+    * Includes enhancements by Scott Trenda <scott.trenda.net>
+    * and Kris Kowal <cixar.com/~kris.kowal/>
+    *
+    * Accepts a date, a mask, or a date and a mask.
+    * Returns a formatted version of the given date.
+    * The date defaults to the current date/time.
+    * The mask defaults to dateFormat.masks.default.
+    */
+
+    var dateFormat = function() {
+        var token = /d{1,4}|m{1,4}|yy(?:yy)?|([HhMsTt])\1?|[LloSZ]|"[^"]*"|'[^']*'/g,
+		timezone = /\b(?:[PMCEA][SDP]T|(?:Pacific|Mountain|Central|Eastern|Atlantic) (?:Standard|Daylight|Prevailing) Time|(?:GMT|UTC)(?:[-+]\d{4})?)\b/g,
+		timezoneClip = /[^-+\dA-Z]/g,
+		pad = function(val, len) {
+		    val = String(val);
+		    len = len || 2;
+		    while (val.length < len) val = "0" + val;
+		    return val;
+		};
+
+        // Regexes and supporting functions are cached through closure
+        return function(date, mask, utc) {
+            var dF = dateFormat;
+
+            // You can't provide utc if you skip other args (use the "UTC:" mask prefix)
+            if (arguments.length == 1 && Object.prototype.toString.call(date) == "[object String]" && !/\d/.test(date)) {
+                mask = date;
+                date = undefined;
+            }
+
+            // Passing date through Date applies Date.parse, if necessary
+            date = date ? new Date(date) : new Date;
+            if (isNaN(date)) throw SyntaxError("invalid date");
+
+            mask = String(dF.masks[mask] || mask || dF.masks["default"]);
+
+            // Allow setting the utc argument via the mask
+            if (mask.slice(0, 4) == "UTC:") {
+                mask = mask.slice(4);
+                utc = true;
+            }
+
+            var _ = utc ? "getUTC" : "get",
+			d = date[_ + "Date"](),
+			D = date[_ + "Day"](),
+			m = date[_ + "Month"](),
+			y = date[_ + "FullYear"](),
+			H = date[_ + "Hours"](),
+			M = date[_ + "Minutes"](),
+			s = date[_ + "Seconds"](),
+			L = date[_ + "Milliseconds"](),
+			o = utc ? 0 : date.getTimezoneOffset(),
+			flags = {
+			    d: d,
+			    dd: pad(d),
+			    ddd: dF.i18n.dayNames[D],
+			    dddd: dF.i18n.dayNames[D + 7],
+			    m: m + 1,
+			    mm: pad(m + 1),
+			    mmm: dF.i18n.monthNames[m],
+			    mmmm: dF.i18n.monthNames[m + 12],
+			    yy: String(y).slice(2),
+			    yyyy: y,
+			    h: H % 12 || 12,
+			    hh: pad(H % 12 || 12),
+			    H: H,
+			    HH: pad(H),
+			    M: M,
+			    MM: pad(M),
+			    s: s,
+			    ss: pad(s),
+			    l: pad(L, 3),
+			    L: pad(L > 99 ? Math.round(L / 10) : L),
+			    t: H < 12 ? "a" : "p",
+			    tt: H < 12 ? "am" : "pm",
+			    T: H < 12 ? "A" : "P",
+			    TT: H < 12 ? "AM" : "PM",
+			    Z: utc ? "UTC" : (String(date).match(timezone) || [""]).pop().replace(timezoneClip, ""),
+			    o: (o > 0 ? "-" : "+") + pad(Math.floor(Math.abs(o) / 60) * 100 + Math.abs(o) % 60, 4),
+			    S: ["th", "st", "nd", "rd"][d % 10 > 3 ? 0 : (d % 100 - d % 10 != 10) * d % 10]
+			};
+
+            return mask.replace(token, function($0) {
+                return $0 in flags ? flags[$0] : $0.slice(1, $0.length - 1);
+            });
+        };
+    } ();
+
+    // Some common format strings
+    dateFormat.masks = {
+        "default": "ddd mmm dd yyyy HH:MM:ss",
+        shortDate: "m/d/yy",
+        mediumDate: "mmm d, yyyy",
+        longDate: "mmmm d, yyyy",
+        fullDate: "dddd, mmmm d, yyyy",
+        shortTime: "h:MM TT",
+        mediumTime: "h:MM:ss TT",
+        longTime: "h:MM:ss TT Z",
+        isoDate: "yyyy-mm-dd",
+        isoTime: "HH:MM:ss",
+        isoDateTime: "yyyy-mm-dd'T'HH:MM:ss",
+        isoUtcDateTime: "UTC:yyyy-mm-dd'T'HH:MM:ss'Z'"
+    };
+
+    // Internationalization strings
+    dateFormat.i18n = {
+        dayNames: [
+		"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat",
+		"Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"
+	],
+        monthNames: [
+		"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec",
+		"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
+	]
+    };
+
+    // For convenience...
+    Date.prototype.format = function(mask, utc) {
+        return dateFormat(this, mask, utc);
+    };
+
+
+    function Format() {
+        var val = $('#tbInput').val();
+        var split = val.split(',');
+        for (i in split) {
+            split[i] = jQuery.trim(split[i]);
+
+        }
+        var from = $('#tbFrom');
+        var to = $('#tbTo');
+        var tbOutput = $('#tbOutput');
+        var date = new Date(from.datepicker('getDate'));
+        var toDate = new Date(to.datepicker('getDate'));
+
+        var result = "";
+        while (date <= toDate) {
+            for (i in split) {
+                var process = $('#cb' + date.getDay()).is(":checked");
+                if (process) {
+                    var line = date.format("dd.mm.yyyy") + " " + split[i];
+                    result += line + "\n";
+                }
+            }
+            date.setDate(date.getDate() + 1);
+        }
+        tbOutput.val(result);
+
+    }
+    function enableDays(enableWorkdays) {
+        var weekdays = new Array();
+        weekdays.push($('#cb1'));
+        weekdays.push($('#cb2'));
+        weekdays.push($('#cb3'));
+        weekdays.push($('#cb4'));
+        weekdays.push($('#cb5'));
+
+        var weekend = new Array();
+        weekend.push($('#cb6'));
+        weekend.push($('#cb0'));
+
+        $(weekdays).each(function(i, val) { val.attr("checked", enableWorkdays); });
+        $(weekend).each(function(i, val) { val.attr("checked", !enableWorkdays); });
+    }
+    $(function() {
+        $('#btnFormat').click(Format);
+
+        $('#btnWeekend').click(function() { enableDays(false); });
+        $('#btnWorkdays').click(function() { enableDays(true); });
+
+        var datepickerSettings = {
+            showAnim: 'fadeIn',
+            hideAnim: 'fadeIn',
+            beforeShow: function(input, inst) {
+                inst.dpDiv.css({ marginTop: -input.offsetHeight + 'px', marginLeft: (input.offsetWidth + 5) + 'px' });
+            },
+            dateFormat: "dd/mm/yy",
+            firstDay: 1
+        };
+
+        $('#tbFrom').datepicker(datepickerSettings);
+        $('#tbTo').datepicker(datepickerSettings);
+
+
+    });
+ 
+</script>
+
+<h1 style="font-size: xx-large">
+    Gorod.lv SilverScreen formatter</h1>
+<div style="height: 20px">
+</div>
+<div style="margin-top: 30px; margin-left: 100px">
+    <form action="">
+    Input:
+    <br />
+    <input type="text" name="tbInput" id="tbInput" style="margin-bottom: 10px; width: 300px;">
+    <input type="text" name="tbFrom" id="tbFrom" style="margin-bottom: 10px; width: 100px;">
+    <input type="text" name="tbTo" id="tbTo" style="margin-bottom: 10px; width: 100px;">
+    <input type="button" value="Format" id="btnFormat" >
+    <br />
+    <br />
+    <table>
+        <tr>
+            <td rowspan="20">
+                <textarea rows="50" cols="50" name="tbOutput" id="tbOutput">  </textarea>
+            </td>
+            <td class="style1">
+                <input id="cb1" type="checkbox" checked="checked" />
+                понедельник
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                <input id="cb2" type="checkbox" checked="checked" />
+                вторник
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                <input id="cb3" type="checkbox" checked="checked" />
+                среда
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                <input id="cb4" type="checkbox" checked="checked">
+                четверг
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                <input id="cb5" type="checkbox" checked="checked" />
+                пятница
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                <input id="cb6" type="checkbox" checked="checked" />
+                суббота
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                <input id="cb0" type="checkbox" checked="checked" />
+                воскресенье
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+            <input id="btnWeekend" type="button"  value="выходные"> 
+            <input id="btnWorkdays" type="button"   value="будни">
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td class="style1">
+                &nbsp;
+            </td>
+        </tr>
+    </table>
+    <br />
+    </form>
+</div>
+<body>
+</body>
+</html>

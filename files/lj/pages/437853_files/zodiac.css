@@ -1,0 +1,68 @@
+/* zodiac Block */
+.zodiac {
+	position:absolute;
+	right:90px !important;
+	width:60px;
+	height:20px;
+	ba ckground:none !important;
+}
+.zodiac .rating {
+	cursor:default;
+	display:block;
+	position:absolute;
+	height:20px;
+	width:60px;
+	left:0;
+}
+.zodiac .rating em {
+	display:block;
+	font-style:normal;
+	line-height:120%;
+	margin-top:-0.6em;
+	position:relative;
+	text-align:right;
+	top:50%;
+}
+#zodiac {display:none;}
+#zodiac {
+	list-style:none;
+	position:absolute;
+	z-index:100;
+	top:20px;
+	left:0;
+	background:#fff;
+	border:1px solid #e9e9e9;
+	margin:0;
+}
+#zodiac li {
+	border:none;
+	padding:0;
+	white-space:nowrap;
+	text-align:right;
+}
+#zodiac a {
+	display:block;
+	padding:2px 3px;
+	text-decoration:none;
+	position:relative;
+	cursor:pointer;
+	cursor:hand;
+	color:#666;
+}
+#zodiac a:hover {
+	background:#eaeaea;
+}
+#zodiac a.voted,
+#zodiac a.voted:hover{
+	color:#000 !important;
+	background:#fff;
+	cursor:default;
+}
+#zodiac img {
+	border:none !important;
+	margin-top:0 !important;
+	position:static !important;
+	top:4px !important;
+}
+* html #zodiac {width:6em;}
+* html #zodiac a {width:100%;}

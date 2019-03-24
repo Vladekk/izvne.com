@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Fusion Tables heatmaps</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: 56, lng: 26},
+    zoom: 8
+  });
+
+  var layer = new google.maps.FusionTablesLayer({
+    query: {
+      select: 'lat,lon',
+      from: '1vr5lIu9IqVPZGtbiDtcwoWatdjHzmLtB9911G2xr'
+//      from:'11ZdMjZkyjWJZ6JgVDesv2o-cpouM3oKCV110ak4A'
+
+    },
+    heatmap: {
+      enabled: true
+    }
+  });
+
+  layer.setMap(map);
+}
+
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIpxglIRNGCytjuj4zOwa4x-Q4K42xbxo&callback=initMap&signed_in=true" async defer>
+    </script>
+  </body>
+</html>

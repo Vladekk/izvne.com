@@ -1,0 +1,7 @@
+# RewriteEngine On
+# RewriteCond %{REQUEST_FILENAME} \.(gif|jpe?g|png)$ [NC]
+# RewriteCond %{HTTP_REFERER} !^$
+# RewriteCond %{HTTP_REFERER} !vladekk\.livejournal\.com [NC]
+# RewriteCond %{HTTP_REFERER} !google\. [NC]
+# RewriteCond %{HTTP_REFERER} !search\?q=cache [NC]
+# RewriteRule .* http://vladekk.izvne.com/lj/nohotlink.jpg [R,NC,L]

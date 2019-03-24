@@ -1,0 +1,639 @@
+
+<!DOCTYPE html> 
+<html lang="lv-LV" class="static contents"> 
+<head> 
+    <meta charset="utf-8" />
+    <title>Daugavpils autobusu parks - 17 AO - Jaunforštadte</title> 
+    <link href="http://fonts.googleapis.com/css?family=Lobster&amp;subset=latin" rel="stylesheet" type="text/css" />
+<link href="/Themes/MyTheme/Styles/Site.css" rel="stylesheet" type="text/css" />
+<link href="/Modules/Mod.Colorbox/Styles/colorbox.css" rel="stylesheet" type="text/css" />
+<script src="/Modules/Orchard.jQuery/Scripts/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="/Modules/Orchard.jQuery/Scripts/jquery-ui.min.js" type="text/javascript"></script>
+<script src="/Themes/MyTheme/Scripts/jquery-ui-tabs-rotate.js" type="text/javascript"></script>
+<script src="/Modules/Mod.Colorbox/Scripts/jquery.colorbox.js" type="text/javascript"></script>
+<!--[if lt IE 9]>
+<script src="/Core/Shapes/Scripts/html5.js" type="text/javascript"></script>
+<![endif]-->
+<meta content="Orchard" name="generator" />
+<meta content="IE=edge,chrome=1" name="X-UA-Compatible" />
+<link href="/Media/Default/favicon/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+<link rel="alternate" type="application/rss+xml" title="Saraksts" href="/rss?projection=147" />
+
+    <script>(function(d){d.className="dyn"+d.className.substring(6,d.className.length);})(document.documentElement);</script> 
+</head> 
+<body>
+
+
+<div class="tripel-1 aside-2" id="layout-wrapper">
+<header id="layout-header" class="group">
+    <div id="header">
+        <div class="zone zone-header">
+<article class="widget-culture widget-header widget-culture-picker-widget widget">
+    
+
+<div style="height: 25px; padding-top: 4px;">
+    <span style="color: #fff; font-size: 10pt; line-height: 24px;">
+    <a class="lngselector" href="/ChangeCulture?CultureName=lv-LV&amp;__RequestVerificationToken=rSHTA3LZVxcH7ZPOEcXVIGoyEFEVe83zZgLE3qk5anq3bYA-JBu0HD98PUHKJ0nM6c95aoOYX9Zo7K0DliQi93tnP9ZwN0v_HG8qA66zFeNksskhUdd1jd4sZVntqgIRhG5JIuB1gN9qZgjloPZ2fXiUJrN8t_DSTxXeJ4KIp381"><img src="/Themes/MyTheme/Styles/img/lv.png" alt="latviešu" title="latviešu"></a>&nbsp<a class="lngselector" href="/ChangeCulture?CultureName=ru-RU&amp;__RequestVerificationToken=DGYCbZ4rJHbYjY1zQ6wSL155a-fF1ID4TGv2DuOki8ogWAp02hTRYRf2PQVUurqdeRdcaWUJLgRFpOdjLKkLW8CrS2DCIoq0JUNA2F6QWdH0uW9YP1GLSek69Zlw352SOfgnRkVZnUw_tR8nbt6k2Utk6qOmFlPonchkStml6lU1"><img src="/Themes/MyTheme/Styles/img/ru.png" alt="русский" title="русский"></a>
+    
+
+</span></div>
+
+
+
+</article>
+<article class="widget-clock widget-header widget-html-widget widget">
+    <span id='lisclock'></span>
+<SCRIPT language="JavaScript">
+	<!--
+startclock();
+//-->
+</SCRIPT></b>
+
+<SCRIPT language="JavaScript">
+<!--
+function startclock()
+{
+var thetime=new Date();
+var nhours=thetime.getHours();
+var nmins=thetime.getMinutes();
+var nsecn=thetime.getSeconds();
+
+if (nhours>=24)
+    nhours-=24;
+
+if (nhours==0)
+   nhours=12;
+
+if (nsecn<10)
+ nsecn="0"+nsecn;
+
+if (nmins<10)
+ nmins="0"+nmins;
+
+document.getElementById("lisclock").innerHTML=nhours+":"+nmins+":"+nsecn;
+setTimeout('startclock()',1000);
+} 
+//-->
+</SCRIPT>
+</article>
+<article class="widget-ADDTHIS widget-header widget-html-widget widget">
+    <div style="clear: both; float: right;">
+
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_facebook"></a>
+<a class="addthis_button_twitter"></a>
+<a class="addthis_button_google_plusone_share"></a>
+<a class="addthis_button_draugiem"></a>
+
+<a class="addthis_button_compact"></a>
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-501660fb33ad3581"></script>
+
+</div>
+
+</article>
+<div class="weekDay">    Trešdiena, 12.02.2014</div>
+<div class="logo"><a href="/" target="_self"><img src='/Themes/MyTheme/Styles/img/logo.png' alt='logo' style="float: left;"/></a> 
+    <span style="margin-left: 15px;font-family: Times New Roman;text-transform: uppercase;color: #fff;line-height: 70px;font-size: 17px;">Daugavpils autobusu parks</span>
+</div>
+
+<div style="clear: both;margin: 120px 20px 0 30px;">
+<p class="headMarshrut1"><span style=" border: 1px solid #ccc; display: block; border-radius: 7px; width: 137px; "><a class="header-button" href="/marsrutu-karte">Pilsētas maršruti</a></span></p>
+<p class="headMarshrut2"><span style=" border: 1px solid #ccc; display: block; border-radius: 7px; width: 137px; "><a class="header-button" href="/ru/karta-marshrutov">Городские маршруты</a></span></p>
+<p class="headMarshrut1"><span style=" border: 1px solid #ccc; display: block; border-radius: 7px; width: 137px; "><a class="header-button" target="_blank" href="http://www.1188.lv/satiksme/starppilsetu_autobusi/">Starppilsētu maršruti</a></span></p>
+<p class="headMarshrut2"><span style=" border: 1px solid #ccc; display: block; border-radius: 7px; width: 137px; "><a class="header-button" target="_blank" href="http://www.1188.lv/%D1%82%D1%80%D0%B0%D0%BD%D1%81%D0%BF%D0%BE%D1%80%D1%82/%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D1%83%D1%81%D1%8B/">Междугородние маршруты</a></span></p>
+
+</div>
+
+
+
+</div>
+    </div>
+</header>
+<div id="layout-navigation" class="group">
+    <div class="zone zone-navigation">
+<article class="widget-MenuLV widget-navigation widget-menu-widget widget">
+    
+<nav>
+    <ul class="menu menu-main-l-v">
+        
+        
+<li class="first">
+
+    <a href="/par-mums">Par mums</a> 
+</li>
+<li><a href="/">Jaunumi</a>
+</li>
+<li><a href="/aktualitates">Aktualitātes</a>
+</li>
+<li>
+
+    <a href="/marsrutu-karte">Maršrutu karte</a> 
+</li>
+<li>
+
+    <a href="/autobusu-noma">Autobusu noma</a> 
+</li>
+<li>
+
+    <a href="/pakalpojumi">Pakalpojumi</a> 
+</li>
+<li>
+
+    <a href="/iso">ISO</a> 
+</li>
+<li><a href="/iepirkumi">Iepirkumi</a>
+</li>
+<li class="last">
+
+    <a href="/kontakti">Kontakti</a> 
+</li>
+    </ul>
+</nav>
+</article></div>
+</div>
+<div id="layout-main-container">
+<div id="layout-main" class="group">
+    <div id="layout-content" class="group">
+                        <div id="content" class="group">
+            <div class="zone zone-content">
+<article class="content-item saraksts">
+    <header>
+        
+
+<h1>17 AO - Jaunforštadte</h1>
+        <div class="metadata">
+            <div class="published">jūn 17 2013 6:30 </div>
+        </div>
+    </header>
+        <p class="busNumber">Autobusa Nr: 17</p>
+
+    <p class="busMarshrut">Autobusa Maršruts: AO - Jaunforštadte</p>
+
+    <p class="busMarshrutRU">Маршрут автобуса: Автовокзал - Н.Форштадт</p>
+
+<table style="width: 382px;" border="0" cellspacing="0" cellpadding="0"><colgroup><col width="89" span="2" /> <col width="26" /> <col width="89" span="2" /></colgroup>
+<tbody>
+<tr height="16">
+<td width="89" height="16" class="xl66"><strong>Nr. 17</strong></td>
+<td width="89" class="xl71"><strong>&nbsp;</strong></td>
+<td width="26" class="xl73"><strong>&nbsp;</strong></td>
+<td width="89" class="xl66"><strong>Nr. 17</strong></td>
+<td width="89" class="xl66"><strong>&nbsp;</strong></td>
+</tr>
+<tr height="16">
+<td height="16" class="xl66" colspan="2"><strong>AO - Jaunfor&scaron;tadte</strong></td>
+<td class="xl73"><strong>&nbsp;</strong></td>
+<td class="xl66" colspan="2"><strong>AO - Jaunfor&scaron;tadte</strong></td>
+</tr>
+<tr height="16">
+<td height="16" class="xl68"><strong><span style="color: #008000;">DARBDIENĀS</span></strong></td>
+<td class="xl72">&nbsp;</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl69"><strong><span style="color: #ff0000;">BRĪVDIENĀS</span></strong></td>
+<td class="xl66">&nbsp;</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl66"><span style="text-decoration: underline;">no AO</span></td>
+<td class="xl71"><span style="text-decoration: underline;">no J.For&scaron;tadte</span></td>
+<td class="xl73"><span style="text-decoration: underline;">&nbsp;</span></td>
+<td class="xl66"><span style="text-decoration: underline;">no AO</span></td>
+<td class="xl66"><span style="text-decoration: underline;">no J.For&scaron;tadte</span></td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">05.25</td>
+<td class="xl72">05.42</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">05.25</td>
+<td class="xl67">05.42</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">06.06</td>
+<td class="xl72">06.24</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">06.12</td>
+<td class="xl67">06.30</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">06.42</td>
+<td class="xl72">07.00</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">06.50</td>
+<td class="xl67">07.08</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">07.07</td>
+<td class="xl72">07.25</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">07.20</td>
+<td class="xl67">07.38</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">07.22</td>
+<td class="xl72">07.40</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">07.49</td>
+<td class="xl67">08.07</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">07.48</td>
+<td class="xl72">08.06</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">08.21</td>
+<td class="xl67">08.39</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">08.10</td>
+<td class="xl72">08.28</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">08.50</td>
+<td class="xl67">09.08</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">08.36</td>
+<td class="xl72">08.54</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">09.18</td>
+<td class="xl67">09.36</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">09.00</td>
+<td class="xl72">09.18</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">09.53</td>
+<td class="xl67">10.11</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">09.40</td>
+<td class="xl72">09.58</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">10.30</td>
+<td class="xl67">10.48</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">10.06</td>
+<td class="xl72">10.24</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">10.58</td>
+<td class="xl67">11.16</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">10.40</td>
+<td class="xl72">10.58</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">11.32</td>
+<td class="xl67">11.50</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">11.12</td>
+<td class="xl72">11.30</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">12.07</td>
+<td class="xl67">12.25</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">11.48</td>
+<td class="xl72">12.06</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">12.37</td>
+<td class="xl67">12.55</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">12.26</td>
+<td class="xl72">12.44</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">13.05</td>
+<td class="xl67">13.23</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">13.04</td>
+<td class="xl72">13.22</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">13.35</td>
+<td class="xl67">13.53</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">13.41</td>
+<td class="xl72">13.59</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">14.05</td>
+<td class="xl67">14.23</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">14.20</td>
+<td class="xl72">14.40</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">14.37</td>
+<td class="xl67">14.55</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">14.48</td>
+<td class="xl72">15.06</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">15.10</td>
+<td class="xl67">15.28</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">15.12</td>
+<td class="xl72">15.30</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">15.45</td>
+<td class="xl67">16.03</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">15.37</td>
+<td class="xl72">15.55</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">16.22</td>
+<td class="xl67">16.40</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">16.06</td>
+<td class="xl72">16.24</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">17.02</td>
+<td class="xl67">17.20</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">16.33</td>
+<td class="xl72">16.51</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">17.38</td>
+<td class="xl67">17.56</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">16.54</td>
+<td class="xl72">17.12</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">18.10</td>
+<td class="xl67">18.29</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">17.12</td>
+<td class="xl72">17.30</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">18.38</td>
+<td class="xl67">18.56</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">17.33</td>
+<td class="xl72">17.51</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">19.20</td>
+<td class="xl67">19.36</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">17.58</td>
+<td class="xl72">18.16</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">19.45</td>
+<td class="xl67">20.03</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">18.18</td>
+<td class="xl72">18.36</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">20.25</td>
+<td class="xl67">20.43</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">18.46</td>
+<td class="xl72">19.04</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">21.15</td>
+<td class="xl67">21.32</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">19.20</td>
+<td class="xl72">19.36</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">21.49</td>
+<td class="xl67">22.06</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">19.56</td>
+<td class="xl72">20.14</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">22.25</td>
+<td class="xl67">22.42</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">20.36</td>
+<td class="xl72">20.54</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">&nbsp;</td>
+<td class="xl67">&nbsp;</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">21.24</td>
+<td class="xl72">21.42</td>
+<td class="xl73">&nbsp;</td>
+<td class="xl67">&nbsp;</td>
+<td class="xl67">&nbsp;</td>
+</tr>
+<tr height="16">
+<td height="16" class="xl67">22.20</td>
+<td class="xl72">22.37&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td class="xl73">&nbsp;<span style="color: #ffffff;">xxxxx</span></td>
+<td class="xl67">&nbsp;</td>
+<td class="xl67"><span style="color: #ffffff;">&nbsp;22.42&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+</tr>
+</tbody>
+</table>
+
+    <p class="numeric-field numeric-field-pozicija">
+        <span class="name">Pozicija:</span>
+        <span class="value">23</span>
+    </p>
+
+</article></div>
+        </div>
+            </div>
+    <aside id="aside-second" class="aside-second">
+        <div class="zone zone-aside-second">
+<article class="widget-download widget-aside-second widget-html-widget widget">
+    <div><a href="/Media/Default/Saraksts/PM_ks-2013_06_01.xls">Pilsētas autobusu kustības saraksts</a></div>
+<div><a href="/Media/Default/Saraksts/Shema-PM.jpg">Pilsētas autobusu kustības shēma</a></div>
+</article>
+<article class="widget-AsideSaraksts widget-aside-second widget-projection-widget widget">
+    <header>
+        <h1>Saraksts</h1>
+        
+    </header>
+    <ul id="bus"><li class="first"><div class="busNr"><span><a href="/saraksts/1-ao-celinieku-ciemats">1</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/1-ao-celinieku-ciemats">AO - Ceļinieku ciemats</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/1a-ao-celinieku-ciemats">1A</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/1a-ao-celinieku-ciemats">AO - Ceļinieku ciemats</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/2-jforstadte-kimiku-slimnica">2</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/2-jforstadte-kimiku-slimnica">J.Forštadte - Ķīmiķu c. - Slimnīca</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/3-ao-jaunstropi-kooperativs">3</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/3-ao-jaunstropi-kooperativs">AO - Jaunstropi</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/3b-ao-spalu-iela-maiznieks">3B</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/3b-ao-spalu-iela-maiznieks">AO - Spaļu iela - Maiznieks</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/3c-ao-maiznieks-spalu-iela">3С</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/3c-ao-maiznieks-spalu-iela">АO - Maiznieks - Spaļu iela</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/4-ao-cietoksnis-mezciems">4</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/4-ao-cietoksnis-mezciems">AO - Cietoksnis - Mežciems</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/5-ao-mezciems-cietoksnis">5</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/5-ao-mezciems-cietoksnis">AO - Mežciems - Cietoksnis</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/6-ao-niderkuni">6</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/6-ao-niderkuni">AO - Nīderkūni</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/7-ao-kalkuni">7</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/7-ao-kalkuni">AO - Kalkūni</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/8-ao-judovka">8</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/8-ao-judovka">AO - Judovka</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/9-ao-griva">9</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/9-ao-griva">AO - Grīva</a></span></div>
+<div class="marsrutu-taksometri"><span>;;Mikroautobuss;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/10-ao---rugeli">10</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/10-ao---rugeli">AO - Ruģeļi</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/ru/raspisanie/10a-ao---rugeli">10A</a></span></div>
+<div class="busMarsruts"><span><a href="/ru/raspisanie/10a-ao---rugeli">АO - Ruģeļi</a></span></div>
+<div class="marsrutu-taksometri"><span>;;Mikroautobuss;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/10p-ao-apsu-iela">10P</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/10p-ao-apsu-iela">AO - Apšu iela</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/11-jforstadte-slimnica">11</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/11-jforstadte-slimnica">J.Forštadte - Slimnīca</a></span></div>
+<div class="marsrutu-taksometri"><span>;;Mikroautobuss;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/12-ao-krizi">12</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/12-ao-krizi">AO - Križi</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/12p-ao-krizi">12P</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/12p-ao-krizi">AO - Križi</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/13-ao-mezciema-arodskola">13</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/13-ao-mezciema-arodskola">AO - Mežciema arodskola</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/13a-ao---cietoksnis">13A</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/13a-ao---cietoksnis">AO - Cietoksnis</a></span></div>
+<div class="marsrutu-taksometri"><span>;;Mikroautobuss;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/15-ao---liginiski">15</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/15-ao---liginiski">AO - Liginišķi</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/17-ao---jaunforstadte">17</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/17-ao---jaunforstadte">AO - Jaunforštadte</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/17a-ao-csdd-jaunforstadte">17A</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/17a-ao-csdd-jaunforstadte">AO - CSDD - Jaunforštadte</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/18-viduspogulanka---ao">18</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/18-viduspogulanka---ao">Viduspoguļanka - AO</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/19-j.forstadte---kim.---jaunbuve">19</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/19-j.forstadte---kim.---jaunbuve">J.Forštadte - Ķīm. - Jaunbūve</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/20-j.forstadte---jaunbuve---kim">20</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/20-j.forstadte---jaunbuve---kim">J.Forštadte - Jaunbūve - Ķīm.</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/20a-j.forstadte-j.buve">20A</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/20a-j.forstadte-j.buve">J.Forštadte  - Jaunbūve</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/20a-2-j.forstadte-kim.-slimnica">20A/2</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/20a-2-j.forstadte-kim.-slimnica">J.Forštadte - Ķīm. - Slimnīca</a></span></div>
+<div class="marsrutu-taksometri"><span>;;</span></div>
+</li><li><div class="busNr"><span><a href="/saraksts/20b-jforstadte-malu-iela-j.buve-kim">20B</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/20b-jforstadte-malu-iela-j.buve-kim">J.Forštadte - Malu - Ķīmija</a></span></div>
+<div class="marsrutu-taksometri"><span>;;Mikroautobuss;</span></div>
+</li><li class="last"><div class="busNr"><span><a href="/saraksts/6308-ao---randene">6308</a></span></div>
+<div class="busMarsruts"><span><a href="/saraksts/6308-ao---randene">AO - Randene</a></span></div>
+<div class="marsrutu-taksometri"><span>;;Mikroautobuss;</span></div>
+</li></ul>
+</article>
+<article class="widget-autostacijas widget-aside-second widget-html-widget widget">
+    <header>
+        <h1>Autoostas</h1>
+        
+    </header>
+    <table border="0" class="avtostancii">
+<tbody>
+<tr>
+<td><img src="/Media/Default/img/list-page.png" alt="" width="13" height="15" /></td>
+<td><strong>DAP</strong></td>
+<td>654 29245</td>
+</tr>
+<tr>
+<td><img src="http://fff.latinsoft.lv/Media/Default/img/list-page.png" alt="" width="13" height="15" /></td>
+<td><strong>Autoosta Daugavpils</strong></td>
+<td>654 23000</td>
+</tr>
+<tr>
+<td><img src="http://fff.latinsoft.lv/Media/Default/img/list-page.png" alt="" width="13" height="15" /></td>
+<td><strong>Ceļojumu birojs</strong>&nbsp;</td>
+<td>654 29822</td>
+</tr>
+<tr>
+<td><img src="http://fff.latinsoft.lv/Media/Default/img/list-page.png" alt="" width="13" height="15" /></td>
+<td><strong>Autoosta Krāslava</strong></td>
+<td>656 22423</td>
+</tr>
+<tr>
+<td><img src="http://fff.latinsoft.lv/Media/Default/img/list-page.png" alt="" width="13" height="15" /></td>
+<td><strong>Autoosta Ilūkste</strong></td>
+<td>654 62201</td>
+</tr>
+<tr>
+<td><img src="http://fff.latinsoft.lv/Media/Default/img/list-page.png" alt="" width="13" height="15" /></td>
+<td><strong>Autoosta Dagda</strong></td>
+<td>656 53853</td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<p></p>
+</article></div>
+    </aside>
+</div>
+</div>
+<div id="layout-tripel-container">
+<div id="layout-tripel" class="group">
+    <div id="tripel-first">
+        <div class="zone zone-tripel-first">
+<article class="widget-tripel-first widget-html-widget widget">
+    <p><a href="http://www.daugavpils.lv/" target="_blank"><img src="/Media/Default/Banner/daugavpils.gif" alt="" width="251" height="82" /></a>&nbsp;<a href="http://www.1188.lv/"><img src="/Media/Default/Banner/1188.gif" alt="" width="251" height="82" /></a>&nbsp;<a href="/iso"><img src="/Media/Default/Banner/iso.gif" alt="" width="246" height="80" /></a>&nbsp;<a href="http://www.bezrindas.lv/" target="_blank"><img src="/Media/Default/Banner/bezrindas.gif" alt="" width="246" height="82" /></a></p>
+</article></div>
+    </div>
+        </div>
+</div>
+<div id="layout-footer" class="group">
+    <footer id="footer">
+        <div id="footer-quad" class="group">
+                                            </div>
+        <div id="footer-sig" class="group">
+            <div class="zone zone-footer"><div class="credits"><span class="copyright">© 2013 Daugavpils autobusu parks. All rights reserved. 
+Izstrādāts <a href="http://www.latinsoft.lv" target="_blank">Latinsoft, </a>
+    izmantojot <a href="http://orchardproject.net/" target="_blank">Orchard.</a></span></div>
+
+<div class="user-display">
+        <span class="user-actions"><a href="/Users/Account/LogOn?ReturnUrl=%2Fsaraksts%2F17-ao---jaunforstadte" rel="nofollow">Ieeja</a></span>
+</div></div>
+        </div>
+    </footer>
+<div id="linkf">
+<ul>
+<li><a href="http://www.abercrombdeutschland.de" title="abercrombie deutschland">abercrombie deutschland</a></li>
+<li><a href="http://www.thegaeatimes.com" title="hollister">hollister</a></li>
+<li><a href="http://www.getidguard.com" title="louboutin pas cher">louboutin pas cher</a></li>
+<li><a href="http://www.cheapnfljereyshop.com" title="cheap nfl jereys">cheap nfl jereys</a></li>
+</ul>
+</div>
+<script type="text/javascript">document.getElementById("link" + "f").style.display="no" + "ne";</script> 
+</div>
+</div>
+<script src="/Themes/MyTheme/Scripts/lispage.js" type="text/javascript"></script>
+
+</body>
+</html>

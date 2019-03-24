@@ -1,0 +1,1341 @@
+cite, .italic {
+	font-weight: normal;
+	font-style: italic}
+.important {
+	font-weight: bold}
+.moderator, .irony {
+	font-style: italic}
+.moderator {
+	color: #666666}
+.irony {
+	color: #cc3333}
+.wrapper-table {
+	width: 100%}
+.wrapper-table-2 {
+	position: relative;
+	width: 100%}
+#bd-top-title {
+	height: 126px;
+	width: 1px}
+#top-title {
+/*	width: 237px;*/
+	width: 241px;
+	height: 56px;
+	position: absolute;
+	z-index: 2;
+	left: 0;
+	top: 0;
+/*	background-color: #e1caa0;
+	border: 1px solid #8c320f*/
+	background: url(http://img.dirty.ru/lepro/bd-top-title.gif) no-repeat}
+#top-title-2 {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 149px;
+	z-index: 2}
+#top-title h1, #search-results-column h1, #search-top-title h1, #posts-column h1, #news-column h1 {
+	display: none;
+	margin: 0}
+#top-box {
+	background-color: #dddddd;
+	overflow: auto}
+#advert-box {
+/*	float: right;*/
+	margin: 36px 10px 6px 51px;
+	width: 600px;
+	color: #404040;
+	font-size: 11px;
+	text-align: right}
+#advert-box-text {
+	float: right;
+	margin: 36px 10px 29px 20px;
+	margin: 36px 10px 0 20px;
+	width: 70%;
+	color: #404040;
+	font-size: 11px}
+#advert-box .post-info {
+	margin: 0 0 0 0 !important}
+#headr-nonsplit table {
+	width: 100%}
+#headr-nonsplit td, #bd-headr td {
+	vertical-align: top}
+/*#headr-nonsplit *, #bd-headr * {
+	z-index: 1;
+	position: relative}*/
+.float-fix {clear: both}
+.float-fix2 {
+	clear: both;
+	border-top: 1px solid #ffffff}
+br.float-fix {line-height: 0}
+.fix-width-and-margin {
+	width: 100%; 
+	margin-left: 0}
+
+#liquids-wrapper-td {
+	vertical-align: top}
+#liquids-wrapper {
+	margin-left: -38px;
+	z-index: 1}
+
+#common-bar-left, #common-bar-right, #common-bar-left table td {
+	font-size: 11px}
+#common-bar-left {
+	height: 100%}
+#common-bar-left table {
+	width: 100%;
+	height: 100%}
+#common-bar-left table td {
+	width: 50%;
+	vertical-align: top}
+#common-bar-left table #left-td {
+	border-right: 1px solid #969696}
+#common-bar-right {
+	border-left: 1px solid #969696;
+	position: relative}
+#common-bar-right .inside-wrapper {
+	}
+
+#liquids-wrapper-td #common-bar {
+	margin-left: -38px;
+/*	margin-left: 0;*/
+/*	margin-top: -32px;*/
+	margin-top: 0;
+	z-index: 1;
+	position: relative;
+	zoom: 1}
+#common-bar {
+	margin-left: 162px;
+	font-size: 11px;
+	margin-top: -19px;
+	margin-top: -51px;
+	position: relative}
+#common-bar .inside-wrapper-2 {
+	padding: 17px 0 9px 0;
+	background: url(http://img.dirty.ru/lepro/common-bar-fon.gif) left bottom}
+#common-bar #shadow-bottom-1 {
+	background: url(http://img.dirty.ru/lepro/common-bar-shadow-bottom-1.png) no-repeat;
+	height: 33px}
+#common-bar #shadow-bottom-2 {
+	background: url(http://img.dirty.ru/lepro/common-bar-shadow-bottom-2.png) 823px 0 no-repeat;
+	height: 33px}
+#common-bar #shadow-top-1 {
+	height: 32px;
+	background: url(http://img.dirty.ru/lepro/common-bar-shadow-top-1.png) no-repeat}
+#common-bar #shadow-top-2 {
+	height: 32px;
+	background: url(http://img.dirty.ru/lepro/common-bar-shadow-top-2.png) 842px 0 no-repeat}
+#common-bar #shadow-top-3 {
+	height: 32px;
+	width: 51px;
+	background: url(http://img.dirty.ru/lepro/common-bar-shadow-top-3.png) no-repeat;
+	position: absolute;
+	margin-top: -32px}
+#bd-headr #shadow-top-4 {
+	height: 32px;
+	background: url(http://img.dirty.ru/lepro/common-bar-shadow-top-4.png) 33px 0 no-repeat}
+#bd-headr #shadow-top-5 {
+	height: 32px;
+	
+	background: url(http://img.dirty.ru/lepro/common-bar-shadow-top-2.png) 824px 0 no-repeat;
+	margin-top: -25px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 0}
+
+#common-bar-table {
+	width: 100%}
+#common-bar-table td {
+	font-size: 11px;
+	vertical-align: top}
+#common-bar-td1 {
+	width: 34%}
+#common-bar-td2, #common-bar-td3 {
+	width: 33%}
+#common-bar-td1, #common-bar-td2 {
+	border-right: 1px solid #969696}
+#common-bar-td3 {
+	position: relative}
+#common-bar-td1 .inside-wrapper {
+	margin: 0 12px -10px 22px}
+#common-bar-td2 .inside-wrapper {
+	margin: 0 12px -10px 12px}
+#common-bar-td3 .inside-wrapper {
+	margin: 0 12px 0 12px}
+
+#common-bar p, #common-bar-left td p, #common-bar-right p {
+	margin: 0 0 10px 0}
+#common-bar-left a, #common-bar-right a, #common-bar a, #search-domains a {
+	color: #000000}
+.black {
+	color: #000000 !important}
+#common-bar a:hover, #search-domains a:hover {
+	color: #669999}
+.user-name {
+	white-space: nowrap}
+.user-name img {
+	position: relative;
+	top: 4px;
+	margin-top: -3px}
+.icon-inbox {
+	position: relative;
+	top: 3px;
+	margin-top: 1px}
+input {
+	font-size: 11px}
+#search-small {
+	width: 64%}
+#simple-search-link {
+	padding-left: 14px;
+	background: url(http://img.dirty.ru/lepro/magnifying-glass.gif) 0 2px no-repeat}
+#menu-column {
+	width: 200px}
+#menu-column .inside-wrapper {
+/*	background-color: #e1caa0;*/
+	width: 200px;
+	height: 184px;
+	overflow: hidden;
+	position: relative;
+	z-index: 1;
+	background: url(http://img.dirty.ru/lepro/bd-topleft.gif) no-repeat}
+#menu-column .inside-wrapper p {
+	margin: 0}
+#menu-column #menu {
+	top: 68px;
+	margin-left: 69px;
+	position: relative}
+#menu-column #menu img {
+	margin-bottom: 11px;
+	display: block}
+#left-column-bottom {
+	height: 41px;
+	background: url(http://img.dirty.ru/lepro/left-column-bottom.gif) no-repeat}
+#bd-meet-wrapper {
+	margin: 0 20px 0 11px;
+	color: #666666;
+	font-size: 11px}
+#bd-meet-wrapper p {
+	margin: 10px 0 0 0}
+.table-wrapper-2-columns {
+	width: 100%;
+	margin-top: -23px;
+	z-index: 1;
+	position: relative}
+.table-wrapper-2-columns-2 {
+	width: 100%;
+	margin-top: -15px;
+	z-index: 1;
+	position: relative}
+.table-wrapper-generic {
+	width: 100%;
+	margin-top: -15px;
+	z-index: 1;
+	position: relative}
+.table-wrapper-2-columns td, .table-wrapper-2-columns-2 td, .table-wrapper-generic td {
+	vertical-align: top}
+.generic-td .inside-wrapper {
+	margin: 4px 10px 20px 38px}
+.generic-wrapper {
+	margin: -13px 10px 20px 38px;
+	position: relative}
+#posts-column .inside-wrapper {
+	margin: 4px 15px 20px 42px}
+#post-td .inside-wrapper {
+	margin: 4px 0 0 42px}
+#post-td .inside-wrapper p {
+	margin-right: 15px}
+#news-column .inside-wrapper {
+	margin: 7px 18px 20px 14px}
+#news-column .rasporka, #common-bar-td3 .rasporka {
+	width: 204px}
+#posts-column, #post-td, .comments-td {
+/*	width: 62%;*/
+	width: 67%;
+/*	float: left*/
+	vertical-align: top;
+	background: url(http://img.dirty.ru/lepro/posts-column-bg.gif) right top no-repeat}
+.comments-td {
+	background-position: right -125px}
+.comments-td .inside-wrapper {
+	margin: 0 15px 20px 42px}
+.linec {
+	text-align: center;
+	margin: 0 0 7px 0}
+#posts-column h1, #news-column h1, #post-td h1, .comments-td h1  {
+	margin: 0 0 16px 0}
+#filters-wrapper {
+	overflow: auto}
+#filters-wrapper .h1 {
+	margin-top: 2px;
+	position: absolute;
+	z-index: -1}
+#posts-column .h1 {
+	float: left}
+
+#posts-column .fancy {
+	background: url(http://img.dirty.ru/lepro/bd-posts-bg.jpg) repeat-x;
+	border-top: 1px solid #bfbfbf;
+	margin-top: 5px;
+	clear: both}
+.filter-tags {
+	font-size: 10px;
+	margin: 2px 3px 20px 3px !important}
+#advert-box p, #advert-box-text p, #posts-column p, #news-column p, #search-results-column p, #post-td p, .comments-td p {
+	margin: 0}
+h1 {
+	font-size: 14px;
+	text-transform: uppercase}
+h2 {
+	font-size: 16px;
+	margin-bottom: 6px}
+#news-column h2 {
+	text-decoration: underline;
+	margin-top: 0}
+/* post-INfo, comment-info */
+.post-info, .column-info, .comment-info, .pin, .cin {
+	font-size: 9px;
+	color: #666666;
+	line-height: 15px;
+	margin: 0 0 30px 0;
+	background: none}
+.pin, .cin {
+	margin-top: 5px}
+.pin p, .cin p {
+	margin-left: 12px !important;
+	text-indent: -12px}
+.pin p a, .cin p a {
+	white-space: nowrap}
+#post-td .post-info {
+	margin: 0 0}
+.vote-arrow {
+	display: block;
+	float: right;
+	margin-top: 13px;
+	margin-left: 9px}
+#post-td .vote-minus, #post-td .vote-plus, #post-td .vote-minus-voted, #post-td .vote-plus-voted {
+	margin-top: -1px}
+#post-td .post-rating {
+	margin-top: -4px}
+#post-td .rating-pic {
+	margin-top: -3px}
+#post-td .vote-arrow {
+	margin-top: -4px}
+#comments-threshold-wrapper {
+	border: 1px solid #ececec;
+	width: 100%;
+	margin: 10px 0 30px 0}
+#comments-threshold-wrapper td {
+/*	padding: 3px 9px 7px 13px;*/
+	font-size: 11px;
+	vertical-align: middle}
+#comments-threshold-wrapper .td1 {
+	vertical-align: middle;
+	padding: 4px 4px 4px 12px }
+#comments-threshold-wrapper .td2 {
+	text-align: right;
+	padding: 4px 9px 4px 0}
+#comments-threshold-wrapper p {
+	color: #666666}
+#comments-filter-dropbox {
+	width: 260px}
+.comment-info {
+	margin: 0 0 0 0}
+.comment, .comment-hidden {
+	margin-bottom: 30px}
+.comment-hidden p {
+	margin: 0}
+.comment .comment-open-hidden, .comment-hidden .comment-open-hidden {
+	float: right;
+	margin: 4px 7px 0 3px}
+.comment .comment-open-hidden {
+	display: none}
+.vote-comment-minus, .vote-comment-plus, .vote-comment-minus-voted, .vote-comment-plus-voted {
+	display: block;
+	text-decoration: none;
+	float: right;
+	width: 16px;
+	height: 16px;
+	margin-top: 3px;
+	margin-left: 3px}
+.cin .vote-comment-minus, .cin .vote-comment-plus, .cin .vote-comment-minus-voted, .cin .vote-comment-plus-voted {
+	margin-top: -3px}
+.vote-comment-minus, .vote-comment-plus {
+	cursor: pointer}
+.vote-comment-minus {
+	background: url(http://img.dirty.ru/lepro/vote-comment-minus.gif) no-repeat}
+.vote-comment-minus:hover, .vote-comment-minus-voted {
+	background: url(http://img.dirty.ru/lepro/vote-comment-minus-voted.gif) no-repeat}
+.vote-comment-plus {
+	background: url(http://img.dirty.ru/lepro/vote-comment-plus.gif) no-repeat}
+.vote-comment-plus:hover, .vote-comment-plus-voted {
+	background: url(http://img.dirty.ru/lepro/vote-comment-plus-voted.gif) no-repeat}
+.comment-hidden .vote-comment-minus, .comment-hidden .vote-comment-plus, .comment-hidden .vote-comment-minus-voted, .comment-hidden .vote-comment-plus-voted {
+	display: none}
+.comment-rating {
+	background: url(http://img.dirty.ru/lepro/comment-rating-bg.gif) no-repeat;
+	width: 26px;
+	height: 16px;
+	text-align: center;
+	float: right;
+	margin-top: 3px;
+	margin-left: 3px;
+	color: #9c9c9c}
+.comment-hidden .comment-rating {
+	background: none;
+	color: #000000;
+	margin-top: 5px;
+	text-align: right}
+.cin .comment-rating {
+	margin-top: -3px}
+.comment-hidden {
+	border: 1px solid #f2f2f2;
+	margin-left: -13px;
+	padding-left: 13px}
+.comment-hidden .comment-body {
+	height: 1px;
+	overflow: hidden}
+.comment-hidden .comment-body p {
+	visibility: hidden}
+.comment-hidden .comment-info {
+/*	padding: 4px 0 6px 0;*/
+	padding: 1px 0 7px 0}
+#posts-column .post-info p {
+/*	margin-left: 13px*/}
+.post-icon {
+	margin: 0 4px 10px 0;
+	float: left;
+	margin-top: 3px}
+#post-td .post-icon {
+	margin-top: -2px}
+.comments-td .post-icon, #post-td .post-icon, .pic {
+	cursor: pointer}
+/* post ICon */
+.pic {
+	vertical-align: -7%;
+	margin: 0 4px 0 0}
+#comments-under {
+	background: url(http://img.dirty.ru/lepro/linec.gif) center top no-repeat;
+	clear: both;
+	margin: 60px 0 40px 0;
+	height: 13px}
+#inbox-comments-under {
+	background: url(http://img.dirty.ru/lepro/linec.gif) center top no-repeat;
+	margin: 0 0 20px 0;
+	height: 13px}
+#comments-under-prev {
+	float: left}
+#comments-under-next {
+	float: right}
+p.column-info {
+	margin: 0 0 30px 0 !important}
+/* user-icon */
+.ui {
+	vertical-align: -25%}
+.post-info img, .column-info img, .comment-info img {
+	position: relative; 
+	top: 4px}
+.vote-minus, .vote-plus, .vote-minus-voted, .vote-plus-voted {
+	display: block;
+	text-decoration: none;
+	float: right;
+	width: 18px;
+	height: 18px;
+	margin-top: 3px;
+	vertical-align: middle;
+	text-align: center;
+	line-height: 19px;
+	margin-left: 3px}
+.pin .vote-minus, .pin .vote-plus, .pin .vote-minus-voted, .pin .vote-plus-voted {
+	margin-top: -2px}
+.vote-minus img, .vote-plus img, .vote-minus-voted img, .vote-plus-voted img, .vote-comment-minus img, .vote-comment-plus img, .vote-comment-minus-voted img, .vote-comment-plus-voted img {
+	top: 0}
+.vote-minus, .vote-plus {
+	cursor: pointer}
+.vote-minus {
+/*	margin-right: 6px;*/
+	background: url(http://img.dirty.ru/lepro/vote-post-minus.gif) no-repeat}
+.vote-minus:hover, .vote-minus-voted {
+	background: url(http://img.dirty.ru/lepro/vote-post-minus-voted.gif) no-repeat}
+.vote-plus {
+	background: url(http://img.dirty.ru/lepro/vote-post-plus.gif) no-repeat}
+.vote-plus:hover, .vote-plus-voted {
+	background: url(http://img.dirty.ru/lepro/vote-post-plus-voted.gif) no-repeat}
+.post-rating {
+	background: url(http://img.dirty.ru/lepro/post-rating-bg.gif) no-repeat;
+	width: 28px;
+	height: 27px;
+	text-align: center;
+	float: right;
+	margin-top: 0;
+	line-height: 23px;
+	color: #9c9c9c;
+	margin-left: 3px}
+.negative {
+	color: #ff0000}
+.pin .post-rating {
+	margin-top: -5px}
+.rating-pic {
+	float: right;
+	margin-top: 1px}
+#news-column {
+/*	width: 38%;*/
+	width: 33%;
+/*	float: left;
+	background-color: #f2f2f2*/
+	vertical-align: top;
+	color: #666666}
+#news-header-wrapper {
+	border-bottom: 1px solid #bfbfbf;
+	margin: 0 0 10px 0;
+	padding-bottom: 7px}
+#news-column #news {
+	border-bottom: 1px solid #dfdfdf}
+#bd-headr {
+	background: url(http://img.dirty.ru/lepro/bd-headr-bg.gif);
+	margin-left: -20px;
+	min-height: 117px;
+	position: relative;
+	z-index: 0}
+#stamp {
+	position: absolute;
+	width: 163px;
+	height: 108px;
+	background: url(http://img.dirty.ru/lepro/stamp.jpg) no-repeat;
+	left: 0;
+	top: 0}
+#slogan {
+	position: absolute;
+	width: 120px;
+	height: 15px;
+	background: url(http://img.dirty.ru/lepro/80-years-in-internet.gif) no-repeat;
+	left: 45px;
+	top: 40px}
+#headr-nonsplit {
+	background: url(http://img.dirty.ru/lepro/bg-guys.jpg);
+	border-bottom: 1px solid #adadad}
+#headr-nonsplit table, #bd-headr table {
+	width: 100%}
+#bd-headr table {
+	z-index: 1;
+	position: relative}
+#top-title-container {
+	width: 284px;
+	width: 289px;
+	}
+#comments-form {}
+#comments-textarea {
+	width: 98%;
+	height: 200px;
+	overflow: auto}
+#comments-form table {
+	width: 100%}
+#comments-attach-text {
+	font-size: 11px;
+	padding-bottom: 10px}
+#comments-form-image-input-wrapper {
+	border-top: 1px solid #808080;
+	padding-top: 10px;
+	display: none}
+#comments-form-image-input {
+	width: 95%}
+#comments-form .td2 {
+	background: #f1f1f1;
+	width: 100px;
+	text-align: center;
+	vertical-align: middle}
+.post-details-td {
+	width: 33%;
+	vertical-align: top}
+.post-details-td .inside-wrapper {
+	margin: 7px 10px 0 9px}
+#post-voting-results-link-td .inside-wrapper {
+	margin: 0 10px 9px 9px}
+.post-details-td .inside-wrapper-2 {
+	margin: 7px 10px 0 12px}
+#post-awards-wrapper {
+	border: 1px solid #f2f2f2;
+	padding: 5px 0 0 10px}
+#post-awards-wrapper img {
+	margin: 0 7px 8px 0}
+#post-award-description {
+	margin: 0;
+	font-size: 10px;
+	margin-top: -7px}
+#post-voting-results-link-td {
+	vertical-align: bottom}
+#post-voting-results-link {
+/*	margin: 0 10px 19px 9px*/
+	margin: 0 10px 10px 9px;
+	cursor: pointer}
+#post-vote-results-wrapper {
+	height: 1px;
+	overflow: hidden;
+	position: relative}
+.post-details-td table {
+	width: 100%;
+	table-layout: fixed}
+.post-details-td table td {
+	width: 50%;
+	font-size: 10px}
+.post-details-td .td1 {
+	border-right: 1px solid #f0f0f0}
+.post-details-td ul {
+	margin: 0;
+	padding: 0}
+.post-details-td li {
+	white-space: nowrap;
+	list-style-type: none}
+.post-details-td li img {
+	position: relative; 
+	top: 4px}
+#voted-list-plus {
+	padding: 32px 9px 30px 0;
+	background: url(http://img.dirty.ru/lepro/voted-users-plus.gif) 25px 5px no-repeat;
+	margin-right: 9px;
+	overflow: hidden}
+#voted-list-minus {
+	padding: 32px 0 30px 9px;
+	background: url(http://img.dirty.ru/lepro/voted-users-minus.gif) 25px 5px no-repeat}
+
+#search-top-title {
+	width: 235px;
+	height: 125px;
+	background-color: #ebcc8c;
+	margin-left: 54px;
+	background: url(http://img.dirty.ru/lepro/search-title.jpg) no-repeat}
+#search-big-form {
+/*	overflow: auto;*/
+	margin-top: 3px;
+	position: relative}
+#search-big-form h1 {
+	margin: 0 0 10px 0;
+	display: none}
+#search-fields {
+	width: 69%;
+	float: left;
+	font-size: 11px;
+	line-height: 12px;
+	color: #8f8f8f;
+	background: url(http://img.dirty.ru/lepro/search-fields-bg.gif) top right repeat-y}
+#search-fields h1, #search-fields .h1 {
+	color: #000000;
+	margin-left: 180px}
+.h1 {
+	display: block}
+#search-domains {
+	width: 31%;
+	float: left;
+/*	background-color: #f4f4f4*/}
+#search-domains .inside-wrapper {
+	margin: 0 25px 0 15px}
+.from-some-domain .inside-wrapper div {
+	display: none}
+.from-some-domain #toggle-domains-link {
+	display: block}
+#toggle-domains-link {
+	display: none}
+#from-domain {
+	display: block}
+.search-label {
+	width: 170px;
+	text-align: right;
+	font-weight: bold;
+	font-size: 12px;
+	color: #000000;
+	text-transform: uppercase;
+	float: left;
+	margin-right: 10px}
+.search-fields-others {
+	margin-left: 180px;
+	margin-bottom: 30px}
+select {
+	vertical-align: top}
+.search-fields-others p {
+	margin: 5px 20px 0 0;
+/*	margin-left: 5px;
+	margin-right: 20px*/}
+#search-string {
+	width: 96%;
+	font-size: 14px}
+#search-string2 {
+	width: 46%}
+#search-advanced-wrapper {
+	margin-top: -1px;
+	overflow: hidden;
+	}
+.search-advanced-displayed {
+	height: auto}
+.search-advanced-hidden {
+	height: 1px}
+#search-fields-advanced {
+	padding-top: 1px;
+	}
+#search-submit-container {
+/*	background-color: #f4f4f4;*/
+	margin-right: 15px;
+	padding: 6px 0;
+	border: 1px solid #e2e2e2}
+#search-submit-container table td {
+	vertical-align: middle;
+	font-size: 11px;
+	line-height: 12px;
+	color: #909090}
+#search-submit-container p {
+	margin: 0 15px 0 0}
+#search-yarrr {
+	padding: 0 15px 0 6px}
+#search-domains a {
+	font-size: 11px}
+#search-domains .script-link {
+	font-size: 11px}
+#search-domains input {
+	float: left;
+	position: relative;
+	top: 4px;
+	margin-right: 12px;
+	margin-bottom: 15px}
+.search-domains-label {
+	padding: 5px 0 5px 5px;
+	margin-bottom: 5px;
+	line-height: 14px;
+	margin-left: 2px}
+.search-domains-label:hover {
+	background-color: #f8f8f8}
+.search-label-inboxes {
+	font-size: 11px}
+.search-domains-divider {
+	border-top: 1px solid #e5e5e5;
+	height: 0;
+	margin-bottom: 5px;
+	line-height: 0}
+#toggle-checkboxes {
+	background: url(http://img.dirty.ru/lepro/science.gif) 0 11px no-repeat;
+	padding: 15px 0 10px 40px;
+	border-top: 1px solid #e5e5e5;
+	margin-top: 20px}
+#search-all-off {
+	display: none}
+#search-domains .icon-inbox {
+	margin-top: 1px}
+#search-warning, #warning-generic {
+	width: 400px;
+	height: 200px;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -100px;
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+	z-index: 1;
+	display: none;
+	opacity: 0.8;
+	_position: absolute;
+	_top: expression(
+		document.getElementsByTagName("body")[0].scrollTop + "px"
+	);
+}
+#search-warning iframe, #warning-generic iframe {
+	display: none}
+#search-warning .inside-wrapper, .warning-wrapper {
+	margin: 20px}
+#search-results-column, #search-generic-wrapper {
+	width: 69%;
+	float: left}
+.search-results-divider {
+	border-top: 1px solid #cdcdcd;
+	margin: 40px 30px 25px 0;
+	height: 0;
+	line-height: 0}
+#search-results-column .inside-wrapper, #search-generic-wrapper {
+	margin: 0 10px 0 72px}
+.found-info {
+	color: #909090;
+	font-size: 11px;
+	margin-bottom: 30px !important}
+.found-words {
+	background-color: #fce800}
+.search-post-icon {
+	margin-left: -16px;
+	float: left;
+	margin-top: -2px}
+#search-results-pages {
+	height: 24px;
+	background-color: #f2f2f2;
+	text-align: center;
+	border-top: 1px solid #ffffff}
+#search-results-back {
+	float: left;
+	border-right: 4px solid #ffffff;
+	margin-right: 4px}
+#search-results-forward {
+	float: right;
+	border-left: 4px solid #ffffff;
+	margin-left: 4px}
+#search-results-pages p {
+	margin-top: 3px}
+#search-advert-box {
+	height: 359px;
+	width: 31%;
+	float: right;
+	margin-top: 75px}
+#search-advert-box div {
+	background-color: #ededed;
+	margin: 0 0 0 34px;
+	height: 359px}
+
+#tabs-wrapper {
+/*	margin-left: 38px;*/
+	margin-top: -13px;
+/*	position: relative;*/
+	z-index: 1}
+#tabs-wrapper .table-wrapper-2-columns-2 {
+	margin-top: 15px;
+	z-index: auto;
+	position: static}
+#tabs-wrapper .table-wrapper-2-columns-2 td {
+	vertical-align: top}
+
+#tabs-table {
+	width: 100%;
+	height: 28px;
+/*	background: #93a2a5;*/
+	z-index: 1;
+	position: relative;
+	empty-cells: show}
+.tab-link, .tab-link-active {
+	background: url(http://img.dirty.ru/lepro/tab-bg-left.gif) no-repeat;
+	color: #4b4b4b !important;
+	text-decoration:none;
+	height: 100%;
+	display: block;
+	position: relative;
+	text-align: center;
+	cursor: pointer;
+	border-bottom: 1px solid #c7c7c7}
+.tab-link-active {
+	background-position: 0 -30px;
+	border-bottom: 1px solid #f1f0f1;
+	bottom:-1px}
+.tab-link:hover {
+	background-position: 0 -60px;
+	color: #ffffff}
+.tab-link:hover * {
+	color: #ffffff}
+.disabled_menu .tab-link {
+	cursor:default;}
+.disabled_menu .tab-link:hover {
+	background-position: 0 0;
+	color: #4b4b4b !important;}
+.disabled_menu .tab-link:hover * {
+	color: #4b4b4b !important;}
+a.tab-link span {
+	}
+#tabs-table td {
+/*	border-bottom: 1px solid #c7c7c7;*/
+	font-size: 10px;
+	line-height: 11px;
+/*	position: relative;*/
+	vertical-align: middle;
+	height: 27px}
+#tabs-table .td1 {
+	width: 17%;
+	color: #ff0000;
+	text-align:center;}
+#tabs-table .td1 a {
+	color: #1b8a02}
+#tabs-table .td2 {
+	width: 25%;
+/*	position: relative*/}
+#tabs-table .td3 {
+	width: 12%}
+#tabs-table .td4 {
+	width: 12%}
+#tabs-table .td5 {
+	width: 13%}
+#tabs-table .td6 {
+	width: 12%}
+	#tabs-table .td6_5 {
+	width: 5%}
+#tabs-table .td7 {
+	width: 4%;
+	text-align: right}
+#tabs-table .td_charlie {
+	width:5%;
+}
+#tabs-table .td_17 {
+	width: 17%;
+}
+#tabs-table .td_15 {
+	width: 15%;
+}
+#tabs-table .td_13 {
+	width: 13%;
+}
+#tabs-table .td_20 {
+	width: 20%;
+}
+#tabs-table .td_30 {
+	width: 30%;
+}
+#tabs-table .td_40 {
+	width: 40%;
+}
+#tabs-table .td_50 {
+	width: 50%;
+}
+#tabs-table .td_55 {
+	width: 55%;
+}
+#tabs-table .underground_search_menu {
+	text-align:right;
+}
+#tabs-table .underground_search_menu div{
+	padding-right:35px;
+}
+#tabs-table .td_charlie img {
+	position:relative;
+	margin-top:-14px;
+}
+.tab-bg-left {
+	background: url(http://img.dirty.ru/lepro/tab-bg-left.gif) no-repeat}
+.tab-bg-right {
+	background: url(http://img.dirty.ru/lepro/tab-bg-right.gif) right top no-repeat;
+	height: 100%;
+	display: block}
+.tab-link:hover .tab-bg-right {
+	background-position: right -60px}
+.disabled_menu .tab-link:hover .tab-bg-right {
+	background-position: right 0}
+.tab-link-active .tab-bg-right {
+	background-position: right -30px}
+.tab-bg-middle {
+	background: url(http://img.dirty.ru/lepro/tab-bg-middle.gif) repeat-x;
+	height: 100%;
+	display: block;
+	margin: 0 5px 0 6px}
+.tab-link:hover .tab-bg-middle {
+	background-position: 0 -60px}
+.disabled_menu .tab-link:hover .tab-bg-middle {
+	background-position: 0 0;}
+.tab-link-active .tab-bg-middle {
+	background-position: 0 -30px}
+.valign-fix-1 {
+	display: table;
+	width: 100%;
+	height: 100%}
+.valign-fix-2 {
+	display: table-cell;
+	vertical-align: middle}
+#under-tabs {
+/*	position: absolute;
+	height: 63px;
+	width: 100%;*/
+	background: url(http://img.dirty.ru/lepro/under-tabs-gradient.gif) repeat-x;
+	border-top: 1px solid #c7c7c7;
+	margin-top: -1px;
+/*	z-index: -1*/}
+
+.my-96-wrapper {
+	width: 96%;
+	padding-top: 12px}
+#tabs-wrapper .inside-wrapper {
+	padding: 0 0 0 12px}
+#tabs-wrapper p {
+	margin: 0}
+#mystuff-submenu {
+	margin: 3px 0 0 0;
+/*	width: 96%;*/
+	font-size: 11px;
+	padding-bottom: 4px;
+/*	border-bottom: 1px solid #c7c7c7*/}
+#mystuff-submenu p {
+/*	margin: 15px 0 0 14px;*/
+	margin: 15px 0 0 0;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #c7c7c7}
+#mystuff-submenu a {
+	color: #000000;
+	margin-right: 6px}
+#mystuff-submenu .current {
+/*	font-size: 17px*/
+	background-color: #e8e8e8;
+	padding: 3px 4px;
+	margin-right: 6px}
+#my-under-tabs {
+/*	width: 97%;*/
+	font-size: 11px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #c7c7c7}
+#fav-under-tabs {
+	font-size: 11px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #c7c7c7;
+	margin-bottom: 20px}
+
+#warning-generic p {
+	margin-bottom: 15px}
+.grey {
+	background: #f1f1f1}
+.l-grey {
+	background: #f8f8f8}
+
+#my-sort {
+	margin: 10px 0 30px 0}
+#my-sort select, #mystuff-days select {
+	vertical-align: middle}
+.popup-abs-wrapper {
+	position: absolute;
+	height: 0;
+	overflow: hidden;
+	width: 232px;
+	z-index: 1;
+	top: 0;
+	left: 0}
+.popup-abs-inside {
+	padding-left: 20px;
+	border: 1px solid #c7c7c7;
+	background: #ffffff}
+.popup-abs-wrapper table {
+	width: 100%}
+.popup-abs-wrapper table td {
+	font-size: 11px}
+#my-doms-wrapper {
+	width: 232px}
+#my-doms, #inbox-prefs {
+	}
+#inbox-prefs-wrapper {
+	width: 300px}
+.inbox-tools-static {
+	width: 232px}
+/*#my-doms table {
+	width: 100%}
+#my-doms table td {
+	font-size: 11px}
+*/
+
+/*#tabs-wrapper form {
+	font-size: 11px}*/
+#my-sort {
+	font-size: 11px}
+/*#tabs-wrapper form * {
+	vertical-align: middle}*/
+	
+#inbox-top-things-table {
+	width: 100%;
+	margin-bottom: 20px}
+#inbox-top-things-table td {
+	font-size: 12px}
+#inbox-top-things-table #td1 {
+	width: 68%}
+#inbox-top-things-table #td2 {
+	padding-left: 20px}
+#inbox-top-things-wrapper {
+	background: #ffffff;
+	border: 1px solid #cccccc;
+	padding: 3px;
+	margin-bottom: 20px
+	}
+#inbox-top-things-table #inbox-top-things-wrapper {
+	margin-bottom: 0}
+#inbox-top-things-inside {
+	background: #f1f1f1;
+	padding: 2px}
+#inbox-top-things-inside img {vertical-align: middle}
+/* inbox-post, favorites-post */
+.ip, .fp {
+	margin: 0 0 30px 23px}
+/* inbox-bullet, favorites-bullet */
+.ib, .fb {
+	float: left}
+#inbox-under-post {
+	background: url(http://img.dirty.ru/lepro/linec.gif) center top no-repeat;
+	margin: -20px 0 10px 0;
+	height: 13px}
+.inbox-comments {
+	margin-left: 23px}
+#mystuff-days {
+	display: inline;
+	margin-right: 25px;
+/*	white-space: nowrap*/}
+#mystuff-days select {
+	width: 120px}
+#mystuff-what-to-show {
+	font-size: 11px;
+	white-space: nowrap}
+.my-h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 22px;
+	color: #666666;	
+	font-weight: normal;
+	line-height: 16px
+	}
+.mystuff-offset {
+	margin: 30px 0 0 50px}
+
+#social-help {
+	margin: 15px 0 0 0;
+	width: 96%;
+	text-align: right;
+	font-size: 11px}
+#social-help p {
+	margin: 0 0 0 14px;
+	padding-bottom: 4px;
+	border-bottom: 1px solid #c7c7c7}
+#social-table {
+	width: 100%;
+	empty-cells: show;
+	margin: 30px 0 0 0}
+#social-table td {
+/*	padding: 11px 10px 80px 10px;*/
+	vertical-align: top;
+	font-size: 11px;
+	line-height: 17px}
+#social-table p {
+	margin: 5px 0 10px 0}
+#social-table #td1 {
+	width: 29%;
+	padding: 11px 12px 80px 0}
+#social-table #td2 {
+	width: 34%;
+	background: #f2f0f3;
+	padding: 11px 12px 80px 16px}
+#social-table #td3 {
+	width: 36%;
+	padding: 11px 10px 80px 14px}
+#social-table #td1 .h2 {
+	float: left;
+	margin-left: 19px}
+#social-interested {
+	float: right;
+	white-space: nowrap;
+	margin-top: -3px}
+#social-add-user {
+	background: #f2f0f3;
+	padding: 9px 4px 9px 15px;
+	clear: both;
+	margin-top: 6px}
+#social-add-user-input {
+	width: 83%}
+#social-table ul {
+	padding: 0}
+#social-table #td1 ul {
+	margin: 21px 0 0 14px}
+#social-table #td2 ul, #social-table #td3 ul {
+	margin: 20px 0 0 0}
+#social-table li {
+	list-style-type: none}
+#social-table #td1 li {
+	margin: 0 0 20px 20px;
+	line-height: 20px}
+#social-table #td2 li {
+	margin: 0 0 2px 0;
+	line-height: 20px}
+#social-table #td2 table {
+	width: 100%}
+#social-table #td2 td {
+	width: 50%;
+	white-space: nowrap;
+	padding-bottom: 3px}
+#social-table #td2 img {
+	vertical-align: middle}
+#social-table #td2 .td2 {
+	padding-left: 12px}
+#social-table #td3 li {
+	margin: 0 0 15px 20px}
+#social-table li img {
+	vertical-align: middle;
+	}
+#social-table #td1 li img, #social-table #td3 li img {
+	margin-left: -20px;
+	position: relative;
+	z-index: 0;
+	margin-right: 4px}
+#social-table #td3 li img {
+	margin-left: -20px;
+	margin-right: 4px}
+#social-table li input {
+	margin: 0 6px 0 -20px;
+	vertical-align: middle;
+	position: relative;
+	z-index: 0}
+#social-watch-template {
+	display: none;
+}
+.popup-generic {
+	position: absolute;
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+	z-index: 1;
+	display: none;
+	opacity: 0.8;
+	text-align: center}
+.popup-generic iframe {
+	display: none}
+.popup-generic td {
+	padding: 5px 10px}
+.popup-generic p {
+	margin: 0 !important}
+
+#upic-wrapper {
+	text-align: center}
+#upic-container {
+	text-align: left;
+	border: 1px solid #e5e5e5;
+	margin: 20px auto;
+	width: 500px;
+	height: 400px;
+	overflow: hidden;
+	position: relative}
+#upic-size {
+	overflow: visible}
+#userpic {
+	position: relative;
+	left: 0;
+	top: 0}
+.upic-transp {
+	background: url(http://img.dirty.ru/lepro/80percent.png);
+	position: absolute}
+/*#upic-transp1 {
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 300px}*/
+#upic-hole {
+	width: 32px;
+	height: 32px;
+	border: 1px solid #e5e5e5;
+	position: absolute}
+#upic-drag {
+	position: absolute;
+	left: 0;
+	top: 0;
+	cursor: move;
+	background: url(http://img.dirty.ru/lepro/0.gif)}
+#upic-slider {
+	width: 141px;
+	margin: 0 auto;
+	height: 19px;
+	background: url(http://img.dirty.ru/lepro/upic-slider-bg-2.gif) repeat-x;
+	position: relative;
+	text-align: left}
+#upic-slider-thing {
+	position: relative;
+	left: 36px;
+	width: 6px;
+	height: 15px;
+	background: url(http://img.dirty.ru/lepro/upic-slider.gif) no-repeat}
+
+#bugs-body {
+	text-align: center;
+	font-size: 11px;
+	line-height: 18px}
+#bugs-body #navigation-thing {
+	text-align: left}
+#bugs-wrapper {
+	width: 800px;
+	min-width: 800px;
+	text-align: left;
+	margin: 0 auto}
+#bugs-title {
+	width: 238px;
+	height: 90px;
+	margin-left: 23px;
+	background: url(http://img.dirty.ru/lepro/bugs-title.jpg) no-repeat}
+#bugs-wrapper .inside-wrapper {
+	margin: 12px 31px 0 47px;
+	background: url(http://img.dirty.ru/lepro/bug-1-top.gif) 188px 42px no-repeat;
+	zoom: 1;
+	overflow: auto}
+#bugs-wrapper h1 {
+	display: none}
+#bugs-wrapper .h1 {
+	margin: 0 0 80px 74px}
+#stupid-ie-floats-bug {}
+#bugs-wrapper #text {
+	float: left;
+	width: 214px;
+	margin-right: 40px;
+	color: #565656;
+	background: url(http://img.dirty.ru/lepro/bug-2-text-bottom.gif) 161px bottom no-repeat;
+	padding-bottom: 12px}
+#bugs-wrapper p {
+	margin: 0 0 18px 0}
+#bugs-form {
+	float: left;
+	width: 466px;
+	margin-top: 3px}
+#bugs-form img {
+	display: block}
+#bugs-name {
+	width: 461px;
+	margin-bottom: 28px}
+#bugs-os-wrapper {
+	width: 219px;
+	float: left;
+	margin-bottom: 20px}
+#bugs-browsers-wrapper {
+	width: 219px;
+	float: right;
+	margin-bottom: 20px}
+#bugs-os-wrapper select, #bugs-browsers-wrapper select {
+	width: 100%}
+#bugs-url {
+	width: 461px;
+	margin-bottom: 11px}
+#bugs-description {
+	width: 461px;
+	height: 154px;
+	overflow: auto;
+	margin-bottom: 14px}
+#bugs-screenshot {
+	width: 290px}
+#bugs-yarr-wrapper {
+	border-top: 1px solid #a0a0a0;
+	padding-top: 6px;
+	margin-top: 13px}
+#bugs-yarr-wrapper .inside-wrapper-2 {
+	background: #e4e4e4;
+	padding: 10px 0 7px 7px;
+	line-height: 0}
+#bugs-submit-bug {
+	display: block;
+	position: relative;
+	left: 424px;
+	top: -23px}
+#bugs-warning {
+	width: 400px;
+	height: 200px;
+	position: absolute;
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	margin-left: -200px;
+	margin-top: -100px;
+	background-color: #ffffff;
+	border: 1px solid #e5e5e5;
+	z-index: 1;
+	display: none;
+	opacity: 0.8;
+	text-align: left}
+#bugs-warning iframe {
+	display: none}
+#bugs-warning .inside-wrapper {
+	margin: 20px}
+
+#footr {
+	font-size: 11px;
+	line-height: 13px;
+	text-align: center;
+	margin-top: 115px;
+	clear: both}
+#archive-links {
+	border-top: 1px solid #939393;
+	padding-top: 9px;
+	margin: 0 0 10px 0}
+#footr-links {
+	font-size: 12px;
+	border-top: 2px solid #939393;
+	padding-top: 30px;
+	margin: 0}

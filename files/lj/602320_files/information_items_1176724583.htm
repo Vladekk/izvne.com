@@ -1,0 +1,414 @@
+<br />
+<b>Notice</b>:  Use of undefined constant CACHE_DOC_TPL - assumed 'CACHE_DOC_TPL' in <b>/home/u99088/apexmed.ru/www/class/class.core.php</b> on line <b>659</b><br />
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"   "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>404 - Документ не найден</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<meta http-equiv="pragma" content="no-cache">
+<meta name="Keywords" content="">
+<meta name="Description" content="">
+<meta name="robots" content="[tag:indexfollow]">
+<meta name="googlebot" content="index, follow">
+<meta name="revisit-after" content="7 days">
+<meta name="document-state" content="dynamic">
+<meta name="reply-to" content="apexmed@apexmed.ru">
+
+<link rel="stylesheet" type="text/css" href="/templates/apexmed/css/reset_ss.css" media="screen, projection">
+<link rel="stylesheet" type="text/css" href="/templates/apexmed/css/screen_s.css" media="screen, projection">
+<link rel="stylesheet" type="text/css" href="/templates/apexmed/js/fancybox/jquery.fancybox.tovar.css" media="screen, projection">
+<link rel="stylesheet" type="text/css" href="/templates/apexmed/css/print.css" media="print">
+
+<link rel="shortcut icon" href="apexmed.ico" type="image/x-icon">
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="/templates/apexmed/css/iestyles.css" media="all">
+<style type=text/css>
+.pngfix {	BEHAVIOR: url("/templates/apexmed/js/iepngfix.htc")}
+</style>
+<![endif]-->
+<!--[if lt IE 7]>
+<script type="text/javascript" src="/templates/apexmed/js/ds-sleight.js" ></script>
+<link rel="stylesheet" type="text/css" href="/templates/apexmed/css/ie7minus.css" media="all">
+<![endif]-->
+
+
+<script type="text/javascript" src="/templates/apexmed/js/iepngfix_tilebg.js" ></script>
+<script type="text/javascript" src="/templates/apexmed/js/curvycorners.src.js"></script>
+<script type="text/javascript" src="/templates/apexmed/js/jquery-1.4.2.min.js"></script>
+<script type="text/javascript" src="/templates/apexmed/js/fancybox/jquery.mousewheel-3.0.2.pack.js"></script>
+<script type="text/javascript" src="/templates/apexmed/js/fancybox/jquery.fancybox-1.3.1.pack.js"></script>
+<script type="text/javascript" src="/templates/apexmed/js/jquery.hoverIntent.minified.js"></script>
+<script type="text/javascript" src="/templates/apexmed/js/jquery.ssi.menu.js"></script>
+<script type="text/javascript" src="/templates/apexmed/js/ssi.lib.js"></script>
+<script type="text/javascript">
+<!--
+$(document).ready(function() {
+			$("a#example2").fancybox({
+				'titleShow'		: false,
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'
+			});
+			$("#btn2").fancybox({
+				'titlePosition'		: 'inside',
+				'autoScale'			: true,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+			$("#btn3").fancybox({
+				'titlePosition'		: 'inside',
+				'autoScale'			: true,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Изображение ' + (currentIndex + 1) + ' из ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+});
+$(document).ready(function() {
+	//Default Action
+	$(".tab_content").hide(); //Hide all content
+	$("ul.tabs li:first").addClass("active").show(); //Activate first tab
+	$(".tab_content:first").show(); //Show first tab content
+	
+	//On Click Event
+	$("ul.tabs li").click(function() {
+		$("ul.tabs li").removeClass("active"); //Remove any "active" class
+		$(this).addClass("active"); //Add "active" class to selected tab
+		$(".tab_content").hide(); //Hide all tab content
+		var activeTab = $(this).find("a").attr("href"); //Find the rel attribute value to identify the active tab + content
+		$(activeTab).fadeIn(); //Fade in the active content
+		return false;
+	});
+});
+ addEvent(window, 'load', initCorners);
+  function initCorners() {
+    var settings = {
+      tl: { radius: 6 },
+      tr: { radius: 6 },
+      bl: { radius: 6 },
+      br: { radius: 6 },
+      antiAlias: true
+    }
+    curvyCorners(settings, ".round");
+  }
+jQuery(document).ready(function(){
+		var config = {    
+			 sensitivity: 2, // number = sensitivity threshold (must be 1 or higher)    
+			 interval: 100, // number = milliseconds for onMouseOver polling interval    
+			 over: showContent, // function = onMouseOver callback (REQUIRED)    
+			 timeout: 200, // number = milliseconds delay before onMouseOut    
+			 out: hideContent // function = onMouseOut callback (REQUIRED)    
+		};
+		jQuery("#ssi_nav li.main_nav_sec").hoverIntent( config );
+		jQuery("#ssi_nav li .nav_link").append('<img src="/templates/apexmed/images/nav-arrow.png" class="nav_arrow">');
+		jQuery("#ssi_nav li .add_triangle").append('<img src="/templates/apexmed/images/triangles_03.gif">');
+		jQuery("#nav_cart").bind("click", function() {toggleCart();}).attr("href", "javascript:void(0)");
+		//jQuery(".mask_this").prepend('<div class="mask"></div>');
+		jQuery(".mask_this").prepend('<div class="mask_bg"></div>');
+		
+		jQuery('.boxgrid.caption').hover(function(){
+			jQuery(".cover", this).stop().animate({top:'0px'},{queue:false,duration:260});
+		}, function() {
+			jQuery(".cover", this).stop().animate({top:'65px'},{queue:false,duration:260});
+		});
+		jQuery(".solution_hover .popup").hide();
+	});
+// -->
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-4994718-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+<body>
+<div class="fon_base01">
+<div id="body_960px">
+<!-------------------------------------------------------------------------------------------
+  Header 
+---------------------------------------------------------------------------------------------->
+<div id="ssi_header">
+<div class="header_top">
+<h1 class="logo"><a href="/index.html" class="pngfix">404 - Документ не найден</a></h1>
+   <div class="header_right pngfix">
+      <form class="header_search clearfix"  method="get" action="/index.php">
+	<div><input type="hidden" name="module" value="search">
+	<input type="text" id="query" class="search text" name="query" value="Поиск по сайту" onfocus="this.value=''" maxlength="300">
+	<input type="submit" class="btn_search">
+	<input type="hidden" name="ts" value="0"></div>
+</form>      <div class="header_right_btm clearfix">
+   		  <map name="Apexmed_phones" id="Phone">
+          <area shape="rect" coords="18,-8,82,16" href="#" alt="ISO9001">
+       	  </map>
+   	  </div>
+	  </div>
+</div>
+    <ul id="ssi_nav">
+      <li class="main_nav_sec"> <a href="/o-kompanii.html" id="nav_about" class="nav_link">О компании</a>
+        <div class="nav-content">
+          <div class="nav-content-inner clearfix">
+            <ul>
+    <li class="link_block first"><a class="sub_nav_link add_triangle" href="/o-kompanii.html">О компании</a>
+    <p>Вот уже более 10 лет комапния Apexmed International работает на рынке России и странах СНГ...<br />
+    <a href="/o-kompanii.html">читать далее&nbsp;<img align="baseline" alt="" src="/templates/apexmed/images/more_01.gif" /></a></p>
+    <ul>
+        <li><a href="/presscenter/otzyvy-i-nagrady.html">Отзывы</a> и <a href="/nagrady.html">награды</a></li>
+        <li><a href="/vakansii.html">Вакансии</a></li>
+    </ul>
+    </li>
+    <li class="link_block"><a class="sub_nav_link add_triangle" href="/sertifikaty.html">Сертификаты</a>
+    <p>В Компании &laquo;Apexmed International B.V.&raquo; внедрена система менеджмента качества и компания сертифицирована по требованиям международных стандартов ISO 9001:2000 и ISO 13485:2003...<br />
+    <a href="/sertifikaty.html">читать далее&nbsp;<img align="baseline" alt="" src="/templates/apexmed/images/more_01.gif" /></a></p>
+    </li>
+    <li class="link_block"><a class="sub_nav_link add_triangle" href="/politika-v-oblasti-kachestva.html">Политика в области качества</a>
+    <p style="text-align: justify">Основная деятельность Компании направлена на производство и поставку на медицинский рынок мед. изделий, применение которых обеспечивает высокое качество оказания медицинских услуг...<br />
+    <a href="/politika-v-oblasti-kachestva.html">читать далее <img align="baseline" alt="" src="/templates/apexmed/images/more_01.gif" /></a></p>
+    </li>
+    <li class="link_block"><a class="sub_nav_link add_triangle" href="/vakansii.html">Вакансии</a>
+    <p>Присоединяйтесь к команде Apexmed! Мы гарантируем: интересную и социально значимую работу, возможность личного развития и карьерного роста...<br />
+    <a href="/vakansii.html">читать далее <img align="baseline" alt="" src="/templates/apexmed/images/more_01.gif" /></a></p>
+    </li>
+</ul>          </div>
+        </div>
+      </li>
+      <li class="main_nav_sec"> <a href="/katalog-produktsii-kompanii-apexmed.html" id="nav_catalog" class="nav_link">Каталог продукции</a>
+        <div class="nav-content">
+          <div class="nav-content-inner clearfix pngfix">
+             <ul>
+    <li class="link_block highlight_block first">
+    <h3>Каталог</h3>
+    <p>Добро пожаловать в каталог продукции Apexmed. Будьте внимательны, вся продукция снабжается инструкциями пользования и предназначена для использования квалифицированным МЕДИЦИНСКИМ персоналом!<br>
+    <a href="/katalog-produktsii-kompanii-apexmed.html">читать далее&nbsp;<img align="baseline" alt="" src="/templates/apexmed/images/more_01.gif" ></a></p>
+    </li>
+    <li class="link_block"><a class="sub_nav_link add_triangle" href="/anesteziologiya-i-reanimatsiya.html">Анестезиология и реанимация</a> 
+                <a class="sub_nav_link add_triangle" href="/gastroenterologiya.html">Гастроэнтерология</a> 
+                <a class="sub_nav_link add_triangle" href="/urologiya.html">Урология</a> 
+                <a class="sub_nav_link add_triangle" href="/proktologiya.html">Проктология</a></li>
+    <li class="link_block"><a class="sub_nav_link add_triangle" href="/vnutrivennaya-terapiya.html">Внутривенная терапия</a> 
+                <a class="sub_nav_link add_triangle" href="/akusherstvo-i-ginekologiya.html">Акушерство и гинекология</a> 
+                <a class="sub_nav_link add_triangle" href="/khirurgiya.html">Хирургия</a> 
+                <a class="sub_nav_link add_triangle" href="/terapiya.html">Терапия</a></li>
+    <li class="link_block"><a class="sub_nav_link add_triangle" href="/fiksiruyushchie-materialy.html">Фиксирующие материалы</a>
+                <a class="sub_nav_link add_triangle" href="/laboratoriya.html">Лаборатория</a> 
+                <a class="sub_nav_link add_triangle" href="/stetoskopes.html">Стетоскопы</a> 
+                <a class="sub_nav_link add_triangle" href="/tonometry.html">Тонометры механические</a></li>
+</ul>          </div>
+        </div>
+      </li>
+      <li class="main_nav_sec "> <a href="/presstsentr.html" id="nav_blog" class="nav_link">Новостной блог</a>
+        <div class="nav-content">
+          <div class="nav-content-inner clearfix">
+               <ul id="ul-nav-blog">
+              <li class="link_block first highlight_block">
+                <h3>Пресс-центр</h3>
+                <p>В данном разделе представлены новостные ленты компании, новости мировой медицины, акции компании, статьи по тематике продукции, информацию о предстоящих и проводящихся выставках. 
+<br /><a href="/presstsentr.html">... перейти в раздел »</a> </p>
+              </li>
+              <li class="link_block blog_block">
+                <div class="sub_nav_header">Новость дня</div>
+                <p><span>13.09.2010</span> <a href="/presscenter/aricle/grafik-uchastiya-kompanii-medikom-v-spetsializirovannykh-vystavkakh-i-konferentsiyakh-na-2010-god.html" class="sub_nav_news">Компания &laquo;МЕДИКОМ&raquo; активно участвует во всех ключевых мероприятиях в области анестезиологии, гинекологии и онкологии&nbsp;&nbsp;<img align="baseline" alt="" src="/templates/apexmed/images/more_01.gif" /></a> </p>
+              </li>
+              <li class="link_block blog_block">
+                <div class="sub_nav_header">Актуальная акция</div>
+                <p><span>05.07.2010</span> <a href="/aktsiya-aspiratsionnye-zondy-apexmed.html" class="sub_nav_news">Короткое описание акции.&nbsp;Короткое описание акции.&nbsp;Короткое описание акции.&nbsp;Короткое описание акции.&nbsp;Короткое описание акции.&nbsp;Короткое описание акции.&nbsp;Короткое описание ак... &nbsp;<img align="baseline" alt="" src="/templates/apexmed/images/more_01.gif"></a> </p>
+              </li>
+              <li class="link_block blog_block">
+                <div class="sub_nav_header">Свежая статья</div>
+                <p><span>18.06.2010</span> <a href="/tipy-i-vidy-mochepriyomnikov-predstavlennye-na-rossiyskom-rynke.html" class="sub_nav_news">Количество урологических больных в России, по данным, Российского общества урологов составляет около 10 млн. человек. И каждый из урологических больных, безусловно, сталкивался с проблемой поиска и вы... &nbsp;<img align="baseline" alt="" src="/templates/apexmed/images/more_01.gif" /></a> </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="main_nav_sec"> <a href="/kontakty/regiony.html" id="nav_contact" class="nav_link">Контакты</a>
+<div class="nav-content">
+<div class="nav-content-inner clearfix" id="nav-contact">
+<div id="mod_contact_box">
+
+<script language="javascript" type="text/javascript">
+function checkForm(obj, elems) {
+	var element, pattern;
+	for (var i = 0; i < obj.elements.length; i++) {
+		element = obj.elements[i];
+		if (elems != undefined)
+			if (elems.join().indexOf(element.type) < 0) continue;
+		if (!element.getAttribute("check_message")) continue;
+		if (pattern = element.getAttribute("check_pattern")) {
+			pattern = new RegExp(pattern, "g");
+			if (!pattern.test(element.value)) {
+				alert(element.getAttribute("check_message"));
+				element.focus();
+				return false;
+			}
+		}
+		else if (/^\s*$/.test(element.value)) {
+			alert(element.getAttribute("check_message"));
+			element.focus();
+			return false;
+		}
+	}
+	return true;
+}
+</script>
+<div id="module_content">
+	<form method="post" enctype="multipart/form-data" onsubmit='return checkForm(this)'>
+<div class="mod_contact_col">
+	<small>Внимание! Поля, с символом <span class='mod_contact_left_star'>*</span> обязательны к заполнению!</small><br />
+		
+		<div class="mod_contact_left"><label for="contact_form_in_email">Ваш E-mail: <span class="mod_contact_left_star">*</span></label></div>
+		<div class="mod_contact_right"><input type="text" value="" name="contact_form_in_email" id="contact_form_in_email" style="width:215px;" check_pattern="^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$" check_message="Пожалуйста, укажите Ваш E-mail"></div>
+
+		
+		            <input type="hidden" value="Обратная связь с сайта APEXMED.ru" id="contact_form_in_subject" name="contact_form_in_subject">
+        
+					
+			<div class="mod_contact_field" style="width:340px;">
+				<div class="mod_contact_left">
+					<label for="cp_19"> Контактное лицо: <span class="mod_contact_left_star">*</span></label>
+									</div>
+				<div class="mod_contact_right">
+											<input style="width:95%;" type="text" name="_Контактное_лицо" id="cp_19" value="" check_pattern="^([\s\S]{1,85}){1}$" check_message="Не заполнено обязательное поле Контактное лицо">
+									</div>
+			</div>
+					
+			<div class="mod_contact_field" style="width:340px;">
+				<div class="mod_contact_left">
+					<label for="cp_20">Телефон: <span class="mod_contact_left_star">*</span></label>
+									</div>
+				<div class="mod_contact_right">
+											<input style="width:95%;" type="text" name="Телефон" id="cp_20" value="" check_pattern="^([\s\S]{1,65}){1}$" check_message="Не заполнено обязательное поле Город / Область">
+									</div>
+			</div>
+					
+			<div class="mod_contact_field" style="width:340px;">
+				<div class="mod_contact_left">
+					<label for="cp_21">Организация: <span class="mod_contact_left_star">*</span></label>
+									</div>
+				<div class="mod_contact_right">
+											<input style="width:95%;" type="text" name="Организация" id="cp_21" value="" check_pattern="^([\s\S]{1,50}){1}$" check_message="Не заполнено обязательное поле Организация">
+									</div>
+			</div>
+									</div><div class="mod_contact_col">
+			
+			<div class="mod_contact_field" style="width:330px;">
+				<div class="mod_contact_left">
+					<label for="cp_24">Текст сообщения: <span class="mod_contact_left_star">*</span></label>
+									</div>
+				<div class="mod_contact_right">
+											<textarea style="width:95%;" name="Текст_сообщения" id="cp_24" check_pattern="^([\s\S]{5,2500}){1}$" check_message="Не заполнено обязательное поле Сообщение"></textarea>
+									</div>
+			</div>
+		
+
+				<div class="mod_contact_capture">        
+<div  id="captcha"><img src="/inc/captcha.php" alt="" width="100" height="46" border="0" /></div>
+<div class="mod_contact_right"><input name="securecode" type="text" id="securecode" style="margin: 0; width:70px" maxlength="8"  check_message="Пожалуйста, укажите защитный код">&nbsp;<small>- введите защитный код</small></div>
+</div>
+					<div class="mod_contact_right">
+				<input type="hidden" name="contact_form_id" value="2">
+				<input type="hidden" name="contact_action" value="DoPost">
+				<input type="hidden" name="modules" value="contact">
+				<input type="submit" class="button" value="Отправить">&nbsp;
+				<input type="reset" class="button">
+			</div>
+</div>
+	</form>
+</div>
+</div>
+<ul>
+    <li class="link_block"><a class="sub_nav_link add_triangle" href="/kontakty/regiony.html">Apexmed в регионах</a>
+  <a class="sub_nav_link add_triangle" href="/contacts/menedzhery.html">Центральный офис</a>
+  <a class="sub_nav_link add_triangle" href="/contacts/gde-kupit.html">Где купить?</a>
+  <a class="sub_nav_link sub_nav_close" onclick="closeMenu()" href="javascript:void(0);">Закрыть меню контактов</a></li>
+</ul></div>
+</div>
+</li>
+    </ul>
+  </div>  
+
+<!-------------------------------------------------------------------------------------------
+  Start Content 
+---------------------------------------------------------------------------------------------->
+<div id="ssi_content" class="round">
+<div id="body_940px">
+<div id="body_middle">
+<div id="body_right">
+<div id="body_right_content">
+
+<div class="content">
+<h2 class="line_b">Ошибка 404</h2>
+<div class="tabsbox">
+<p>Извините, запрошенный Вами документ не найден.</p>
+<p>Мы изменили структуру сайта, и теперь запрошенный Вами документ, скорее всего, переименован.<br />
+<br />
+Воспользуйтесь меню для перехода в нужный раздел.<br />
+<br />
+<ul class="sitemap"><li><a href="/anesteziologiya-i-reanimatsiya.html" target="_self">Анестезиология и реанимация</a><ul><li><a href="/trubka-endotrakhealnaya-tip-merfi.html" target="_self">Трубка эндотрахеальная тип «Мерфи»</a></li><li><a href="/endotraheal-tube-armir.html" target="_self">Трубка эндотрахеальная армированная тип «Мерфи»</a></li><li><a href="/trubka-endotrakhealnaya-polyarnaya-tip-merfi.html" target="_self">Трубка эндотрахеальная полярная тип «Мерфи»</a></li><li><a href="/endotraheal-tube.html" target="_self">Трубка эндотрахеальная с каналом для надманжеточной аспирации</a></li><li><a href="/stilet.html" target="_self">Стилет для ЭТ</a></li><li><a href="/fixator.html" target="_self">Загубник–фиксатор для ЭТ</a></li><li><a href="/trubka-trakheostomicheskaya.html" target="_self">Трубка  трахеостомическая</a></li><li><a href="/zond-aspiratsionyy-s-vakuum-kontrolem-tip-karkon-tip-vakon.html" target="_self">Зонд аспирационый с вакуумконтролем тип Karkon тип Vakon</a></li><li><a href="/mucus-extractor.html" target="_self">Зонд аспирационный с мукусэкстрактором</a></li><li><a href="/kanula.html" target="_self">Канюля назальная кислородная</a></li><li><a href="/maska.html" target="_self">Маска лицевая кислородная</a></li><li><a href="/epidural-catheter.html" target="_self">Катетер эпидуральный</a></li><li><a href="/nabor-dlya-epiduralnoy-anestezii-epix-miniset.html" target="_self">Набор для эпидуральной анестезии «EPIX MINISET»</a></li><li><a href="/nabor-dlya-epiduralnoy-anestezii-maxiset.html" target="_self">Набор для эпидуральной анестезии «MAXISET»</a></li><li><a href="/igla-spinalnaya-spinex.html" target="_self">Игла спинальная SPINEX</a></li><li><a href="/nabory-dlya-kateterizatsii-tsentralnykh-ven.html" target="_self">Наборы для катетеризации центральных вен</a></li><li><a href="/kateter-dlya-tsentralnykh-ven-venoflex.html" target="_self">Катетер для центральных вен VENOFLEX</a></li><li><a href="/sistema-dlya-enteralnogo-pitaniya.html" target="_self">Система для энтерального питания</a></li><li><a href="/zond-pitatelnyy-nazogastralnyy.html" target="_self">Зонд питательный назогастральный</a></li><li><a href="/nabor-dlya-tsentralnykh-ven-venoflex.html" target="_self">Набор для центральных вен VENOFLEX</a></li><li><a href="/kateter-dlya-tsentralnykh-ven-odnokhodovoy-venocent.html" target="_self">Катетер для центральных вен VENOCENT</a></li><li><a href="/epidural-filter.html" target="_self">Фильтр бактериовирусный</a></li><li><a href="/endotraheal-tube-parker.html" target="_self">Трубка эндотрахеальная тип  «ПАРКЕР»</a></li><li><a href="/liniya-udlinitelnaya-infuzionnaya.html" target="_self">Линия удлинительная инфузионная</a></li><li><a href="/igla-spinalnaya-atravmatichnaya.html" target="_self">Игла спинальная атравматичная</a></li><li><a href="/epidural-needle.html" target="_self">Игла эпидуральная (Туохи)</a></li><li><a href="/pvx.html" target="_self">Трубки ПВХ</a></li><li><a href="/konnektor.html" target="_self">Коннектор для соединения трубок</a></li></ul></li><li><a href="/gastroenterologiya.html" target="_self">Гастроэнтерология</a><ul><li><a href="/zond-duodenalnyy.html" target="_self">Зонд дуоденальный</a></li><li><a href="/zond-zheludochnyy.html" target="_self">Зонд  желудочный</a></li></ul></li><li><a href="/urologiya.html" target="_self">Урология</a><ul><li><a href="/mochepriemnik-nosimyy-nozhnoy.html" target="_self">Мочеприемник носимый ножной</a></li><li><a href="/mochepriemnik-nosimyy-nozhnoy-lyuks.html" target="_self">Мочеприемник носимый ножной Люкс</a></li><li><a href="/mochepriemnik-prikrovatnyy.html" target="_self">Мочеприемник прикроватный</a></li><li><a href="/mochepriemnik-prikrovatnyy-lyuks.html" target="_self">Мочеприемник прикроватный Люкс</a></li><li><a href="/mochepriemnik-detskiy-universalnyy-dlya-devochek-kat-dlya-malchikov.html" target="_self">Мочеприемник детский  универсальный  для девочек  для мальчиков</a></li><li><a href="/kateter-nelatona.html" target="_self">Катетер Нелатона</a></li><li><a href="/kateter-foleya.html" target="_self">Катетер Фолея</a></li><li><a href="/kateter-foleya-s-konchikom-timanna-2-kh-khodovoy.html" target="_self">Катетер Фолея с кончиком Тиманна  2х ходовой</a></li><li><a href="/kateter-foleya-cilikonovyy-2-kh-khodovoy.html" target="_self">Катетер Фолея cиликоновый  2х ходовой</a></li><li><a href="/kateter-foleya-aquacath-s-gidrofilnym-pokrytiem.html" target="_self">Катетер Фолея AquaCath с гидрофильным покрытием</a></li><li><a href="/kateter-nelatona-s-konchikom-timanna.html" target="_self">Катетер Нелатона с кончиком Тиманна</a></li><li><a href="/kateter-nelatona-aquacath-s-gidrofilnym-pokrytiem.html" target="_self">Катетер Нелатона AquaCath с гидрофильным покрытием</a></li><li><a href="/kateter-urologicheskiy-zhenskiy.html" target="_self">Катетер урологический женский</a></li><li><a href="/kateter-urologicheskiy-muzhskoy-naruzhnyy.html" target="_self">Катетер урологический мужской наружный</a></li><li><a href="/kateter-malekota.html" target="_self">Катетер Малекота</a></li></ul></li><li><a href="/proktologiya.html" target="_self">Проктология</a><ul><li><a href="/kalopriemnik-odnokomponentnyy-zakrytyy.html" target="_self">Калоприемник однокомпонентный закрытый</a></li><li><a href="/detskaya-gazootvodnaya-trubkazond-rektalnyy.html" target="_self">Детская газоотводная трубказонд ректальный</a></li><li><a href="/kalopriemnik-odnokomponentnyy-otkrytyy.html" target="_self">Калоприемник однокомпонентный открытый</a></li><li><a href="/kalopriemnik-2-kh-komponentnyy-otkrytyy.html" target="_self">Калоприемник  2х компонентный открытый</a></li><li><a href="/kruzhka-esmarkha.html" target="_self">Кружка Эсмарха</a></li><li><a href="/zond-rektalnyy.html" target="_self">Зонд ректальный</a></li></ul></li><li><a href="/vnutrivennaya-terapiya.html" target="_self">Внутривенная терапия</a><ul><li><a href="/shprits-odnorazovyy-s-igloy.html" target="_self">Шприц одноразовый (с иглой)</a></li><li><a href="/shprits-insulin-tuberkulinovyy.html" target="_self">Шприц инсулинтуберкулиновый</a></li><li><a href="/igla-inyektsionnaya-luer.html" target="_self">Игла инъекционная «луeр»</a></li><li><a href="/zhgut-venoznyy.html" target="_self">Жгут венозный</a></li><li><a href="/salfetka-spirtovaya.html" target="_self">Салфетка спиртовая</a></li><li><a href="/ustroystvo-infuzionnoe-odnorazovogo-ispolzovaniya-s-igloy.html" target="_self">Устройство инфузионное одноразового использования (с иглой)</a></li><li><a href="/kateter-dlya-vlivaniy-v-malye-veny-igla-babochka.html" target="_self">Катетер для вливаний в малые вены («Иглабабочка»)</a></li><li><a href="/kranik-trekhkhodovoy-dlya-infuzionnykh-magistraley.html" target="_self">Краник трехходовой для инфузионных магистралей</a></li><li><a href="/katetery-vnutrivennye-perifericheskie.html" target="_self">Катетеры внутривенные периферические</a></li><li><a href="/regulyator-skorosti-infuzii-dlya-vnutrivennykh-sistem-medireg.html" target="_self">Регулятор скорости инфузии для внутривенных систем MEDIREG</a></li></ul></li><li><a href="/akusherstvo-i-ginekologiya.html" target="_self">Акушерство и гинекология</a><ul><li><a href="/shchetka-tserveks-brash-vorsistaya.html" target="_self">Щетка ЦервексБраш ворсистая</a></li><li><a href="/shchetka-tserveks-brash.html" target="_self">Щетка ЦервексБраш</a></li><li><a href="/lozhka-folkmana.html" target="_self">Ложка Фолькмана</a></li><li><a href="/shchetka-tservikalnaya.html" target="_self">Щетка цервикальная</a></li><li><a href="/kateter-pupochnyy.html" target="_self">Катетер Пупочный</a></li><li><a href="/nabor-dlya-novorozhdennykh.html" target="_self">Набор для новорожденных</a></li><li><a href="/zazhim-pupochnyy.html" target="_self">Зажим пупочный</a></li><li><a href="/zerkalo-vaginalnoe-po-kusko.html" target="_self">Зеркало вагинальное по Куско</a></li><li><a href="/shpatel-eyra.html" target="_self">Шпатель Эйра</a></li></ul></li><li><a href="/khirurgiya.html" target="_self">Хирургия</a><ul><li><a href="/skarifikator-kozhnyy-s-bokovym-kopyem.html" target="_self">Скарификатор кожный с боковым копьем</a></li><li><a href="/sistema-drenazhnaya-s-kateterom-tipa-redon.html" target="_self">Система дренажная  с катетером типа Редон</a></li><li><a href="/lezvie-dlya-skalpelya.html" target="_self">Лезвие для скальпеля</a></li><li><a href="/meshok-drenazhnyy.html" target="_self">Мешок дренажный</a></li><li><a href="/trubka-drenazhnaya.html" target="_self">Трубка дренажная</a></li><li><a href="/drenazhnaya-trubka-kera.html" target="_self">Дренажная трубка Кера</a></li><li><a href="/emkosti-dlya-drenazha-ran.html" target="_self">Емкости для дренажа ран</a></li><li><a href="/stanok-dlya-britya-operatsionnogo-polya.html" target="_self">Станок для бритья операционного поля</a></li><li><a href="/skalpel-s-plastmassovoy-ruchkoy.html" target="_self">Скальпель с пластмассовой ручкой</a></li><li><a href="/konnektor-dlya-soedineniya-drenazhnykh-trubok.html" target="_self">Коннектор для соединения дренажных трубок</a></li></ul></li><li><a href="/terapiya.html" target="_self">Терапия</a><ul><li><a href="/shpatel-terapevticheskiy.html" target="_self">Шпатель  терапевтический</a></li></ul></li><li><a href="/fiksiruyushchie-materialy.html" target="_self">Фиксирующие материалы</a><ul><li><a href="/plastyr-3-kh-polosochnyy.html" target="_self">Пластырь 3х полосочный</a></li><li><a href="/plastyr-dlya-fiksatsii-vnutrivennykh-tsentralnykh-kateterov.html" target="_self">Пластырь для фиксации внутривенных центральных катетеров</a></li><li><a href="/plastyr-dlya-fiksatsii-vnutrivennykh-perifericheskikh-kateterov.html" target="_self">Пластырь для фиксации  внутривенных периферических  катетеров</a></li></ul></li><li><a href="/stetoskopes.html" target="_self">Стетоскопы</a><ul><li><a href="/odnostoronniy-stetoskop-model-as-11.html" target="_self">Односторонний стетоскоп Модель AS11</a></li><li><a href="/odnostoronniy-stetoskop-model-as-12.html" target="_self">Односторонний стетоскоп Модель AS12</a></li><li><a href="/odnostoronniy-stetoskop-serii-delux-emodel-as-61-deluxe.html" target="_self">Односторонний стетоскоп серии DELUXE Модель AS61</a></li><li><a href="/dvustoronniy-stetoskop-model-as-21.html" target="_self">Двусторонний стетоскоп Модель AS21</a></li><li><a href="/dvustoronniy-stetoskop-model-as-22.html" target="_self">Двусторонний стетоскоп Модель AS22</a></li><li><a href="/dvustoronniy-pediatricheskiy-stetoskop-model-as-31.html" target="_self">Двусторонний педиатрический стетоскоп Модель AS31</a></li><li><a href="/dvustoronniy-neonatalnyy-stetoskop-model-as-31n.html" target="_self">Двусторонний неонатальный стетоскоп Модель AS31N</a></li><li><a href="/dvustoronniy-pediatricheskiy-stetoskop-model-as-32.html" target="_self">Двусторонний педиатрический стетоскоп Модель AS32</a></li><li><a href="/dvustoronniy-stetoskop-s-nekholodyashchim-koltsom-model-as-42.html" target="_self">Двусторонний стетоскоп с нехолодящим кольцом Модель AS42</a></li><li><a href="/dvustoronniy-kardiologicheskiy-stetoskop-model-as-62-deluxe.html" target="_self">Двусторонний  кардиологический стетоскоп AS62 DELUXE</a></li><li><a href="/stetoskop-rappaporta-model-as-50-as-50e.html" target="_self">Стетоскоп Раппапорта Модель АS50 AS50E</a></li><li><a href="/dvustoronniy-kardiologicheskiy-stetoskopy-serii-deluxe-model-as-62-deluxe-gold.html" target="_self">Двусторонний кардиологический стетоскоп AS62 DELUXE GOLD</a></li><li><a href="/stetoskopy-rappaporta-model-as-51-as-51e.html" target="_self">Стетоскопы Раппапорта Модель АS51 AS51E</a></li></ul></li><li><a href="/tonometry.html" target="_self">Тонометры</a><ul><li><a href="/tonometr-model-at-10-klassicheskiy-tip.html" target="_self">Тонометр  Модель АТ  10 Классический тип</a></li><li><a href="/tonometr-model-at-11-klassicheskiy-tip.html" target="_self">Тонометр  Модель АТ  11 Классический тип</a></li><li><a href="/tonometrmodel-at-12-klassicheskiy-tip-so-vstroennym-stetoskopom.html" target="_self">Тонометр  Модель АТ  12 Классический тип со встроенным стетоскопом</a></li><li><a href="/tonometrmodel-at-13-klassicheskiy-tip-so-vstroennym-stetoskopom.html" target="_self">Тонометр  Модель АТ  13 Классический тип со встроенным стетоскопом</a></li><li><a href="/tonometr-model-at-20-kombinirovannyy-tip-palm.html" target="_self">Тонометр  Модель АТ  20 Комбинированный тип</a></li><li><a href="/tonometr-model-at-21-kombinirovannyy-tip-palm.html" target="_self">Тонометр  Модель АТ  21 Комбинированный тип</a></li><li><a href="/tonometr-model-at-30-kombinirovannyy-tip-palm.html" target="_self">Тонометр Модель АТ  30 Комбинированный тип</a></li><li><a href="/tonometr-model-at-22-kombinirovannyy-tip-palm-so-vstroennym-stetoskopom.html" target="_self">Тонометр  Модель АТ  22 Комбинированный тип  со встроенным стетоскопом</a></li><li><a href="/tonometr-model-at-41-statsionarnyy-tip-1.html" target="_self">Тонометр  Модель АТ  41 Стационарный тип</a></li><li><a href="/tonometr-model-at-31-kombinirovannyy-tip-palm.html" target="_self">Тонометр Модель АТ  31 Комбинированный тип</a></li><li><a href="/manzhety-dlya-tonometrov.html" target="_self">Манжеты для тонометров</a></li></ul></li><li><a href="/" target="_self">На главную</a></li><li><a href="/o-kompanii.html" target="_self">О компании</a></li><li><a href="/katalog-produktsii-kompanii-apexmed.html" target="_self">Каталог продукции</a></li><li><a href="/presstsentr.html" target="_self">Прессцентр</a></li><li><a href="/sertifikaty.html" target="_self">Сертификаты</a></li><li><a href="/vakansii.html" target="_self">Вакансии</a></li><li><a href="/kontakty/regiony.html" target="_self">Контакты</a></li><li><a href="http://www.sensitec.ru" target="_self">Медицинское оборудование SENSITEC</a></li><li><a href="#" target="_self">Вход</a></li><li><a href="/o-kompanii.html" target="_self">О компании</a></li><li><a href="/sertifikaty.html" target="_self">Сертификаты</a></li><li><a href="/nagrady.html" target="_self">Награды</a></li><li><a href="/politika-v-oblasti-kachestva.html" target="_self">Политика качества</a></li><li><a href="/vakansii.html" target="_self">Вакансии</a></li><li><a href="/proekty.html" target="_self">Проекты</a></li><li><a href="/kontakty/regiony.html" target="_self">Apexmed в регионах</a></li><li><a href="/contacts/menedzhery.html" target="_self">Центральный офис</a></li><li><a href="/contacts/gde-kupit.html" target="_self">Где купить</a></li><li><a href="/presstsentr.html" target="_self">Все события</a></li><li><a href="/presscenter/novosti-kompanii.html" target="_self">Новости компании</a></li><li><a href="/presscenter/mirovye-novosti.html" target="_self">Мировые новости</a></li><li><a href="/presscenter/aktsii.html" target="_self">Акции</a></li><li><a href="/presscenter/vystavki-i-konferentsii.html" target="_self">Выставки и конференции</a></li><li><a href="/presscenter/statyi.html" target="_self">Статьи</a></li><li><a href="/presscenter/otzyvy-i-nagrady.html" target="_self">Отзывы</a></li></ul></p>
+ </div>
+<div class="iconbox">
+    <img alt="" src="uploads/images/earth.jpg" border="0" />
+</div>
+<div class="clear"></div>
+<div class="description">
+<!-- EMPTY -->
+</div>
+</div>
+
+</div>
+</div>
+<div id="body_left" class="menu_r">
+<h3 class="line_b topmenu_r">Каталог продукции</h3>
+<!-- vnavi --><ul><li><a href='/anesteziologiya-i-reanimatsiya.html' title="Анестезиология и реанимация" target="_self">Анестезиология и реанимация</a></li><li><a href='/gastroenterologiya.html' title="Гастроэнтерология" target="_self">Гастроэнтерология</a></li><li><a href='/urologiya.html' title="Урология" target="_self">Урология</a></li><li><a href='/proktologiya.html' title="Проктология" target="_self">Проктология</a></li><li><a href='/vnutrivennaya-terapiya.html' title="Внутривенная терапия" target="_self">Внутривенная терапия</a></li><li><a href='/akusherstvo-i-ginekologiya.html' title="Акушерство и гинекология" target="_self">Акушерство и гинекология</a></li><li><a href='/khirurgiya.html' title="Хирургия" target="_self">Хирургия</a></li><li><a href='/terapiya.html' title="Терапия" target="_self">Терапия</a></li><li><a href='/fiksiruyushchie-materialy.html' title="Фиксирующие материалы" target="_self">Фиксирующие материалы</a></li><li><a href='/stetoskopes.html' title="Стетоскопы" target="_self">Стетоскопы</a></li><li><a href='/tonometry.html' title="Тонометры" target="_self">Тонометры</a></li></ul><!-- /vnavi --><div class="botmenu_r">
+<h3>Последние новости</h3>
+<div class="news_ticker"><dl>
+<dt><small><em>13.09.2010</em> • Выставки и конференции</small></dt>
+    <dd><a  href="/presscenter/aricle/grafik-uchastiya-kompanii-medikom-v-spetsializirovannykh-vystavkakh-i-konferentsiyakh-na-2010-god.html" title="Компания &laquo;МЕДИКОМ&raquo; активно участвует во всех ключевых мероприятиях в области анестезиологии, гинекологии и онкологии&nbsp;"> Компания &laquo;МЕДИКОМ&raquo; активно участвует во всех ключевых мероприятиях в области анестезиологии, гинекологии и онкологии&nbsp;</a></dd>
+</dl><dl>
+<dt><small><em>01.09.2010</em> • Новости компании</small></dt>
+    <dd><a  href="/presscenter/aricle.html" title="Коллектив компании &laquo;МЕДИКОМ&raquo; поздравляет своих клиентов и партнеров с Днем знаний и началом учебного года!&nbsp;"> Коллектив компании &laquo;МЕДИКОМ&raquo; поздравляет своих клиентов и партнеров с Днем знаний и началом учебного года!&nbsp;</a></dd>
+</dl>
+<dl>
+<dt><small><a href="/press-tsentr.html">все новости » </a></small></dt>
+ </dl></div>
+<object style="z-index: 1;" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" width="200" height="300" id="banner_medikom_01" align="middle">
+<param name="allowScriptAccess" value="sameDomain" />
+<param name="allowFullScreen" value="false" />
+<param name="movie" value="/uploads/banner/banner_medikom_01.swf" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" style="z-index: 3;"/><embed src="/uploads/banner/banner_medikom_01.swf" quality="high" bgcolor="#ffffff" width="200" height="300" name="banner_medikom_01" align="middle" allowscriptaccess="sameDomain" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer"></embed>
+  </object></div></div>
+</div>
+</div>
+<!-------------------------------------------------------------------------------------------
+  footer
+---------------------------------------------------------------------------------------------->
+    <div class="ssi_footer_container round">
+	<!-- hnavi --><ul class="nav"><li><a href="/" title="На главную" target="_self">На главную</a></li><li><a href="/o-kompanii.html" title="О компании" target="_self">О компании</a></li><li><a href="/katalog-produktsii-kompanii-apexmed.html" title="Каталог продукции" target="_self">Каталог продукции</a></li><li><a href="/presstsentr.html" title="Прессцентр" target="_self">Прессцентр</a></li><li><a href="/sertifikaty.html" title="Сертификаты" target="_self">Сертификаты</a></li><li><a href="/vakansii.html" title="Вакансии" target="_self">Вакансии</a></li><li><a href="/kontakty/regiony.html" title="Контакты" target="_self">Контакты</a></li><li><a href="http://www.sensitec.ru" title="Медицинское оборудование SENSITEC" target="_self">Медицинское оборудование SENSITEC</a></li><li><a href="#" title="Вход" target="_self">Вход</a></li></ul><!-- /hnavi -->    </div>
+    <div class="sub_footer">
+    <div class="sub_footer_right">Copyright &copy; 2004 - 2009 APEXMED International. All rights reserved.</div>
+      <h4>Качество продукта — качество жизни!</h4>
+   </div></div>
+</div>
+</div>
+</body>
+<!-- Yandex.Metrika -->
+<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+<div style="display:none;"><script type="text/javascript">
+try { var yaCounter1387977 = new Ya.Metrika(1387977); } catch(e){}
+</script></div>
+<noscript><div style="position:absolute"><img src="//mc.yandex.ru/watch/1387977" alt="" /></div></noscript>
+<!-- /Yandex.Metrika -->
+</html>

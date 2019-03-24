@@ -1,0 +1,2007 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gpx version="1.1" creator="GPX Editor 1.3.26.1316" xmlns="http://www.topografix.com/GPX/1/1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.topografix.com/GPX/1/1 http://www.topografix.com/GPX/1/1/gpx.xsd">
+	<name>Snowdrop Vabole Liksna</name>
+	<desc>Export from Prune</desc>
+	<trk><name>Snowdrop Vabole Liksna</name><number>1</number><trkseg>
+<trkpt lat="56.040916" lon="26.457567">
+			<ele>108.141663</ele>
+			<time>2011-04-03T04:43:50Z</time>
+			<desc>lat.=56.040916, lon.=26.457567, Alt.=108.141663m. Speed=0.720000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.040775" lon="26.456207">
+			<ele>113.963928</ele>
+			<time>2011-04-03T04:47:28Z</time>
+			<desc>lat.=56.040775, lon.=26.456207, Alt.=113.963928m. Speed=4.896000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.040749" lon="26.454643">
+			<ele>110.639709</ele>
+			<time>2011-04-03T04:49:17Z</time>
+			<desc>lat.=56.040749, lon.=26.454643, Alt.=110.639709m. Speed=4.176000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.040886" lon="26.453262">
+			<ele>107.145569</ele>
+			<time>2011-04-03T04:51:42Z</time>
+			<desc>lat.=56.040886, lon.=26.453262, Alt.=107.145569m. Speed=5.940000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.041294" lon="26.452385">
+			<ele>109.069397</ele>
+			<time>2011-04-03T04:52:40Z</time>
+			<desc>lat.=56.041294, lon.=26.452385, Alt.=109.069397m. Speed=5.400000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.041492" lon="26.45112">
+			<ele>105.430725</ele>
+			<time>2011-04-03T04:53:39Z</time>
+			<desc>lat.=56.041492, lon.=26.451120, Alt.=105.430725m. Speed=4.788000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.041691" lon="26.449886">
+			<ele>106.368225</ele>
+			<time>2011-04-03T04:54:39Z</time>
+			<desc>lat.=56.041691, lon.=26.449886, Alt.=106.368225m. Speed=3.456000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.041893" lon="26.448648">
+			<ele>110.624084</ele>
+			<time>2011-04-03T04:55:42Z</time>
+			<desc>lat.=56.041893, lon.=26.448648, Alt.=110.624084m. Speed=6.156000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.041523" lon="26.447708">
+			<ele>108.25885</ele>
+			<time>2011-04-03T04:56:57Z</time>
+			<desc>lat.=56.041523, lon.=26.447708, Alt.=108.258850m. Speed=5.688000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.040859" lon="26.447302">
+			<ele>110.645569</ele>
+			<time>2011-04-03T04:59:46Z</time>
+			<desc>lat.=56.040859, lon.=26.447302, Alt.=110.645569m. Speed=4.968000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.040928" lon="26.445827">
+			<ele>115.456116</ele>
+			<time>2011-04-03T05:01:30Z</time>
+			<desc>lat.=56.040928, lon.=26.445827, Alt.=115.456116m. Speed=2.520000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.041634" lon="26.445499">
+			<ele>112.770569</ele>
+			<time>2011-04-03T05:04:15Z</time>
+			<desc>lat.=56.041634, lon.=26.445499, Alt.=112.770569m. Speed=2.628000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.041481" lon="26.444176">
+			<ele>113.051819</ele>
+			<time>2011-04-03T05:05:18Z</time>
+			<desc>lat.=56.041481, lon.=26.444176, Alt.=113.051819m. Speed=5.256000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.04126" lon="26.442951">
+			<ele>111.948303</ele>
+			<time>2011-04-03T05:06:15Z</time>
+			<desc>lat.=56.041260, lon.=26.442951, Alt.=111.948303m. Speed=5.616000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.041126" lon="26.441597">
+			<ele>109.276428</ele>
+			<time>2011-04-03T05:07:38Z</time>
+			<desc>lat.=56.041126, lon.=26.441597, Alt.=109.276428m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.040874" lon="26.440458">
+			<ele>111.655334</ele>
+			<time>2011-04-03T05:09:07Z</time>
+			<desc>lat.=56.040874, lon.=26.440458, Alt.=111.655334m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.040695" lon="26.439188">
+			<ele>113.856506</ele>
+			<time>2011-04-03T05:10:10Z</time>
+			<desc>lat.=56.040695, lon.=26.439188, Alt.=113.856506m. Speed=4.356000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.04044" lon="26.438044">
+			<ele>116.266663</ele>
+			<time>2011-04-03T05:11:33Z</time>
+			<desc>lat.=56.040440, lon.=26.438044, Alt.=116.266663m. Speed=5.328000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.040192" lon="26.436874">
+			<ele>114.188538</ele>
+			<time>2011-04-03T05:13:00Z</time>
+			<desc>lat.=56.040192, lon.=26.436874, Alt.=114.188538m. Speed=5.976000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.040047" lon="26.435535">
+			<ele>110.69635</ele>
+			<time>2011-04-03T05:14:01Z</time>
+			<desc>lat.=56.040047, lon.=26.435535, Alt.=110.696350m. Speed=4.716000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.039948" lon="26.434109">
+			<ele>113.028381</ele>
+			<time>2011-04-03T05:16:10Z</time>
+			<desc>lat.=56.039948, lon.=26.434109, Alt.=113.028381m. Speed=4.104000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.039829" lon="26.432722">
+			<ele>120.081116</ele>
+			<time>2011-04-03T05:17:26Z</time>
+			<desc>lat.=56.039829, lon.=26.432722, Alt.=120.081116m. Speed=4.680000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.039745" lon="26.431274">
+			<ele>130.23645</ele>
+			<time>2011-04-03T05:18:36Z</time>
+			<desc>lat.=56.039745, lon.=26.431274, Alt.=130.236450m. Speed=4.500000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.039684" lon="26.429783">
+			<ele>128.310669</ele>
+			<time>2011-04-03T05:19:47Z</time>
+			<desc>lat.=56.039684, lon.=26.429783, Alt.=128.310669m. Speed=4.104000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.039631" lon="26.428255">
+			<ele>127.239319</ele>
+			<time>2011-04-03T05:26:35Z</time>
+			<desc>lat.=56.039631, lon.=26.428255, Alt.=127.239319m. Speed=4.644000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.039551" lon="26.426788">
+			<ele>129.572388</ele>
+			<time>2011-04-03T05:29:25Z</time>
+			<desc>lat.=56.039551, lon.=26.426788, Alt.=129.572388m. Speed=4.752000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.039448" lon="26.425379">
+			<ele>124.438538</ele>
+			<time>2011-04-03T05:30:32Z</time>
+			<desc>lat.=56.039448, lon.=26.425379, Alt.=124.438538m. Speed=4.428000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.03936" lon="26.423935">
+			<ele>128.853638</ele>
+			<time>2011-04-03T05:31:39Z</time>
+			<desc>lat.=56.039360, lon.=26.423935, Alt.=128.853638m. Speed=4.140000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.039268" lon="26.422489">
+			<ele>123.420959</ele>
+			<time>2011-04-03T05:33:21Z</time>
+			<desc>lat.=56.039268, lon.=26.422489, Alt.=123.420959m. Speed=0.108000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.038525" lon="26.422194">
+			<ele>117.725647</ele>
+			<time>2011-04-03T05:38:24Z</time>
+			<desc>lat.=56.038525, lon.=26.422194, Alt.=117.725647m. Speed=5.112000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.037819" lon="26.421858">
+			<ele>116.661194</ele>
+			<time>2011-04-03T05:40:07Z</time>
+			<desc>lat.=56.037819, lon.=26.421858, Alt.=116.661194m. Speed=3.384000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.036991" lon="26.421999">
+			<ele>108.585022</ele>
+			<time>2011-04-03T05:46:29Z</time>
+			<desc>lat.=56.036991, lon.=26.421999, Alt.=108.585022m. Speed=3.924000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.036301" lon="26.422365">
+			<ele>117.692444</ele>
+			<time>2011-04-03T05:52:34Z</time>
+			<desc>lat.=56.036301, lon.=26.422365, Alt.=117.692444m. Speed=1.872000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.035503" lon="26.422148">
+			<ele>106.704163</ele>
+			<time>2011-04-03T05:56:44Z</time>
+			<desc>lat.=56.035503, lon.=26.422148, Alt.=106.704163m. Speed=5.004000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.035164" lon="26.42116">
+			<ele>112.719788</ele>
+			<time>2011-04-03T05:58:14Z</time>
+			<desc>lat.=56.035164, lon.=26.421160, Alt.=112.719788m. Speed=3.312000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.034847" lon="26.42013">
+			<ele>105.891663</ele>
+			<time>2011-04-03T05:59:57Z</time>
+			<desc>lat.=56.034847, lon.=26.420130, Alt.=105.891663m. Speed=2.664000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.034401" lon="26.419323">
+			<ele>118.752991</ele>
+			<time>2011-04-03T06:00:59Z</time>
+			<desc>lat.=56.034401, lon.=26.419323, Alt.=118.752991m. Speed=3.852000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.033684" lon="26.419014">
+			<ele>118.174866</ele>
+			<time>2011-04-03T06:02:51Z</time>
+			<desc>lat.=56.033684, lon.=26.419014, Alt.=118.174866m. Speed=2.376000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.033302" lon="26.418106">
+			<ele>119.116272</ele>
+			<time>2011-04-03T06:05:36Z</time>
+			<desc>lat.=56.033302, lon.=26.418106, Alt.=119.116272m. Speed=3.312000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.032982" lon="26.417072">
+			<ele>130.6427</ele>
+			<time>2011-04-03T06:07:02Z</time>
+			<desc>lat.=56.032982, lon.=26.417072, Alt.=130.642700m. Speed=2.016000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.032536" lon="26.416246">
+			<ele>133.509888</ele>
+			<time>2011-04-03T06:09:54Z</time>
+			<desc>lat.=56.032536, lon.=26.416246, Alt.=133.509888m. Speed=2.592000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.032055" lon="26.415499">
+			<ele>128.002075</ele>
+			<time>2011-04-03T06:11:34Z</time>
+			<desc>lat.=56.032055, lon.=26.415499, Alt.=128.002075m. Speed=2.808000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.031273" lon="26.415281">
+			<ele>130.939575</ele>
+			<time>2011-04-03T06:15:09Z</time>
+			<desc>lat.=56.031273, lon.=26.415281, Alt.=130.939575m. Speed=2.088000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.030708" lon="26.414675">
+			<ele>124.577209</ele>
+			<time>2011-04-03T06:17:35Z</time>
+			<desc>lat.=56.030708, lon.=26.414675, Alt.=124.577209m. Speed=3.996000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.030342" lon="26.41374">
+			<ele>122.563538</ele>
+			<time>2011-04-03T06:20:34Z</time>
+			<desc>lat.=56.030342, lon.=26.413740, Alt.=122.563538m. Speed=3.240000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.030167" lon="26.412443">
+			<ele>128.709106</ele>
+			<time>2011-04-03T06:22:31Z</time>
+			<desc>lat.=56.030167, lon.=26.412443, Alt.=128.709106m. Speed=1.116000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.030411" lon="26.411272">
+			<ele>125.917053</ele>
+			<time>2011-04-03T06:42:05Z</time>
+			<desc>lat.=56.030411, lon.=26.411272, Alt.=125.917053m. Speed=2.664000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.030899" lon="26.410526">
+			<ele>113.9151</ele>
+			<time>2011-04-03T06:44:32Z</time>
+			<desc>lat.=56.030899, lon.=26.410526, Alt.=113.915100m. Speed=0.288000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.031387" lon="26.409769">
+			<ele>119.1651</ele>
+			<time>2011-04-03T06:57:05Z</time>
+			<desc>lat.=56.031387, lon.=26.409769, Alt.=119.165100m. Speed=2.088000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.031372" lon="26.408184">
+			<ele>120.151428</ele>
+			<time>2011-04-03T06:59:14Z</time>
+			<desc>lat.=56.031372, lon.=26.408184, Alt.=120.151428m. Speed=1.440000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.03178" lon="26.407295">
+			<ele>103.176819</ele>
+			<time>2011-04-03T07:00:28Z</time>
+			<desc>lat.=56.031780, lon.=26.407295, Alt.=103.176819m. Speed=3.096000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.032417" lon="26.406841">
+			<ele>100.754944</ele>
+			<time>2011-04-03T07:03:39Z</time>
+			<desc>lat.=56.032417, lon.=26.406841, Alt.=100.754944m. Speed=3.636000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.032948" lon="26.406179">
+			<ele>97.75885</ele>
+			<time>2011-04-03T07:07:01Z</time>
+			<desc>lat.=56.032948, lon.=26.406179, Alt.=97.758850m. Speed=0.252000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.033409" lon="26.405382">
+			<ele>98.807678</ele>
+			<time>2011-04-03T07:08:33Z</time>
+			<desc>lat.=56.033409, lon.=26.405382, Alt.=98.807678m. Speed=3.816000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.033051" lon="26.404411">
+			<ele>101.909241</ele>
+			<time>2011-04-03T07:10:06Z</time>
+			<desc>lat.=56.033051, lon.=26.404411, Alt.=101.909241m. Speed=3.240000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.032799" lon="26.403227">
+			<ele>101.153381</ele>
+			<time>2011-04-03T07:12:09Z</time>
+			<desc>lat.=56.032799, lon.=26.403227, Alt.=101.153381m. Speed=3.312000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.032326" lon="26.402458">
+			<ele>98.678772</ele>
+			<time>2011-04-03T07:14:56Z</time>
+			<desc>lat.=56.032326, lon.=26.402458, Alt.=98.678772m. Speed=3.456000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.031696" lon="26.401966">
+			<ele>109.592834</ele>
+			<time>2011-04-03T07:33:52Z</time>
+			<desc>lat.=56.031696, lon.=26.401966, Alt.=109.592834m. Speed=3.096000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.030849" lon="26.402056">
+			<ele>111.251038</ele>
+			<time>2011-04-03T07:35:23Z</time>
+			<desc>lat.=56.030849, lon.=26.402056, Alt.=111.251038m. Speed=4.392000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.030155" lon="26.402489">
+			<ele>108.333069</ele>
+			<time>2011-04-03T07:36:35Z</time>
+			<desc>lat.=56.030155, lon.=26.402489, Alt.=108.333069m. Speed=4.680000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.029491" lon="26.40291">
+			<ele>110.606506</ele>
+			<time>2011-04-03T07:37:41Z</time>
+			<desc>lat.=56.029491, lon.=26.402910, Alt.=110.606506m. Speed=4.104000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.028717" lon="26.403156">
+			<ele>104.936584</ele>
+			<time>2011-04-03T07:38:51Z</time>
+			<desc>lat.=56.028717, lon.=26.403156, Alt.=104.936584m. Speed=4.464000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.027878" lon="26.403055">
+			<ele>100.569397</ele>
+			<time>2011-04-03T07:40:10Z</time>
+			<desc>lat.=56.027878, lon.=26.403055, Alt.=100.569397m. Speed=4.932000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.027218" lon="26.40263">
+			<ele>104.329163</ele>
+			<time>2011-04-03T07:41:00Z</time>
+			<desc>lat.=56.027218, lon.=26.402630, Alt.=104.329163m. Speed=5.940000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.026558" lon="26.40307">
+			<ele>104.147522</ele>
+			<time>2011-04-03T07:42:03Z</time>
+			<desc>lat.=56.026558, lon.=26.403070, Alt.=104.147522m. Speed=5.076000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.02615" lon="26.403929">
+			<ele>105.838928</ele>
+			<time>2011-04-03T07:42:47Z</time>
+			<desc>lat.=56.026150, lon.=26.403929, Alt.=105.838928m. Speed=5.724000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.025463" lon="26.404301">
+			<ele>105.432678</ele>
+			<time>2011-04-03T07:43:41Z</time>
+			<desc>lat.=56.025463, lon.=26.404301, Alt.=105.432678m. Speed=6.012000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.024632" lon="26.404438">
+			<ele>105.817444</ele>
+			<time>2011-04-03T07:44:52Z</time>
+			<desc>lat.=56.024632, lon.=26.404438, Alt.=105.817444m. Speed=5.040000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.023792" lon="26.404568">
+			<ele>103.178772</ele>
+			<time>2011-04-03T07:45:58Z</time>
+			<desc>lat.=56.023792, lon.=26.404568, Alt.=103.178772m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.022968" lon="26.404436">
+			<ele>108.967834</ele>
+			<time>2011-04-03T07:46:59Z</time>
+			<desc>lat.=56.022968, lon.=26.404436, Alt.=108.967834m. Speed=5.220000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.022209" lon="26.40419">
+			<ele>108.891663</ele>
+			<time>2011-04-03T07:47:57Z</time>
+			<desc>lat.=56.022209, lon.=26.404190, Alt.=108.891663m. Speed=5.184000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.021568" lon="26.403746">
+			<ele>106.893616</ele>
+			<time>2011-04-03T07:48:57Z</time>
+			<desc>lat.=56.021568, lon.=26.403746, Alt.=106.893616m. Speed=5.616000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.021492" lon="26.402294">
+			<ele>100.981506</ele>
+			<time>2011-04-03T07:50:00Z</time>
+			<desc>lat.=56.021492, lon.=26.402294, Alt.=100.981506m. Speed=5.292000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.021572" lon="26.400841">
+			<ele>99.131897</ele>
+			<time>2011-04-03T07:51:02Z</time>
+			<desc>lat.=56.021572, lon.=26.400841, Alt.=99.131897m. Speed=5.580000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.021488" lon="26.399403">
+			<ele>95.94635</ele>
+			<time>2011-04-03T07:52:02Z</time>
+			<desc>lat.=56.021488, lon.=26.399403, Alt.=95.946350m. Speed=5.580000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.021313" lon="26.398108">
+			<ele>100.118225</ele>
+			<time>2011-04-03T07:53:06Z</time>
+			<desc>lat.=56.021313, lon.=26.398108, Alt.=100.118225m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.021141" lon="26.396801">
+			<ele>100.928772</ele>
+			<time>2011-04-03T07:54:01Z</time>
+			<desc>lat.=56.021141, lon.=26.396801, Alt.=100.928772m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.021152" lon="26.395224">
+			<ele>98.333069</ele>
+			<time>2011-04-03T07:55:07Z</time>
+			<desc>lat.=56.021152, lon.=26.395224, Alt.=98.333069m. Speed=5.652000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.021061" lon="26.393774">
+			<ele>98.104553</ele>
+			<time>2011-04-03T07:56:03Z</time>
+			<desc>lat.=56.021061, lon.=26.393774, Alt.=98.104553m. Speed=5.760000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.020996" lon="26.39229">
+			<ele>95.956116</ele>
+			<time>2011-04-03T07:57:56Z</time>
+			<desc>lat.=56.020996, lon.=26.392290, Alt.=95.956116m. Speed=5.544000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.020988" lon="26.390713">
+			<ele>96.13385</ele>
+			<time>2011-04-03T07:59:00Z</time>
+			<desc>lat.=56.020988, lon.=26.390713, Alt.=96.133850m. Speed=5.688000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.020901" lon="26.389269">
+			<ele>99.835022</ele>
+			<time>2011-04-03T08:00:01Z</time>
+			<desc>lat.=56.020901, lon.=26.389269, Alt.=99.835022m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.020691" lon="26.388008">
+			<ele>97.524475</ele>
+			<time>2011-04-03T08:01:11Z</time>
+			<desc>lat.=56.020691, lon.=26.388008, Alt.=97.524475m. Speed=4.464000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.020527" lon="26.386692">
+			<ele>96.622131</ele>
+			<time>2011-04-03T08:02:07Z</time>
+			<desc>lat.=56.020527, lon.=26.386692, Alt.=96.622131m. Speed=5.688000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.020348" lon="26.385416">
+			<ele>95.254944</ele>
+			<time>2011-04-03T08:03:40Z</time>
+			<desc>lat.=56.020348, lon.=26.385416, Alt.=95.254944m. Speed=1.152000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.02" lon="26.384451">
+			<ele>98.145569</ele>
+			<time>2011-04-03T08:07:00Z</time>
+			<desc>lat.=56.020000, lon.=26.384451, Alt.=98.145569m. Speed=4.392000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.019623" lon="26.383511">
+			<ele>96.022522</ele>
+			<time>2011-04-03T08:07:50Z</time>
+			<desc>lat.=56.019623, lon.=26.383511, Alt.=96.022522m. Speed=5.904000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.019245" lon="26.382593">
+			<ele>97.565491</ele>
+			<time>2011-04-03T08:08:59Z</time>
+			<desc>lat.=56.019245, lon.=26.382593, Alt.=97.565491m. Speed=4.824000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.018913" lon="26.381584">
+			<ele>93.159241</ele>
+			<time>2011-04-03T08:11:18Z</time>
+			<desc>lat.=56.018913, lon.=26.381584, Alt.=93.159241m. Speed=3.312000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.018452" lon="26.380804">
+			<ele>104.129944</ele>
+			<time>2011-04-03T08:12:24Z</time>
+			<desc>lat.=56.018452, lon.=26.380804, Alt.=104.129944m. Speed=3.456000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.017967" lon="26.38007">
+			<ele>103.452209</ele>
+			<time>2011-04-03T08:13:21Z</time>
+			<desc>lat.=56.017967, lon.=26.380070, Alt.=103.452209m. Speed=5.580000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.01767" lon="26.378981">
+			<ele>95.956116</ele>
+			<time>2011-04-03T08:14:11Z</time>
+			<desc>lat.=56.017670, lon.=26.378981, Alt.=95.956116m. Speed=6.552000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.016994" lon="26.378597">
+			<ele>90.6026</ele>
+			<time>2011-04-03T08:15:19Z</time>
+			<desc>lat.=56.016994, lon.=26.378597, Alt.=90.602600m. Speed=5.472000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.016525" lon="26.377842">
+			<ele>93.495178</ele>
+			<time>2011-04-03T08:16:10Z</time>
+			<desc>lat.=56.016525, lon.=26.377842, Alt.=93.495178m. Speed=3.708000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.016262" lon="26.37672">
+			<ele>108.270569</ele>
+			<time>2011-04-03T08:17:01Z</time>
+			<desc>lat.=56.016262, lon.=26.376720, Alt.=108.270569m. Speed=5.724000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.015903" lon="26.375769">
+			<ele>97.145569</ele>
+			<time>2011-04-03T08:18:18Z</time>
+			<desc>lat.=56.015903, lon.=26.375769, Alt.=97.145569m. Speed=5.760000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.015602" lon="26.374685">
+			<ele>95.995178</ele>
+			<time>2011-04-03T08:19:08Z</time>
+			<desc>lat.=56.015602, lon.=26.374685, Alt.=95.995178m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.01516" lon="26.373878">
+			<ele>95.985413</ele>
+			<time>2011-04-03T08:20:06Z</time>
+			<desc>lat.=56.015160, lon.=26.373878, Alt.=95.985413m. Speed=4.716000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.014496" lon="26.373449">
+			<ele>93.471741</ele>
+			<time>2011-04-03T08:21:13Z</time>
+			<desc>lat.=56.014496, lon.=26.373449, Alt.=93.471741m. Speed=4.356000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.013756" lon="26.373152">
+			<ele>85.241272</ele>
+			<time>2011-04-03T08:22:46Z</time>
+			<desc>lat.=56.013756, lon.=26.373152, Alt.=85.241272m. Speed=5.292000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.013195" lon="26.372538">
+			<ele>87.686584</ele>
+			<time>2011-04-03T08:23:41Z</time>
+			<desc>lat.=56.013195, lon.=26.372538, Alt.=87.686584m. Speed=5.688000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.012543" lon="26.372107">
+			<ele>89.424866</ele>
+			<time>2011-04-03T08:25:09Z</time>
+			<desc>lat.=56.012543, lon.=26.372107, Alt.=89.424866m. Speed=4.248000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.011837" lon="26.371744">
+			<ele>86.362366</ele>
+			<time>2011-04-03T08:27:12Z</time>
+			<desc>lat.=56.011837, lon.=26.371744, Alt.=86.362366m. Speed=4.392000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.011265" lon="26.371159">
+			<ele>82.799866</ele>
+			<time>2011-04-03T08:28:19Z</time>
+			<desc>lat.=56.011265, lon.=26.371159, Alt.=82.799866m. Speed=4.428000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.010742" lon="26.370483">
+			<ele>85.899475</ele>
+			<time>2011-04-03T08:29:14Z</time>
+			<desc>lat.=56.010742, lon.=26.370483, Alt.=85.899475m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.010159" lon="26.369938">
+			<ele>87.458069</ele>
+			<time>2011-04-03T08:30:36Z</time>
+			<desc>lat.=56.010159, lon.=26.369938, Alt.=87.458069m. Speed=3.636000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.010967" lon="26.369778">
+			<ele>86.502991</ele>
+			<time>2011-04-03T08:54:02Z</time>
+			<desc>lat.=56.010967, lon.=26.369778, Alt.=86.502991m. Speed=5.652000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.011585" lon="26.370277">
+			<ele>84.243225</ele>
+			<time>2011-04-03T08:54:55Z</time>
+			<desc>lat.=56.011585, lon.=26.370277, Alt.=84.243225m. Speed=0.324000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.011082" lon="26.369551">
+			<ele>83.022522</ele>
+			<time>2011-04-03T08:57:21Z</time>
+			<desc>lat.=56.011082, lon.=26.369551, Alt.=83.022522m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.010277" lon="26.369383">
+			<ele>84.143616</ele>
+			<time>2011-04-03T08:58:37Z</time>
+			<desc>lat.=56.010277, lon.=26.369383, Alt.=84.143616m. Speed=5.220000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.009865" lon="26.368456">
+			<ele>85.393616</ele>
+			<time>2011-04-03T09:00:30Z</time>
+			<desc>lat.=56.009865, lon.=26.368456, Alt.=85.393616m. Speed=5.652000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.009449" lon="26.367605">
+			<ele>88.036194</ele>
+			<time>2011-04-03T09:01:45Z</time>
+			<desc>lat.=56.009449, lon.=26.367605, Alt.=88.036194m. Speed=4.788000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.008911" lon="26.366976">
+			<ele>89.237366</ele>
+			<time>2011-04-03T09:03:23Z</time>
+			<desc>lat.=56.008911, lon.=26.366976, Alt.=89.237366m. Speed=5.328000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.008415" lon="26.366266">
+			<ele>90.243225</ele>
+			<time>2011-04-03T09:05:11Z</time>
+			<desc>lat.=56.008415, lon.=26.366266, Alt.=90.243225m. Speed=5.724000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.008194" lon="26.365074">
+			<ele>86.63385</ele>
+			<time>2011-04-03T09:06:15Z</time>
+			<desc>lat.=56.008194, lon.=26.365074, Alt.=86.633850m. Speed=4.896000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.007687" lon="26.364344">
+			<ele>87.682678</ele>
+			<time>2011-04-03T09:31:48Z</time>
+			<desc>lat.=56.007687, lon.=26.364344, Alt.=87.682678m. Speed=3.960000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.006969" lon="26.364679">
+			<ele>90.547913</ele>
+			<time>2011-04-03T09:32:43Z</time>
+			<desc>lat.=56.006969, lon.=26.364679, Alt.=90.547913m. Speed=5.904000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.006275" lon="26.365067">
+			<ele>86.524475</ele>
+			<time>2011-04-03T09:33:38Z</time>
+			<desc>lat.=56.006275, lon.=26.365067, Alt.=86.524475m. Speed=3.996000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.005604" lon="26.365501">
+			<ele>88.75885</ele>
+			<time>2011-04-03T09:34:34Z</time>
+			<desc>lat.=56.005604, lon.=26.365501, Alt.=88.758850m. Speed=5.616000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.004993" lon="26.366045">
+			<ele>88.549866</ele>
+			<time>2011-04-03T09:35:20Z</time>
+			<desc>lat.=56.004993, lon.=26.366045, Alt.=88.549866m. Speed=6.408000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.004353" lon="26.366518">
+			<ele>89.739319</ele>
+			<time>2011-04-03T09:36:14Z</time>
+			<desc>lat.=56.004353, lon.=26.366518, Alt.=89.739319m. Speed=5.256000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.003773" lon="26.367111">
+			<ele>88.741272</ele>
+			<time>2011-04-03T09:37:06Z</time>
+			<desc>lat.=56.003773, lon.=26.367111, Alt.=88.741272m. Speed=5.004000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.003246" lon="26.367765">
+			<ele>86.641663</ele>
+			<time>2011-04-03T09:40:35Z</time>
+			<desc>lat.=56.003246, lon.=26.367765, Alt.=86.641663m. Speed=4.068000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.002659" lon="26.368309">
+			<ele>84.055725</ele>
+			<time>2011-04-03T09:41:56Z</time>
+			<desc>lat.=56.002659, lon.=26.368309, Alt.=84.055725m. Speed=4.716000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.002003" lon="26.368723">
+			<ele>87.348694</ele>
+			<time>2011-04-03T09:42:48Z</time>
+			<desc>lat.=56.002003, lon.=26.368723, Alt.=87.348694m. Speed=5.472000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.001423" lon="26.369278">
+			<ele>85.444397</ele>
+			<time>2011-04-03T09:43:37Z</time>
+			<desc>lat.=56.001423, lon.=26.369278, Alt.=85.444397m. Speed=4.752000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.000843" lon="26.369846">
+			<ele>92.534241</ele>
+			<time>2011-04-03T09:45:02Z</time>
+			<desc>lat.=56.000843, lon.=26.369846, Alt.=92.534241m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="56.00013" lon="26.370169">
+			<ele>92.881897</ele>
+			<time>2011-04-03T09:46:16Z</time>
+			<desc>lat.=56.000130, lon.=26.370169, Alt.=92.881897m. Speed=4.608000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.999897" lon="26.37138">
+			<ele>92.481506</ele>
+			<time>2011-04-03T09:47:19Z</time>
+			<desc>lat.=55.999897, lon.=26.371380, Alt.=92.481506m. Speed=4.716000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.999416" lon="26.372107">
+			<ele>90.647522</ele>
+			<time>2011-04-03T09:48:18Z</time>
+			<desc>lat.=55.999416, lon.=26.372107, Alt.=90.647522m. Speed=4.500000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.998798" lon="26.372591">
+			<ele>88.924866</ele>
+			<time>2011-04-03T09:50:26Z</time>
+			<desc>lat.=55.998798, lon.=26.372591, Alt.=88.924866m. Speed=3.600000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.998215" lon="26.373173">
+			<ele>91.295959</ele>
+			<time>2011-04-03T09:51:47Z</time>
+			<desc>lat.=55.998215, lon.=26.373173, Alt.=91.295959m. Speed=5.220000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.997555" lon="26.37359">
+			<ele>90.549866</ele>
+			<time>2011-04-03T09:53:10Z</time>
+			<desc>lat.=55.997555, lon.=26.373590, Alt.=90.549866m. Speed=4.824000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.996773" lon="26.373806">
+			<ele>88.167053</ele>
+			<time>2011-04-03T09:54:22Z</time>
+			<desc>lat.=55.996773, lon.=26.373806, Alt.=88.167053m. Speed=4.356000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.996052" lon="26.374142">
+			<ele>89.338928</ele>
+			<time>2011-04-03T09:55:25Z</time>
+			<desc>lat.=55.996052, lon.=26.374142, Alt.=89.338928m. Speed=5.040000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.995327" lon="26.374506">
+			<ele>87.399475</ele>
+			<time>2011-04-03T09:56:25Z</time>
+			<desc>lat.=55.995327, lon.=26.374506, Alt.=87.399475m. Speed=3.204000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.994743" lon="26.375084">
+			<ele>95.801819</ele>
+			<time>2011-04-03T10:11:53Z</time>
+			<desc>lat.=55.994743, lon.=26.375084, Alt.=95.801819m. Speed=3.564000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.994198" lon="26.375731">
+			<ele>97.485413</ele>
+			<time>2011-04-03T10:12:54Z</time>
+			<desc>lat.=55.994198, lon.=26.375731, Alt.=97.485413m. Speed=3.924000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.993679" lon="26.376417">
+			<ele>99.694397</ele>
+			<time>2011-04-03T10:14:00Z</time>
+			<desc>lat.=55.993679, lon.=26.376417, Alt.=99.694397m. Speed=4.536000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.993267" lon="26.377281">
+			<ele>98.676819</ele>
+			<time>2011-04-03T10:14:53Z</time>
+			<desc>lat.=55.993267, lon.=26.377281, Alt.=98.676819m. Speed=4.176000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.992878" lon="26.378176">
+			<ele>99.157288</ele>
+			<time>2011-04-03T10:16:19Z</time>
+			<desc>lat.=55.992878, lon.=26.378176, Alt.=99.157288m. Speed=4.572000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.992558" lon="26.379204">
+			<ele>102.544006</ele>
+			<time>2011-04-03T10:17:19Z</time>
+			<desc>lat.=55.992558, lon.=26.379204, Alt.=102.544006m. Speed=4.032000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.992271" lon="26.380295">
+			<ele>111.004944</ele>
+			<time>2011-04-03T10:21:39Z</time>
+			<desc>lat.=55.992271, lon.=26.380295, Alt.=111.004944m. Speed=0.936000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.991802" lon="26.381098">
+			<ele>114.319397</ele>
+			<time>2011-04-03T10:22:57Z</time>
+			<desc>lat.=55.991802, lon.=26.381098, Alt.=114.319397m. Speed=4.572000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.991333" lon="26.381865">
+			<ele>102.094788</ele>
+			<time>2011-04-03T10:24:56Z</time>
+			<desc>lat.=55.991333, lon.=26.381865, Alt.=102.094788m. Speed=4.680000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.990974" lon="26.382826">
+			<ele>110.729553</ele>
+			<time>2011-04-03T10:26:29Z</time>
+			<desc>lat.=55.990974, lon.=26.382826, Alt.=110.729553m. Speed=5.004000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.990566" lon="26.383701">
+			<ele>109.001038</ele>
+			<time>2011-04-03T10:27:24Z</time>
+			<desc>lat.=55.990566, lon.=26.383701, Alt.=109.001038m. Speed=4.968000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.990795" lon="26.384892">
+			<ele>110.788147</ele>
+			<time>2011-04-03T10:29:43Z</time>
+			<desc>lat.=55.990795, lon.=26.384892, Alt.=110.788147m. Speed=5.544000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.99062" lon="26.386177">
+			<ele>114.581116</ele>
+			<time>2011-04-03T10:31:05Z</time>
+			<desc>lat.=55.990620, lon.=26.386177, Alt.=114.581116m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.990231" lon="26.387094">
+			<ele>122.788147</ele>
+			<time>2011-04-03T10:31:51Z</time>
+			<desc>lat.=55.990231, lon.=26.387094, Alt.=122.788147m. Speed=4.824000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.989815" lon="26.387989">
+			<ele>114.454163</ele>
+			<time>2011-04-03T10:33:26Z</time>
+			<desc>lat.=55.989815, lon.=26.387989, Alt.=114.454163m. Speed=5.472000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.989422" lon="26.388878">
+			<ele>120.485413</ele>
+			<time>2011-04-03T10:34:46Z</time>
+			<desc>lat.=55.989422, lon.=26.388878, Alt.=120.485413m. Speed=5.004000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.989037" lon="26.38982">
+			<ele>129.416138</ele>
+			<time>2011-04-03T10:35:32Z</time>
+			<desc>lat.=55.989037, lon.=26.389820, Alt.=129.416138m. Speed=5.220000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.988663" lon="26.390759">
+			<ele>127.456116</ele>
+			<time>2011-04-03T10:36:19Z</time>
+			<desc>lat.=55.988663, lon.=26.390759, Alt.=127.456116m. Speed=5.832000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.988262" lon="26.391647">
+			<ele>129.670044</ele>
+			<time>2011-04-03T10:37:08Z</time>
+			<desc>lat.=55.988262, lon.=26.391647, Alt.=129.670044m. Speed=5.760000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.987846" lon="26.3925">
+			<ele>132.103638</ele>
+			<time>2011-04-03T10:37:51Z</time>
+			<desc>lat.=55.987846, lon.=26.392500, Alt.=132.103638m. Speed=4.680000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.987434" lon="26.393391">
+			<ele>124.333069</ele>
+			<time>2011-04-03T10:38:35Z</time>
+			<desc>lat.=55.987434, lon.=26.393391, Alt.=124.333069m. Speed=4.752000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.987049" lon="26.394304">
+			<ele>120.188538</ele>
+			<time>2011-04-03T10:39:21Z</time>
+			<desc>lat.=55.987049, lon.=26.394304, Alt.=120.188538m. Speed=5.652000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.986572" lon="26.395071">
+			<ele>112.149475</ele>
+			<time>2011-04-03T10:40:00Z</time>
+			<desc>lat.=55.986572, lon.=26.395071, Alt.=112.149475m. Speed=5.796000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.986042" lon="26.395725">
+			<ele>107.717834</ele>
+			<time>2011-04-03T10:40:44Z</time>
+			<desc>lat.=55.986042, lon.=26.395725, Alt.=107.717834m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.985523" lon="26.396404">
+			<ele>109.684631</ele>
+			<time>2011-04-03T10:41:33Z</time>
+			<desc>lat.=55.985523, lon.=26.396404, Alt.=109.684631m. Speed=5.868000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.98505" lon="26.39715">
+			<ele>109.301819</ele>
+			<time>2011-04-03T10:42:17Z</time>
+			<desc>lat.=55.985050, lon.=26.397150, Alt.=109.301819m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.984634" lon="26.398022">
+			<ele>107.190491</ele>
+			<time>2011-04-03T10:43:20Z</time>
+			<desc>lat.=55.984634, lon.=26.398022, Alt.=107.190491m. Speed=4.032000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.98394" lon="26.39838">
+			<ele>115.836975</ele>
+			<time>2011-04-03T10:44:19Z</time>
+			<desc>lat.=55.983940, lon.=26.398380, Alt.=115.836975m. Speed=5.328000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.983402" lon="26.399006">
+			<ele>118.313538</ele>
+			<time>2011-04-03T10:45:10Z</time>
+			<desc>lat.=55.983402, lon.=26.399006, Alt.=118.313538m. Speed=2.592000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.983059" lon="26.399988">
+			<ele>109.448303</ele>
+			<time>2011-04-03T11:24:03Z</time>
+			<desc>lat.=55.983059, lon.=26.399988, Alt.=109.448303m. Speed=3.600000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.983204" lon="26.401356">
+			<ele>102.030334</ele>
+			<time>2011-04-03T11:25:44Z</time>
+			<desc>lat.=55.983204, lon.=26.401356, Alt.=102.030334m. Speed=1.368000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.982353" lon="26.401449">
+			<ele>103.315491</ele>
+			<time>2011-04-03T11:28:48Z</time>
+			<desc>lat.=55.982353, lon.=26.401449, Alt.=103.315491m. Speed=5.328000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.981773" lon="26.402052">
+			<ele>95.155334</ele>
+			<time>2011-04-03T11:30:09Z</time>
+			<desc>lat.=55.981773, lon.=26.402052, Alt.=95.155334m. Speed=4.140000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.980968" lon="26.402239">
+			<ele>91.317444</ele>
+			<time>2011-04-03T11:31:29Z</time>
+			<desc>lat.=55.980968, lon.=26.402239, Alt.=91.317444m. Speed=1.656000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.980499" lon="26.403008">
+			<ele>89.797913</ele>
+			<time>2011-04-03T11:36:30Z</time>
+			<desc>lat.=55.980499, lon.=26.403008, Alt.=89.797913m. Speed=4.752000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.979939" lon="26.403631">
+			<ele>87.32135</ele>
+			<time>2011-04-03T11:37:23Z</time>
+			<desc>lat.=55.979939, lon.=26.403631, Alt.=87.321350m. Speed=4.356000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.979424" lon="26.404316">
+			<ele>88.967834</ele>
+			<time>2011-04-03T11:39:03Z</time>
+			<desc>lat.=55.979424, lon.=26.404316, Alt.=88.967834m. Speed=5.796000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.979004" lon="26.405176">
+			<ele>85.711975</ele>
+			<time>2011-04-03T11:39:53Z</time>
+			<desc>lat.=55.979004, lon.=26.405176, Alt.=85.711975m. Speed=5.220000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.978523" lon="26.405947">
+			<ele>85.108459</ele>
+			<time>2011-04-03T11:40:41Z</time>
+			<desc>lat.=55.978523, lon.=26.405947, Alt.=85.108459m. Speed=5.400000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.977993" lon="26.40662">
+			<ele>84.7276</ele>
+			<time>2011-04-03T11:42:03Z</time>
+			<desc>lat.=55.977993, lon.=26.406620, Alt.=84.727600m. Speed=4.608000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.977566" lon="26.407459">
+			<ele>86.161194</ele>
+			<time>2011-04-03T11:42:56Z</time>
+			<desc>lat.=55.977566, lon.=26.407459, Alt.=86.161194m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.977165" lon="26.408379">
+			<ele>87.551819</ele>
+			<time>2011-04-03T11:43:52Z</time>
+			<desc>lat.=55.977165, lon.=26.408379, Alt.=87.551819m. Speed=4.248000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.976665" lon="26.409086">
+			<ele>85.920959</ele>
+			<time>2011-04-03T11:45:02Z</time>
+			<desc>lat.=55.976665, lon.=26.409086, Alt.=85.920959m. Speed=5.220000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.976189" lon="26.409836">
+			<ele>85.307678</ele>
+			<time>2011-04-03T11:45:52Z</time>
+			<desc>lat.=55.976189, lon.=26.409836, Alt.=85.307678m. Speed=4.824000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.975639" lon="26.410479">
+			<ele>85.743225</ele>
+			<time>2011-04-03T11:46:42Z</time>
+			<desc>lat.=55.975639, lon.=26.410479, Alt.=85.743225m. Speed=5.400000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.975334" lon="26.411539">
+			<ele>85.252991</ele>
+			<time>2011-04-03T11:48:02Z</time>
+			<desc>lat.=55.975334, lon.=26.411539, Alt.=85.252991m. Speed=4.284000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.974899" lon="26.412365">
+			<ele>83.938538</ele>
+			<time>2011-04-03T11:49:12Z</time>
+			<desc>lat.=55.974899, lon.=26.412365, Alt.=83.938538m. Speed=5.508000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.974247" lon="26.41193">
+			<ele>84.002991</ele>
+			<time>2011-04-03T11:53:20Z</time>
+			<desc>lat.=55.974247, lon.=26.411930, Alt.=84.002991m. Speed=5.184000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.973736" lon="26.411217">
+			<ele>84.7901</ele>
+			<time>2011-04-03T11:54:29Z</time>
+			<desc>lat.=55.973736, lon.=26.411217, Alt.=84.790100m. Speed=10.908000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.973255" lon="26.410471">
+			<ele>89.522522</ele>
+			<time>2011-04-03T11:55:43Z</time>
+			<desc>lat.=55.973255, lon.=26.410471, Alt.=89.522522m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.97282" lon="26.409637">
+			<ele>90.376038</ele>
+			<time>2011-04-03T11:56:31Z</time>
+			<desc>lat.=55.972820, lon.=26.409637, Alt.=90.376038m. Speed=5.400000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.972542" lon="26.408541">
+			<ele>88.614319</ele>
+			<time>2011-04-03T11:57:25Z</time>
+			<desc>lat.=55.972542, lon.=26.408541, Alt.=88.614319m. Speed=5.400000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.972385" lon="26.407204">
+			<ele>84.57135</ele>
+			<time>2011-04-03T11:58:26Z</time>
+			<desc>lat.=55.972385, lon.=26.407204, Alt.=84.571350m. Speed=5.184000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.971996" lon="26.406282">
+			<ele>85.362366</ele>
+			<time>2011-04-03T11:59:20Z</time>
+			<desc>lat.=55.971996, lon.=26.406282, Alt.=85.362366m. Speed=5.220000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.971272" lon="26.40658">
+			<ele>91.774475</ele>
+			<time>2011-04-03T12:00:21Z</time>
+			<desc>lat.=55.971272, lon.=26.406580, Alt.=91.774475m. Speed=3.852000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.970493" lon="26.406826">
+			<ele>93.856506</ele>
+			<time>2011-04-03T12:01:31Z</time>
+			<desc>lat.=55.970493, lon.=26.406826, Alt.=93.856506m. Speed=4.788000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.969711" lon="26.407045">
+			<ele>93.672913</ele>
+			<time>2011-04-03T12:02:33Z</time>
+			<desc>lat.=55.969711, lon.=26.407045, Alt.=93.672913m. Speed=4.104000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.969051" lon="26.407473">
+			<ele>91.403381</ele>
+			<time>2011-04-03T12:03:31Z</time>
+			<desc>lat.=55.969051, lon.=26.407473, Alt.=91.403381m. Speed=4.356000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.968506" lon="26.408112">
+			<ele>89.329163</ele>
+			<time>2011-04-03T12:04:33Z</time>
+			<desc>lat.=55.968506, lon.=26.408112, Alt.=89.329163m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.968021" lon="26.408833">
+			<ele>91.403381</ele>
+			<time>2011-04-03T12:05:24Z</time>
+			<desc>lat.=55.968021, lon.=26.408833, Alt.=91.403381m. Speed=4.536000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.967499" lon="26.4095">
+			<ele>90.188538</ele>
+			<time>2011-04-03T12:06:13Z</time>
+			<desc>lat.=55.967499, lon.=26.409500, Alt.=90.188538m. Speed=5.112000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.966991" lon="26.410202">
+			<ele>89.295959</ele>
+			<time>2011-04-03T12:07:05Z</time>
+			<desc>lat.=55.966991, lon.=26.410202, Alt.=89.295959m. Speed=5.076000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.966465" lon="26.410929">
+			<ele>88.403381</ele>
+			<time>2011-04-03T12:07:55Z</time>
+			<desc>lat.=55.966465, lon.=26.410929, Alt.=88.403381m. Speed=5.652000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.965965" lon="26.411623">
+			<ele>89.631897</ele>
+			<time>2011-04-03T12:08:42Z</time>
+			<desc>lat.=55.965965, lon.=26.411623, Alt.=89.631897m. Speed=5.580000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.965412" lon="26.412243">
+			<ele>89.200256</ele>
+			<time>2011-04-03T12:09:37Z</time>
+			<desc>lat.=55.965412, lon.=26.412243, Alt.=89.200256m. Speed=5.256000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.96471" lon="26.412663">
+			<ele>91.573303</ele>
+			<time>2011-04-03T12:10:36Z</time>
+			<desc>lat.=55.964710, lon.=26.412663, Alt.=91.573303m. Speed=5.580000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.963993" lon="26.413">
+			<ele>92.795959</ele>
+			<time>2011-04-03T12:11:32Z</time>
+			<desc>lat.=55.963993, lon.=26.413000, Alt.=92.795959m. Speed=5.292000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.963291" lon="26.413374">
+			<ele>88.885803</ele>
+			<time>2011-04-03T12:12:58Z</time>
+			<desc>lat.=55.963291, lon.=26.413374, Alt.=88.885803m. Speed=5.544000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.962551" lon="26.413641">
+			<ele>90.69635</ele>
+			<time>2011-04-03T12:13:58Z</time>
+			<desc>lat.=55.962551, lon.=26.413641, Alt.=90.696350m. Speed=5.184000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.961845" lon="26.413975">
+			<ele>89.969788</ele>
+			<time>2011-04-03T12:15:16Z</time>
+			<desc>lat.=55.961845, lon.=26.413975, Alt.=89.969788m. Speed=5.112000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.961136" lon="26.414297">
+			<ele>92.204163</ele>
+			<time>2011-04-03T12:16:12Z</time>
+			<desc>lat.=55.961136, lon.=26.414297, Alt.=92.204163m. Speed=5.724000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.960434" lon="26.414637">
+			<ele>91.868225</ele>
+			<time>2011-04-03T12:17:03Z</time>
+			<desc>lat.=55.960434, lon.=26.414637, Alt.=91.868225m. Speed=5.724000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.959717" lon="26.414959">
+			<ele>92.473694</ele>
+			<time>2011-04-03T12:17:58Z</time>
+			<desc>lat.=55.959717, lon.=26.414959, Alt.=92.473694m. Speed=5.400000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.959003" lon="26.415283">
+			<ele>93.00885</ele>
+			<time>2011-04-03T12:20:39Z</time>
+			<desc>lat.=55.959003, lon.=26.415283, Alt.=93.008850m. Speed=5.400000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.95829" lon="26.415613">
+			<ele>91.864319</ele>
+			<time>2011-04-03T12:21:33Z</time>
+			<desc>lat.=55.958290, lon.=26.415613, Alt.=91.864319m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.957577" lon="26.415949">
+			<ele>91.805725</ele>
+			<time>2011-04-03T12:22:27Z</time>
+			<desc>lat.=55.957577, lon.=26.415949, Alt.=91.805725m. Speed=4.536000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.956856" lon="26.416271">
+			<ele>91.684631</ele>
+			<time>2011-04-03T12:23:20Z</time>
+			<desc>lat.=55.956856, lon.=26.416271, Alt.=91.684631m. Speed=5.832000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.956055" lon="26.416464">
+			<ele>93.649475</ele>
+			<time>2011-04-03T12:24:17Z</time>
+			<desc>lat.=55.956055, lon.=26.416464, Alt.=93.649475m. Speed=5.400000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.955269" lon="26.416685">
+			<ele>89.2276</ele>
+			<time>2011-04-03T12:25:15Z</time>
+			<desc>lat.=55.955269, lon.=26.416685, Alt.=89.227600m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.954517" lon="26.416964">
+			<ele>89.809631</ele>
+			<time>2011-04-03T12:26:14Z</time>
+			<desc>lat.=55.954517, lon.=26.416964, Alt.=89.809631m. Speed=5.004000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.953949" lon="26.417574">
+			<ele>89.813538</ele>
+			<time>2011-04-03T12:27:05Z</time>
+			<desc>lat.=55.953949, lon.=26.417574, Alt.=89.813538m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.953545" lon="26.418447">
+			<ele>88.9776</ele>
+			<time>2011-04-03T12:27:56Z</time>
+			<desc>lat.=55.953545, lon.=26.418447, Alt.=88.977600m. Speed=5.940000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.953236" lon="26.419493">
+			<ele>87.325256</ele>
+			<time>2011-04-03T12:28:46Z</time>
+			<desc>lat.=55.953236, lon.=26.419493, Alt.=87.325256m. Speed=5.688000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.952801" lon="26.420328">
+			<ele>88.280334</ele>
+			<time>2011-04-03T12:30:27Z</time>
+			<desc>lat.=55.952801, lon.=26.420328, Alt.=88.280334m. Speed=4.500000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.951916" lon="26.420309">
+			<ele>81.059631</ele>
+			<time>2011-04-03T12:47:51Z</time>
+			<desc>lat.=55.951916, lon.=26.420309, Alt.=81.059631m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.951145" lon="26.420078">
+			<ele>81.692444</ele>
+			<time>2011-04-03T12:48:56Z</time>
+			<desc>lat.=55.951145, lon.=26.420078, Alt.=81.692444m. Speed=4.644000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.950241" lon="26.42009">
+			<ele>84.323303</ele>
+			<time>2011-04-03T12:50:09Z</time>
+			<desc>lat.=55.950241, lon.=26.420090, Alt.=84.323303m. Speed=5.688000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.949642" lon="26.42067">
+			<ele>80.512756</ele>
+			<time>2011-04-03T12:50:58Z</time>
+			<desc>lat.=55.949642, lon.=26.420670, Alt.=80.512756m. Speed=5.076000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.949055" lon="26.421251">
+			<ele>82.182678</ele>
+			<time>2011-04-03T12:51:53Z</time>
+			<desc>lat.=55.949055, lon.=26.421251, Alt.=82.182678m. Speed=4.320000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.94846" lon="26.421785">
+			<ele>78.991272</ele>
+			<time>2011-04-03T12:52:44Z</time>
+			<desc>lat.=55.948460, lon.=26.421785, Alt.=78.991272m. Speed=4.464000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.947861" lon="26.422367">
+			<ele>75.313538</ele>
+			<time>2011-04-03T12:53:35Z</time>
+			<desc>lat.=55.947861, lon.=26.422367, Alt.=75.313538m. Speed=5.040000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.947269" lon="26.422924">
+			<ele>78.436584</ele>
+			<time>2011-04-03T12:54:28Z</time>
+			<desc>lat.=55.947269, lon.=26.422924, Alt.=78.436584m. Speed=2.736000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.946793" lon="26.423674">
+			<ele>81.616272</ele>
+			<time>2011-04-03T12:55:16Z</time>
+			<desc>lat.=55.946793, lon.=26.423674, Alt.=81.616272m. Speed=3.024000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.946438" lon="26.42465">
+			<ele>88.264709</ele>
+			<time>2011-04-03T12:56:17Z</time>
+			<desc>lat.=55.946438, lon.=26.424650, Alt.=88.264709m. Speed=4.140000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.94577" lon="26.425085">
+			<ele>85.456116</ele>
+			<time>2011-04-03T12:57:49Z</time>
+			<desc>lat.=55.945770, lon.=26.425085, Alt.=85.456116m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.945324" lon="26.425877">
+			<ele>82.254944</ele>
+			<time>2011-04-03T12:58:35Z</time>
+			<desc>lat.=55.945324, lon.=26.425877, Alt.=82.254944m. Speed=4.608000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.945053" lon="26.426983">
+			<ele>89.2901</ele>
+			<time>2011-04-03T12:59:25Z</time>
+			<desc>lat.=55.945053, lon.=26.426983, Alt.=89.290100m. Speed=6.336000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.944801" lon="26.428133">
+			<ele>85.317444</ele>
+			<time>2011-04-03T13:00:14Z</time>
+			<desc>lat.=55.944801, lon.=26.428133, Alt.=85.317444m. Speed=5.976000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.944569" lon="26.429348">
+			<ele>87.674866</ele>
+			<time>2011-04-03T13:01:09Z</time>
+			<desc>lat.=55.944569, lon.=26.429348, Alt.=87.674866m. Speed=5.256000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.944237" lon="26.430368">
+			<ele>82.9776</ele>
+			<time>2011-04-03T13:02:01Z</time>
+			<desc>lat.=55.944237, lon.=26.430368, Alt.=82.977600m. Speed=4.932000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.943985" lon="26.43152">
+			<ele>83.659241</ele>
+			<time>2011-04-03T13:02:52Z</time>
+			<desc>lat.=55.943985, lon.=26.431520, Alt.=83.659241m. Speed=5.364000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.943127" lon="26.431416">
+			<ele>78.872131</ele>
+			<time>2011-04-03T13:05:21Z</time>
+			<desc>lat.=55.943127, lon.=26.431416, Alt.=78.872131m. Speed=5.832000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.942322" lon="26.431246">
+			<ele>81.504944</ele>
+			<time>2011-04-03T13:06:47Z</time>
+			<desc>lat.=55.942322, lon.=26.431246, Alt.=81.504944m. Speed=4.680000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.941669" lon="26.431679">
+			<ele>82.180725</ele>
+			<time>2011-04-03T13:07:50Z</time>
+			<desc>lat.=55.941669, lon.=26.431679, Alt.=82.180725m. Speed=5.004000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.940994" lon="26.431288">
+			<ele>96.473694</ele>
+			<time>2011-04-03T13:11:34Z</time>
+			<desc>lat.=55.940994, lon.=26.431288, Alt.=96.473694m. Speed=6.120000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.940594" lon="26.430386">
+			<ele>95.751038</ele>
+			<time>2011-04-03T13:14:42Z</time>
+			<desc>lat.=55.940594, lon.=26.430386, Alt.=95.751038m. Speed=3.996000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.940132" lon="26.429583">
+			<ele>91.610413</ele>
+			<time>2011-04-03T13:15:23Z</time>
+			<desc>lat.=55.940132, lon.=26.429583, Alt.=91.610413m. Speed=6.444000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.939716" lon="26.42872">
+			<ele>91.479553</ele>
+			<time>2011-04-03T13:16:11Z</time>
+			<desc>lat.=55.939716, lon.=26.428720, Alt.=91.479553m. Speed=5.868000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.938972" lon="26.429016">
+			<ele>87.346741</ele>
+			<time>2011-04-03T13:36:58Z</time>
+			<desc>lat.=55.938972, lon.=26.429016, Alt.=87.346741m. Speed=5.004000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.93829" lon="26.429417">
+			<ele>84.155334</ele>
+			<time>2011-04-03T13:38:46Z</time>
+			<desc>lat.=55.938290, lon.=26.429417, Alt.=84.155334m. Speed=2.520000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.937607" lon="26.429842">
+			<ele>82.672913</ele>
+			<time>2011-04-03T13:40:10Z</time>
+			<desc>lat.=55.937607, lon.=26.429842, Alt.=82.672913m. Speed=5.544000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.93671" lon="26.429823">
+			<ele>76.13385</ele>
+			<time>2011-04-03T13:41:30Z</time>
+			<desc>lat.=55.936710, lon.=26.429823, Alt.=76.133850m. Speed=4.896000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.93586" lon="26.42972">
+			<ele>78.129944</ele>
+			<time>2011-04-03T13:42:56Z</time>
+			<desc>lat.=55.935860, lon.=26.429720, Alt.=78.129944m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.935127" lon="26.429411">
+			<ele>76.569397</ele>
+			<time>2011-04-03T13:45:21Z</time>
+			<desc>lat.=55.935127, lon.=26.429411, Alt.=76.569397m. Speed=3.816000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.934376" lon="26.42911">
+			<ele>76.620178</ele>
+			<time>2011-04-03T13:46:26Z</time>
+			<desc>lat.=55.934376, lon.=26.429110, Alt.=76.620178m. Speed=5.004000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.933556" lon="26.428936">
+			<ele>79.358459</ele>
+			<time>2011-04-03T13:48:08Z</time>
+			<desc>lat.=55.933556, lon.=26.428936, Alt.=79.358459m. Speed=4.140000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.932659" lon="26.428915">
+			<ele>80.016663</ele>
+			<time>2011-04-03T13:50:22Z</time>
+			<desc>lat.=55.932659, lon.=26.428915, Alt.=80.016663m. Speed=4.572000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.931808" lon="26.429005">
+			<ele>78.1026</ele>
+			<time>2011-04-03T13:51:32Z</time>
+			<desc>lat.=55.931808, lon.=26.429005, Alt.=78.102600m. Speed=7.416000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.931084" lon="26.428694">
+			<ele>77.075256</ele>
+			<time>2011-04-03T13:53:01Z</time>
+			<desc>lat.=55.931084, lon.=26.428694, Alt.=77.075256m. Speed=5.220000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.930882" lon="26.427454">
+			<ele>78.280334</ele>
+			<time>2011-04-03T13:54:14Z</time>
+			<desc>lat.=55.930882, lon.=26.427454, Alt.=78.280334m. Speed=5.832000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.930683" lon="26.426191">
+			<ele>78.893616</ele>
+			<time>2011-04-03T13:55:07Z</time>
+			<desc>lat.=55.930683, lon.=26.426191, Alt.=78.893616m. Speed=5.616000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.930466" lon="26.42499">
+			<ele>79.049866</ele>
+			<time>2011-04-03T13:55:59Z</time>
+			<desc>lat.=55.930466, lon.=26.424990, Alt.=79.049866m. Speed=5.328000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.930241" lon="26.423759">
+			<ele>82.182678</ele>
+			<time>2011-04-03T13:56:57Z</time>
+			<desc>lat.=55.930241, lon.=26.423759, Alt.=82.182678m. Speed=5.292000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.929966" lon="26.422617">
+			<ele>80.241272</ele>
+			<time>2011-04-03T13:57:51Z</time>
+			<desc>lat.=55.929966, lon.=26.422617, Alt.=80.241272m. Speed=3.672000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.929291" lon="26.423014">
+			<ele>83.430725</ele>
+			<time>2011-04-03T14:00:05Z</time>
+			<desc>lat.=55.929291, lon.=26.423014, Alt.=83.430725m. Speed=5.364000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.928577" lon="26.423382">
+			<ele>85.877991</ele>
+			<time>2011-04-03T14:01:04Z</time>
+			<desc>lat.=55.928577, lon.=26.423382, Alt.=85.877991m. Speed=5.472000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.927883" lon="26.423767">
+			<ele>84.829163</ele>
+			<time>2011-04-03T14:02:06Z</time>
+			<desc>lat.=55.927883, lon.=26.423767, Alt.=84.829163m. Speed=5.868000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.927189" lon="26.424129">
+			<ele>85.219788</ele>
+			<time>2011-04-03T14:03:06Z</time>
+			<desc>lat.=55.927189, lon.=26.424129, Alt.=85.219788m. Speed=5.112000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.926388" lon="26.42432">
+			<ele>83.876038</ele>
+			<time>2011-04-03T14:04:11Z</time>
+			<desc>lat.=55.926388, lon.=26.424320, Alt.=83.876038m. Speed=3.996000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.925606" lon="26.424522">
+			<ele>85.862366</ele>
+			<time>2011-04-03T14:05:13Z</time>
+			<desc>lat.=55.925606, lon.=26.424522, Alt.=85.862366m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.924824" lon="26.424715">
+			<ele>84.958069</ele>
+			<time>2011-04-03T14:06:11Z</time>
+			<desc>lat.=55.924824, lon.=26.424715, Alt.=84.958069m. Speed=5.472000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.924026" lon="26.424887">
+			<ele>86.329163</ele>
+			<time>2011-04-03T14:07:13Z</time>
+			<desc>lat.=55.924026, lon.=26.424887, Alt.=86.329163m. Speed=1.440000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.923222" lon="26.42506">
+			<ele>84.741272</ele>
+			<time>2011-04-03T14:08:26Z</time>
+			<desc>lat.=55.923222, lon.=26.425060, Alt.=84.741272m. Speed=5.796000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.922428" lon="26.425255">
+			<ele>84.768616</ele>
+			<time>2011-04-03T14:09:31Z</time>
+			<desc>lat.=55.922428, lon.=26.425255, Alt.=84.768616m. Speed=5.652000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.921631" lon="26.425432">
+			<ele>86.471741</ele>
+			<time>2011-04-03T14:10:40Z</time>
+			<desc>lat.=55.921631, lon.=26.425432, Alt.=86.471741m. Speed=2.196000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.920853" lon="26.425655">
+			<ele>83.801819</ele>
+			<time>2011-04-03T14:11:38Z</time>
+			<desc>lat.=55.920853, lon.=26.425655, Alt.=83.801819m. Speed=5.868000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.920101" lon="26.425926">
+			<ele>85.270569</ele>
+			<time>2011-04-03T14:12:38Z</time>
+			<desc>lat.=55.920101, lon.=26.425926, Alt.=85.270569m. Speed=5.688000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.919411" lon="26.426336">
+			<ele>87.264709</ele>
+			<time>2011-04-03T14:13:32Z</time>
+			<desc>lat.=55.919411, lon.=26.426336, Alt.=87.264709m. Speed=5.184000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.918789" lon="26.426815">
+			<ele>84.526428</ele>
+			<time>2011-04-03T14:14:24Z</time>
+			<desc>lat.=55.918789, lon.=26.426815, Alt.=84.526428m. Speed=5.904000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.91824" lon="26.42745">
+			<ele>83.2901</ele>
+			<time>2011-04-03T14:15:12Z</time>
+			<desc>lat.=55.918240, lon.=26.427450, Alt.=83.290100m. Speed=5.400000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.917698" lon="26.428099">
+			<ele>82.272522</ele>
+			<time>2011-04-03T14:16:03Z</time>
+			<desc>lat.=55.917698, lon.=26.428099, Alt.=82.272522m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.91716" lon="26.428745">
+			<ele>82.690491</ele>
+			<time>2011-04-03T14:16:52Z</time>
+			<desc>lat.=55.917160, lon.=26.428745, Alt.=82.690491m. Speed=4.896000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.916603" lon="26.429346">
+			<ele>82.514709</ele>
+			<time>2011-04-03T14:17:45Z</time>
+			<desc>lat.=55.916603, lon.=26.429346, Alt.=82.514709m. Speed=5.580000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.916073" lon="26.429993">
+			<ele>83.208069</ele>
+			<time>2011-04-03T14:18:38Z</time>
+			<desc>lat.=55.916073, lon.=26.429993, Alt.=83.208069m. Speed=5.904000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.915524" lon="26.430614">
+			<ele>85.893616</ele>
+			<time>2011-04-03T14:19:26Z</time>
+			<desc>lat.=55.915524, lon.=26.430614, Alt.=85.893616m. Speed=5.580000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.914989" lon="26.431261">
+			<ele>86.604553</ele>
+			<time>2011-04-03T14:20:26Z</time>
+			<desc>lat.=55.914989, lon.=26.431261, Alt.=86.604553m. Speed=4.572000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.914406" lon="26.431862">
+			<ele>86.827209</ele>
+			<time>2011-04-03T14:22:37Z</time>
+			<desc>lat.=55.914406, lon.=26.431862, Alt.=86.827209m. Speed=4.932000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.913857" lon="26.432489">
+			<ele>88.704163</ele>
+			<time>2011-04-03T14:24:08Z</time>
+			<desc>lat.=55.913857, lon.=26.432489, Alt.=88.704163m. Speed=4.896000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.913296" lon="26.433111">
+			<ele>85.499084</ele>
+			<time>2011-04-03T14:24:55Z</time>
+			<desc>lat.=55.913296, lon.=26.433111, Alt.=85.499084m. Speed=5.688000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.9128" lon="26.43384">
+			<ele>86.200256</ele>
+			<time>2011-04-03T14:25:40Z</time>
+			<desc>lat.=55.912800, lon.=26.433840, Alt.=86.200256m. Speed=5.832000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.912399" lon="26.434765">
+			<ele>88.079163</ele>
+			<time>2011-04-03T14:26:26Z</time>
+			<desc>lat.=55.912399, lon.=26.434765, Alt.=88.079163m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.912018" lon="26.435678">
+			<ele>88.702209</ele>
+			<time>2011-04-03T14:27:15Z</time>
+			<desc>lat.=55.912018, lon.=26.435678, Alt.=88.702209m. Speed=5.688000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.911659" lon="26.43664">
+			<ele>93.19635</ele>
+			<time>2011-04-03T14:28:05Z</time>
+			<desc>lat.=55.911659, lon.=26.436640, Alt.=93.196350m. Speed=4.932000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.911236" lon="26.437481">
+			<ele>91.323303</ele>
+			<time>2011-04-03T14:28:56Z</time>
+			<desc>lat.=55.911236, lon.=26.437481, Alt.=91.323303m. Speed=4.716000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.910839" lon="26.438372">
+			<ele>89.581116</ele>
+			<time>2011-04-03T14:29:47Z</time>
+			<desc>lat.=55.910839, lon.=26.438372, Alt.=89.581116m. Speed=4.932000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.91045" lon="26.439283">
+			<ele>89.842834</ele>
+			<time>2011-04-03T14:30:46Z</time>
+			<desc>lat.=55.910450, lon.=26.439283, Alt.=89.842834m. Speed=0.396000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.910057" lon="26.44018">
+			<ele>89.835022</ele>
+			<time>2011-04-03T14:33:49Z</time>
+			<desc>lat.=55.910057, lon.=26.440180, Alt.=89.835022m. Speed=5.652000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.909645" lon="26.441065">
+			<ele>88.004944</ele>
+			<time>2011-04-03T14:34:36Z</time>
+			<desc>lat.=55.909645, lon.=26.441065, Alt.=88.004944m. Speed=2.268000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.909218" lon="26.441959">
+			<ele>88.075256</ele>
+			<time>2011-04-03T14:35:30Z</time>
+			<desc>lat.=55.909218, lon.=26.441959, Alt.=88.075256m. Speed=3.996000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.908764" lon="26.442757">
+			<ele>86.504944</ele>
+			<time>2011-04-03T14:36:21Z</time>
+			<desc>lat.=55.908764, lon.=26.442757, Alt.=86.504944m. Speed=5.076000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.908257" lon="26.443455">
+			<ele>85.014709</ele>
+			<time>2011-04-03T14:37:06Z</time>
+			<desc>lat.=55.908257, lon.=26.443455, Alt.=85.014709m. Speed=5.508000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.907742" lon="26.444151">
+			<ele>87.569397</ele>
+			<time>2011-04-03T14:37:51Z</time>
+			<desc>lat.=55.907742, lon.=26.444151, Alt.=87.569397m. Speed=5.724000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.907211" lon="26.444799">
+			<ele>88.012756</ele>
+			<time>2011-04-03T14:38:39Z</time>
+			<desc>lat.=55.907211, lon.=26.444799, Alt.=88.012756m. Speed=5.328000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.90667" lon="26.445452">
+			<ele>87.194397</ele>
+			<time>2011-04-03T14:39:27Z</time>
+			<desc>lat.=55.906670, lon.=26.445452, Alt.=87.194397m. Speed=6.084000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.906128" lon="26.446077">
+			<ele>89.44635</ele>
+			<time>2011-04-03T14:40:14Z</time>
+			<desc>lat.=55.906128, lon.=26.446077, Alt.=89.446350m. Speed=5.616000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.905598" lon="26.446728">
+			<ele>90.585022</ele>
+			<time>2011-04-03T14:41:07Z</time>
+			<desc>lat.=55.905598, lon.=26.446728, Alt.=90.585022m. Speed=5.868000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.905045" lon="26.447374">
+			<ele>86.106506</ele>
+			<time>2011-04-03T14:41:52Z</time>
+			<desc>lat.=55.905045, lon.=26.447374, Alt.=86.106506m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.90448" lon="26.447956">
+			<ele>86.624084</ele>
+			<time>2011-04-03T14:42:37Z</time>
+			<desc>lat.=55.904480, lon.=26.447956, Alt.=86.624084m. Speed=5.760000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.903896" lon="26.44853">
+			<ele>85.819397</ele>
+			<time>2011-04-03T14:43:33Z</time>
+			<desc>lat.=55.903896, lon.=26.448530, Alt.=85.819397m. Speed=5.184000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.903301" lon="26.449059">
+			<ele>83.583069</ele>
+			<time>2011-04-03T14:47:10Z</time>
+			<desc>lat.=55.903301, lon.=26.449059, Alt.=83.583069m. Speed=5.076000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.902912" lon="26.449984">
+			<ele>84.995178</ele>
+			<time>2011-04-03T14:47:59Z</time>
+			<desc>lat.=55.902912, lon.=26.449984, Alt.=84.995178m. Speed=5.112000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.902508" lon="26.450903">
+			<ele>84.19635</ele>
+			<time>2011-04-03T14:48:48Z</time>
+			<desc>lat.=55.902508, lon.=26.450903, Alt.=84.196350m. Speed=5.544000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.902092" lon="26.451754">
+			<ele>85.358459</ele>
+			<time>2011-04-03T14:49:34Z</time>
+			<desc>lat.=55.902092, lon.=26.451754, Alt.=85.358459m. Speed=6.048000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.901672" lon="26.452618">
+			<ele>84.481506</ele>
+			<time>2011-04-03T14:50:20Z</time>
+			<desc>lat.=55.901672, lon.=26.452618, Alt.=84.481506m. Speed=5.472000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.901226" lon="26.453484">
+			<ele>85.256897</ele>
+			<time>2011-04-03T14:51:09Z</time>
+			<desc>lat.=55.901226, lon.=26.453484, Alt.=85.256897m. Speed=5.580000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.900806" lon="26.454336">
+			<ele>83.559631</ele>
+			<time>2011-04-03T14:51:58Z</time>
+			<desc>lat.=55.900806, lon.=26.454336, Alt.=83.559631m. Speed=5.400000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.90036" lon="26.455153">
+			<ele>81.835022</ele>
+			<time>2011-04-03T14:52:48Z</time>
+			<desc>lat.=55.900360, lon.=26.455153, Alt.=81.835022m. Speed=4.752000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.899891" lon="26.455959">
+			<ele>81.835022</ele>
+			<time>2011-04-03T14:53:37Z</time>
+			<desc>lat.=55.899891, lon.=26.455959, Alt.=81.835022m. Speed=5.580000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.899479" lon="26.456835">
+			<ele>82.186584</ele>
+			<time>2011-04-03T14:54:24Z</time>
+			<desc>lat.=55.899479, lon.=26.456835, Alt.=82.186584m. Speed=5.796000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.899071" lon="26.457701">
+			<ele>82.090881</ele>
+			<time>2011-04-03T14:55:10Z</time>
+			<desc>lat.=55.899071, lon.=26.457701, Alt.=82.090881m. Speed=5.616000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.898632" lon="26.458536">
+			<ele>83.569397</ele>
+			<time>2011-04-03T14:55:58Z</time>
+			<desc>lat.=55.898632, lon.=26.458536, Alt.=83.569397m. Speed=5.544000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.898159" lon="26.459291">
+			<ele>86.122131</ele>
+			<time>2011-04-03T14:56:44Z</time>
+			<desc>lat.=55.898159, lon.=26.459291, Alt.=86.122131m. Speed=5.832000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.897659" lon="26.460018">
+			<ele>86.833069</ele>
+			<time>2011-04-03T14:57:31Z</time>
+			<desc>lat.=55.897659, lon.=26.460018, Alt.=86.833069m. Speed=5.580000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.897141" lon="26.460707">
+			<ele>87.063538</ele>
+			<time>2011-04-03T14:58:16Z</time>
+			<desc>lat.=55.897141, lon.=26.460707, Alt.=87.063538m. Speed=5.184000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.896587" lon="26.461365">
+			<ele>87.622131</ele>
+			<time>2011-04-03T14:59:06Z</time>
+			<desc>lat.=55.896587, lon.=26.461365, Alt.=87.622131m. Speed=5.400000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.895943" lon="26.461861">
+			<ele>84.895569</ele>
+			<time>2011-04-03T14:59:57Z</time>
+			<desc>lat.=55.895943, lon.=26.461861, Alt.=84.895569m. Speed=6.336000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.895332" lon="26.462412">
+			<ele>86.112366</ele>
+			<time>2011-04-03T15:00:48Z</time>
+			<desc>lat.=55.895332, lon.=26.462412, Alt.=86.112366m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.894722" lon="26.462952">
+			<ele>89.137756</ele>
+			<time>2011-04-03T15:01:38Z</time>
+			<desc>lat.=55.894722, lon.=26.462952, Alt.=89.137756m. Speed=5.400000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.894081" lon="26.463402">
+			<ele>87.442444</ele>
+			<time>2011-04-03T15:02:28Z</time>
+			<desc>lat.=55.894081, lon.=26.463402, Alt.=87.442444m. Speed=5.544000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.893509" lon="26.463984">
+			<ele>83.893616</ele>
+			<time>2011-04-03T15:03:30Z</time>
+			<desc>lat.=55.893509, lon.=26.463984, Alt.=83.893616m. Speed=3.096000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.892887" lon="26.464478">
+			<ele>94.065491</ele>
+			<time>2011-04-03T15:20:46Z</time>
+			<desc>lat.=55.892887, lon.=26.464478, Alt.=94.065491m. Speed=4.428000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.892246" lon="26.465006">
+			<ele>90.850647</ele>
+			<time>2011-04-03T15:21:41Z</time>
+			<desc>lat.=55.892246, lon.=26.465006, Alt.=90.850647m. Speed=5.328000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.891628" lon="26.465511">
+			<ele>93.2276</ele>
+			<time>2011-04-03T15:22:37Z</time>
+			<desc>lat.=55.891628, lon.=26.465511, Alt.=93.227600m. Speed=4.932000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.891018" lon="26.466066">
+			<ele>98.297913</ele>
+			<time>2011-04-03T15:23:28Z</time>
+			<desc>lat.=55.891018, lon.=26.466066, Alt.=98.297913m. Speed=5.796000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.890396" lon="26.466557">
+			<ele>97.573303</ele>
+			<time>2011-04-03T15:24:17Z</time>
+			<desc>lat.=55.890396, lon.=26.466557, Alt.=97.573303m. Speed=5.400000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.889778" lon="26.467056">
+			<ele>97.114319</ele>
+			<time>2011-04-03T15:25:26Z</time>
+			<desc>lat.=55.889778, lon.=26.467056, Alt.=97.114319m. Speed=5.004000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.88916" lon="26.467554">
+			<ele>90.813538</ele>
+			<time>2011-04-03T15:26:16Z</time>
+			<desc>lat.=55.889160, lon.=26.467554, Alt.=90.813538m. Speed=4.860000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.88855" lon="26.468088">
+			<ele>88.596741</ele>
+			<time>2011-04-03T15:27:07Z</time>
+			<desc>lat.=55.888550, lon.=26.468088, Alt.=88.596741m. Speed=4.860000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.887928" lon="26.468596">
+			<ele>89.850647</ele>
+			<time>2011-04-03T15:28:03Z</time>
+			<desc>lat.=55.887928, lon.=26.468596, Alt.=89.850647m. Speed=6.264000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.887321" lon="26.469109">
+			<ele>90.801819</ele>
+			<time>2011-04-03T15:28:49Z</time>
+			<desc>lat.=55.887321, lon.=26.469109, Alt.=90.801819m. Speed=6.120000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.886662" lon="26.469528">
+			<ele>91.926819</ele>
+			<time>2011-04-03T15:29:35Z</time>
+			<desc>lat.=55.886662, lon.=26.469528, Alt.=91.926819m. Speed=6.048000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.886017" lon="26.469997">
+			<ele>94.00885</ele>
+			<time>2011-04-03T15:30:49Z</time>
+			<desc>lat.=55.886017, lon.=26.469997, Alt.=94.008850m. Speed=5.760000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.885387" lon="26.470488">
+			<ele>95.024475</ele>
+			<time>2011-04-03T15:31:36Z</time>
+			<desc>lat.=55.885387, lon.=26.470488, Alt.=95.024475m. Speed=5.724000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.884907" lon="26.471256">
+			<ele>93.710022</ele>
+			<time>2011-04-03T15:32:17Z</time>
+			<desc>lat.=55.884907, lon.=26.471256, Alt.=93.710022m. Speed=6.048000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.884529" lon="26.47221">
+			<ele>94.559631</ele>
+			<time>2011-04-03T15:33:01Z</time>
+			<desc>lat.=55.884529, lon.=26.472210, Alt.=94.559631m. Speed=5.976000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.884163" lon="26.473152">
+			<ele>96.155334</ele>
+			<time>2011-04-03T15:33:45Z</time>
+			<desc>lat.=55.884163, lon.=26.473152, Alt.=96.155334m. Speed=5.904000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.88377" lon="26.474051">
+			<ele>99.745178</ele>
+			<time>2011-04-03T15:34:29Z</time>
+			<desc>lat.=55.883770, lon.=26.474051, Alt.=99.745178m. Speed=6.228000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.883385" lon="26.474968">
+			<ele>99.430725</ele>
+			<time>2011-04-03T15:35:16Z</time>
+			<desc>lat.=55.883385, lon.=26.474968, Alt.=99.430725m. Speed=5.508000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.883064" lon="26.475992">
+			<ele>99.430725</ele>
+			<time>2011-04-03T15:36:02Z</time>
+			<desc>lat.=55.883064, lon.=26.475992, Alt.=99.430725m. Speed=5.652000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.882778" lon="26.477097">
+			<ele>97.467834</ele>
+			<time>2011-04-03T15:36:53Z</time>
+			<desc>lat.=55.882778, lon.=26.477097, Alt.=97.467834m. Speed=5.652000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.882504" lon="26.478226">
+			<ele>93.932678</ele>
+			<time>2011-04-03T15:37:42Z</time>
+			<desc>lat.=55.882504, lon.=26.478226, Alt.=93.932678m. Speed=5.328000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.882248" lon="26.479368">
+			<ele>93.932678</ele>
+			<time>2011-04-03T15:38:31Z</time>
+			<desc>lat.=55.882248, lon.=26.479368, Alt.=93.932678m. Speed=5.724000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.882008" lon="26.480562">
+			<ele>95.387756</ele>
+			<time>2011-04-03T15:39:22Z</time>
+			<desc>lat.=55.882008, lon.=26.480562, Alt.=95.387756m. Speed=5.112000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.881786" lon="26.481779">
+			<ele>95.754944</ele>
+			<time>2011-04-03T15:40:15Z</time>
+			<desc>lat.=55.881786, lon.=26.481779, Alt.=95.754944m. Speed=5.868000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.881443" lon="26.482756">
+			<ele>95.635803</ele>
+			<time>2011-04-03T15:41:04Z</time>
+			<desc>lat.=55.881443, lon.=26.482756, Alt.=95.635803m. Speed=5.328000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.880985" lon="26.483561">
+			<ele>95.442444</ele>
+			<time>2011-04-03T15:41:57Z</time>
+			<desc>lat.=55.880985, lon.=26.483561, Alt.=95.442444m. Speed=5.472000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.88052" lon="26.484365">
+			<ele>98.327209</ele>
+			<time>2011-04-03T15:42:47Z</time>
+			<desc>lat.=55.880520, lon.=26.484365, Alt.=98.327209m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.880043" lon="26.48513">
+			<ele>100.766663</ele>
+			<time>2011-04-03T15:43:36Z</time>
+			<desc>lat.=55.880043, lon.=26.485130, Alt.=100.766663m. Speed=5.580000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.879555" lon="26.48587">
+			<ele>100.329163</ele>
+			<time>2011-04-03T15:44:20Z</time>
+			<desc>lat.=55.879555, lon.=26.485870, Alt.=100.329163m. Speed=6.012000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.879074" lon="26.486616">
+			<ele>99.098694</ele>
+			<time>2011-04-03T15:45:02Z</time>
+			<desc>lat.=55.879074, lon.=26.486616, Alt.=99.098694m. Speed=5.688000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.878578" lon="26.48736">
+			<ele>95.9151</ele>
+			<time>2011-04-03T15:45:47Z</time>
+			<desc>lat.=55.878578, lon.=26.487360, Alt.=95.915100m. Speed=5.616000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.878109" lon="26.488127">
+			<ele>95.002991</ele>
+			<time>2011-04-03T15:46:32Z</time>
+			<desc>lat.=55.878109, lon.=26.488127, Alt.=95.002991m. Speed=5.868000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.87772" lon="26.489035">
+			<ele>94.4151</ele>
+			<time>2011-04-03T15:47:16Z</time>
+			<desc>lat.=55.877720, lon.=26.489035, Alt.=94.415100m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.87748" lon="26.490221">
+			<ele>93.7276</ele>
+			<time>2011-04-03T15:48:03Z</time>
+			<desc>lat.=55.877480, lon.=26.490221, Alt.=93.727600m. Speed=6.084000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.877506" lon="26.491814">
+			<ele>103.370178</ele>
+			<time>2011-04-03T15:49:15Z</time>
+			<desc>lat.=55.877506, lon.=26.491814, Alt.=103.370178m. Speed=6.012000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.877148" lon="26.492773">
+			<ele>99.325256</ele>
+			<time>2011-04-03T15:50:04Z</time>
+			<desc>lat.=55.877148, lon.=26.492773, Alt.=99.325256m. Speed=5.580000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.876526" lon="26.492283">
+			<ele>92.19635</ele>
+			<time>2011-04-03T15:51:47Z</time>
+			<desc>lat.=55.876526, lon.=26.492283, Alt.=92.196350m. Speed=2.808000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.875957" lon="26.492863">
+			<ele>91.510803</ele>
+			<time>2011-04-03T15:52:55Z</time>
+			<desc>lat.=55.875957, lon.=26.492863, Alt.=91.510803m. Speed=4.968000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.875351" lon="26.493402">
+			<ele>91.045959</ele>
+			<time>2011-04-03T15:53:50Z</time>
+			<desc>lat.=55.875351, lon.=26.493402, Alt.=91.045959m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.874851" lon="26.49411">
+			<ele>88.141663</ele>
+			<time>2011-04-03T15:54:38Z</time>
+			<desc>lat.=55.874851, lon.=26.494110, Alt.=88.141663m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.874355" lon="26.494822">
+			<ele>88.07135</ele>
+			<time>2011-04-03T15:56:18Z</time>
+			<desc>lat.=55.874355, lon.=26.494822, Alt.=88.071350m. Speed=9.972000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.87389" lon="26.495619">
+			<ele>87.270569</ele>
+			<time>2011-04-03T15:57:12Z</time>
+			<desc>lat.=55.873890, lon.=26.495619, Alt.=87.270569m. Speed=5.148000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.873413" lon="26.496393">
+			<ele>88.372131</ele>
+			<time>2011-04-03T15:58:14Z</time>
+			<desc>lat.=55.873413, lon.=26.496393, Alt.=88.372131m. Speed=5.256000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.872936" lon="26.497137">
+			<ele>90.036194</ele>
+			<time>2011-04-03T15:59:00Z</time>
+			<desc>lat.=55.872936, lon.=26.497137, Alt.=90.036194m. Speed=5.472000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.872189" lon="26.497442">
+			<ele>92.151428</ele>
+			<time>2011-04-03T16:00:11Z</time>
+			<desc>lat.=55.872189, lon.=26.497442, Alt.=92.151428m. Speed=5.436000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.871441" lon="26.497726">
+			<ele>93.768616</ele>
+			<time>2011-04-03T16:01:20Z</time>
+			<desc>lat.=55.871441, lon.=26.497726, Alt.=93.768616m. Speed=7.236000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.870701" lon="26.498001">
+			<ele>89.120178</ele>
+			<time>2011-04-03T16:02:21Z</time>
+			<desc>lat.=55.870701, lon.=26.498001, Alt.=89.120178m. Speed=6.516000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.869968" lon="26.498331">
+			<ele>88.379944</ele>
+			<time>2011-04-03T16:03:13Z</time>
+			<desc>lat.=55.869968, lon.=26.498331, Alt.=88.379944m. Speed=4.896000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.869408" lon="26.498945">
+			<ele>92.713928</ele>
+			<time>2011-04-03T16:04:05Z</time>
+			<desc>lat.=55.869408, lon.=26.498945, Alt.=92.713928m. Speed=5.472000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.868832" lon="26.499556">
+			<ele>92.428772</ele>
+			<time>2011-04-03T16:04:57Z</time>
+			<desc>lat.=55.868832, lon.=26.499556, Alt.=92.428772m. Speed=5.112000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.868279" lon="26.500195">
+			<ele>92.809631</ele>
+			<time>2011-04-03T16:05:43Z</time>
+			<desc>lat.=55.868279, lon.=26.500195, Alt.=92.809631m. Speed=5.580000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.867733" lon="26.500834">
+			<ele>92.723694</ele>
+			<time>2011-04-03T16:06:36Z</time>
+			<desc>lat.=55.867733, lon.=26.500834, Alt.=92.723694m. Speed=5.724000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.867222" lon="26.501528">
+			<ele>92.335022</ele>
+			<time>2011-04-03T16:07:26Z</time>
+			<desc>lat.=55.867222, lon.=26.501528, Alt.=92.335022m. Speed=0.180000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.866745" lon="26.502283">
+			<ele>90.475647</ele>
+			<time>2011-04-03T16:08:16Z</time>
+			<desc>lat.=55.866745, lon.=26.502283, Alt.=90.475647m. Speed=5.760000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.866245" lon="26.502995">
+			<ele>90.930725</ele>
+			<time>2011-04-03T16:09:02Z</time>
+			<desc>lat.=55.866245, lon.=26.502995, Alt.=90.930725m. Speed=5.004000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.865643" lon="26.503534">
+			<ele>90.413147</ele>
+			<time>2011-04-03T16:09:56Z</time>
+			<desc>lat.=55.865643, lon.=26.503534, Alt.=90.413147m. Speed=6.408000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.864998" lon="26.503994">
+			<ele>90.637756</ele>
+			<time>2011-04-03T16:10:43Z</time>
+			<desc>lat.=55.864998, lon.=26.503994, Alt.=90.637756m. Speed=5.400000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.865074" lon="26.505472">
+			<ele>89.504944</ele>
+			<time>2011-04-03T16:11:47Z</time>
+			<desc>lat.=55.865074, lon.=26.505472, Alt.=89.504944m. Speed=6.408000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.864964" lon="26.506895">
+			<ele>89.309631</ele>
+			<time>2011-04-03T16:12:59Z</time>
+			<desc>lat.=55.864964, lon.=26.506895, Alt.=89.309631m. Speed=6.336000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.864761" lon="26.508144">
+			<ele>90.774475</ele>
+			<time>2011-04-03T16:13:53Z</time>
+			<desc>lat.=55.864761, lon.=26.508144, Alt.=90.774475m. Speed=5.940000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.864502" lon="26.509287">
+			<ele>92.627991</ele>
+			<time>2011-04-03T16:14:45Z</time>
+			<desc>lat.=55.864502, lon.=26.509287, Alt.=92.627991m. Speed=5.472000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.864319" lon="26.510569">
+			<ele>90.377991</ele>
+			<time>2011-04-03T16:15:38Z</time>
+			<desc>lat.=55.864319, lon.=26.510569, Alt.=90.377991m. Speed=6.192000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.864784" lon="26.511353">
+			<ele>92.127991</ele>
+			<time>2011-04-03T16:16:29Z</time>
+			<desc>lat.=55.864784, lon.=26.511353, Alt.=92.127991m. Speed=5.616000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.865448" lon="26.511808">
+			<ele>87.338928</ele>
+			<time>2011-04-03T16:17:20Z</time>
+			<desc>lat.=55.865448, lon.=26.511808, Alt.=87.338928m. Speed=5.292000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.866119" lon="26.512238">
+			<ele>84.07135</ele>
+			<time>2011-04-03T16:21:15Z</time>
+			<desc>lat.=55.866119, lon.=26.512238, Alt.=84.071350m. Speed=4.320000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.866779" lon="26.512682">
+			<ele>81.051819</ele>
+			<time>2011-04-03T16:22:05Z</time>
+			<desc>lat.=55.866779, lon.=26.512682, Alt.=81.051819m. Speed=5.616000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.867409" lon="26.513178">
+			<ele>86.885803</ele>
+			<time>2011-04-03T16:22:59Z</time>
+			<desc>lat.=55.867409, lon.=26.513178, Alt.=86.885803m. Speed=5.616000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.867809" lon="26.514116">
+			<ele>91.504944</ele>
+			<time>2011-04-03T16:24:10Z</time>
+			<desc>lat.=55.867809, lon.=26.514116, Alt.=91.504944m. Speed=2.232000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.868137" lon="26.51512">
+			<ele>112.018616</ele>
+			<time>2011-04-03T16:25:19Z</time>
+			<desc>lat.=55.868137, lon.=26.515120, Alt.=112.018616m. Speed=2.376000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.868649" lon="26.515827">
+			<ele>112.358459</ele>
+			<time>2011-04-03T16:26:13Z</time>
+			<desc>lat.=55.868649, lon.=26.515827, Alt.=112.358459m. Speed=5.220000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.869164" lon="26.516611">
+			<ele>124.350647</ele>
+			<time>2011-04-03T16:27:30Z</time>
+			<desc>lat.=55.869164, lon.=26.516611, Alt.=124.350647m. Speed=2.232000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.869392" lon="26.517851">
+			<ele>114.948303</ele>
+			<time>2011-04-03T16:28:24Z</time>
+			<desc>lat.=55.869392, lon.=26.517851, Alt.=114.948303m. Speed=3.888000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.869652" lon="26.518988">
+			<ele>116.876038</ele>
+			<time>2011-04-03T16:29:17Z</time>
+			<desc>lat.=55.869652, lon.=26.518988, Alt.=116.876038m. Speed=4.860000m/h.</desc>
+		</trkpt>
+<trkpt lat="55.869827" lon="26.52029">
+			<ele>143.255981</ele>
+			<time>2011-04-03T16:30:38Z</time>
+			<desc>lat.=55.869827, lon.=26.520290, Alt.=143.255981m. Speed=3.600000m/h.</desc>
+		</trkpt>
+	</trkseg></trk>
+</gpx>

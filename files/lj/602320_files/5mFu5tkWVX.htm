@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"> 
+<html xmlns="http://www.w3.org/1999/xhtml"> 
+	<title>Ipicture.ru - бесплатный хостинг фотографий</title> 
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" /> 
+	<meta name="description" content="Специализированный ресурс для публикации фотографий на форумах: автоматическая оптимизация, создание превью" /> 
+	<meta name="keywords" content="закачать фото на сайт, на форум, загрузить фотографии, фото, фотки, картинки, юзерпик, как разместить фотографию на форуме, публикация фотографий, оптимизация фотографий для Интернета, хостинг фотографий, где разместить фотографии, эффективная интернет реклама, pr кампании, размещение рекламы, маркетинг в интернет, продвижение, целевая аудитория" /> 
+ 
+	<link rel="stylesheet" type="text/css" href="/public/css/style.css"> 
+	<script type="text/javascript" src="/public/javascripts/jquery.js"></script> 
+	<script type="text/javascript" src="/public/javascripts/Main.js"></script> 
+    <script type="text/javascript" src="/public/javascripts/pixlr_minified.js"></script> 
+	<script type="text/javascript" src="/public/javascripts/jquery.filestyle.js"></script> 
+    <script type="text/javascript" src="/public/swfupload/js/swfupload.js"></script> 
+	<!--8D89655E5FF7732F1FFE01D9AD978B7B--> 
+	<!--[if lt IE 7]>
+	<script type="text/javascript" src="/public/javascripts/pngfix.js"></script>
+	<![endif]--> 
+</head> 
+<body> 
+ 
+<div id="page"> 
+	<div id="logo"> 
+    	<a href="/"><img src="/public/images/logo.png" border="0"></a> 
+    </div> 
+    <div id="menu_top"><a href="/">Главная</a>     
+        <a href="/Rules/">Правила</a> 
+        <a href="/Gallery/">Галереи</a> 
+        <a href="/Faq/">F.A.Q.</a> 
+        <a href="/About/">О проекте</a> 
+        <a href="/4blogs/" class="blogs">Форумы и Блоги</a> 
+        <a href="/Contacts/">Контакты</a> 
+    </div> 
+    <div id="search_tags"> 
+        <form action="/search/tags/" method="post" id="seach_tags" name="seach_tags"> 
+            <input name="stags" type="text" value=""> 
+            <input src="/public/images/ent.png" type="image" align="absmiddle"> 
+        </form> 
+    </div> 
+    <div id="user_enter"> 
+    	<a href="/User/Login/">Вход</a> | 
+<a href="/User/Register/">Регистрация</a> 
+    </div> 
+    <div id="user_info"> 
+    	
+    </div> 
+    <div id="menu_form"> 
+    	<label for="uploadtype1"><input type="radio" name="uploadtype" id="uploadtype1" onClick="toggleuploadmode(this)" value="1" checked="checked"> Обычная</label> 
+		<label for="uploadtype2"><input type="radio" name="uploadtype"  id="uploadtype2" onClick="toggleuploadmode(this)" value="2"> Ссылка</label> 
+        <label for="uploadtype3"><input type="radio" name="uploadtype"  id="uploadtype3" onClick="toggleuploadmode(this)" value="3"> Мульти</label>
+    </div> 
+    <form action="/Upload/" id="upload" method="post" enctype="multipart/form-data" name="upload"> 
+    <div id="form_uploads">    	
+    	<input type="hidden" name="method" id="method" value="file" /> 
+        <div class="leftpan"></div> 
+        <div class="centerpan"> 
+            <div id="fileSelector"> 
+            	Файл: 
+                <input type="file" name="userfile" id="userfile" /> 
+                <input type="submit" style="height:26px; width:80px;" value="Загрузить"> 
+                <a onclick='addNewUpload();' title='Добавить еще 1 файл'><img src="/public/images/add_upload.gif"></a> 
+                <script type="text/javascript"> 
+					$(function() {   
+						$("input#userfile").filestyle({ 
+							image: "/public/images/choose-file.png",
+							imageheight : 25,
+							imagewidth : 73,
+							width : 400
+						});
+					});
+				</script> 
+            </div> 
+            <div id="urlSelector" style="display:none;"> 
+            	Укажите URL:
+                <input type='text' name='userurl[]' id='userurl' size='60'/> 
+                <input type="submit" style="height: 27px;" value="Загрузить"> 
+                <a class='addNewLink' onclick='addNewUpload(this)' title='Добавить еще 1 файл'><img src="/public/images/add_upload.gif"></a> 
+            </div> 
+            <div id="flashSelector" style="display:none;"> 
+            	<div id="buttons"> 
+                   <div id="size_progress"></div> 
+                   <div class="upbutton"> 
+                        <input type="button" id="fAddPhotos" value="Обзор" /> 
+                   </div> 
+                </div> 
+                <input type="button" class="multibutton" id="upStart" value="" onclick="uploadStart();"> 
+                <script type="text/javascript"> 
+					var ASPSESSID = "3949bd7d8174f23772645be7bd993368";
+					var swfuPhotos;
+					function BindSWFUpload() {
+						var swfuPhotosSettings = {
+							file_dialog_complete_handler: photos_fileDialogComplete,
+					
+							upload_progress_handler: photos_uploadProgress,
+							upload_success_handler: photos_uploadSuccess,
+							upload_complete_handler: photos_uploadComplete,
+							file_queued_handler: fileQueued,
+							file_queue_error_handler: photos_fileQueueError,
+							
+					
+							file_size_limit: "100 MB",
+							file_types: "*.jpg;*.png;*.gif;*.jpeg",
+							file_types_description: "Изображения",
+							file_upload_limit: "20",
+							button_placeholder_id: "fAddPhotos"
+							
+							
+						}
+					
+						var defaultSettings = {
+							flash_url: "/public/swfupload/swf/swfupload.swf",
+							upload_url: "/Multiupload/",
+							post_params: {
+								"ASPSESSID": "3949bd7d8174f23772645be7bd993368",
+								"ASPSESSUI": ""
+							},
+					
+							button_width: 91,
+							button_height: 25,
+							button_image_url: "/public/swfupload/images/files.png",
+					
+							button_window_mode: SWFUpload.WINDOW_MODE.TRANSPARENT,
+							button_cursor: SWFUpload.CURSOR.HAND
+						}
+					
+						swfuPhotos = new SWFUpload($.extend(swfuPhotosSettings, defaultSettings));
+					}
+				</script> 
+            </div> 
+        </div> 
+        <div class="rightpan"></div> 
+    </div> 
+    <div id="dopSelector"></div>  
+    <div id="multiFiles" style="display:none;">  
+        <div style="width:480px; background-color:#f1f1f1; margin-left:auto; margin-right:auto; padding:10px;"> 
+            <div id="filesMulti"></div> 
+        </div> 
+    </div> 
+    <br clear="all"> 
+    <div style="width:100%; clear:both; margin-top:10px;"><div class="cont600"> 
+	<h1></h1> 
+	<p><div style="position: absolute; margin-top: -5px; margin-left:-120px; height:185px; background-color:#FFFFFF;"> 
+			<script type="text/javascript"> 
+                var mag = Math.floor( Math.random( ) * (2 - 1 + 1) ) + 1;
+                document.write('<a href="http://zula.ru/"><img src="/public/images/temp/'+ mag +'.jpg"></a>');
+            </script> 
+		</div> 
+        <div style="width:800px; text-align:center; margin-left:-110px; margin-right:auto;"> 
+            <font class="text1"> 
+            <p> 
+                <div id="MarketGid3948"><center><a href="http://marketgid.com/" target="_blank">Загрузка...</a></center></div> 
+                <script type="text/javascript"> 
+					var MarketGidDate = new Date();
+					document.write('<scr'+'ipt type="text/javascript" '
+					+'src="http://mg.dt00.net/gjs/i/p/ipicture.ru.3948.js?t='
+					+MarketGidDate.getYear()+MarketGidDate.getMonth()+'"'
+					+ '" charset="WINDOWS-1251" ></scr'+'ipt>');
+                </script> 
+            </p> 
+            </font> 
+        </div> 
+        <div class="screenshooter" style=" width:420px; margin-left:auto; margin-right:auto; padding:16px; height:55px; margin-top:10px;">
+	<a href="/tools/publish.htm" style="background-color:#fff1a8; display:block; padding:5px; float:left;"><img src="/public/images/shooter.png" align="left" border="0"></a> 
+    <a href="/tools/toolbar.htm" style="background-color:#fff1a8; display:block; padding:5px; float:right;"><img src="/public/images/toolbar.png" align="right" border="0"></a> 
+</div></p> 
+</div></div> 
+    </form> 
+    <div id="footer"> 
+    	<img src="/public/images/foot.gif"><br /> 
+        &copy; 2007-2010 "<a href="/Lastphoto/">i</a>Picture" Все права защищены
+        <div> 
+			<script type="text/javascript"> 
+                window.onload = function() { BindSWFUpload();}
+            </script> 
+			<noindex> 
+				<script type="text/javascript"><!--
+                document.write("<a href='http://www.liveinternet.ru/click' "+
+                "target=_blank><img src='//counter.yadro.ru/hit?t14.6;r"+
+                escape(document.referrer)+((typeof(screen)=="undefined")?"":
+                ";s"+screen.width+"*"+screen.height+"*"+(screen.colorDepth?
+                screen.colorDepth:screen.pixelDepth))+";u"+escape(document.URL)+
+                ";"+Math.random()+
+                "' alt='' title='LiveInternet: показано число просмотров за 24"+
+                " часа, посетителей за 24 часа и за сегодня' "+
+                "border='0' width='1' height='1'><\/a>")
+                //--></script> 
+            </noindex> 
+			<div class="ss"></div> 
+		</div> 
+    </div> 
+</div> 
+</body> 
+</html> 

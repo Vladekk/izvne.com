@@ -1,0 +1,415 @@
+
+<!-- saved from url=(0070)https://commondatastorage.googleapis.com/itchio/html/235936/index.html -->
+<html style="background-color: rgb(60, 27, 67);"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Zigzag</title>
+<script>
+
+var canvas, ctx, centerX, centerY, maxRadius, rotationsPerSecond, zoomSpeed, path, pathStart, pathEnd, pathIndex, interpIndex, time, startTime, rotationAngle, deltaTime, rotationReversalsPerSecond, rewindInterval, audio, backgroundColor, pathColor, trailColor, usedPaletteIndices, currentPaletteIndex, nextPaletteChangeTime, blinkOpacity;
+var isLoaded = false;
+var isGameRunning = false;
+var stepLength = 0.25;
+var musicLength = 140000;
+var measureLength = 12 / 13;
+var paletteDebuggerOn = false;
+
+var palettes = [
+	["#3C1B43", "#922D50", "#D4E79E"], // initial
+	["#53131E", "#A50104", "#FFFFFF"],
+	["#009FB7", "#FED766", "#D11149"],
+	["#145C9E", "#C4CBCA", "#EE4266"],
+	["#0F084B", "#26408B", "#C2E7D9"],
+	["#84DCC6", "#FFFFFF", "#222222"],
+];
+
+function getPoint(radial, angular) {
+	var radius = radial * radial * maxRadius;
+	var angle = angular * 2 * Math.PI / 6;
+	angle += rotationAngle;
+	return {
+		x: centerX + Math.sin(angle) * radius,
+		y: centerY + Math.cos(angle) * radius
+	};
+}
+ 
+function radialMoveTo(radial, angular) {
+	var point = getPoint(radial, angular);
+	ctx.moveTo(point.x, point.y);
+}
+ 
+function radialLineTo(radial, angular) {
+	var point = getPoint(radial, angular);
+	ctx.lineTo(point.x, point.y);
+}
+ 
+function drawBackground() {
+	ctx.fillStyle = backgroundColor;
+	ctx.fillRect(0, 0, canvas.width, canvas.height);
+}
+ 
+function updateTime() {
+	deltaTime = new Date().getTime() / 1000 - time;
+	time += deltaTime;
+}
+
+function updatePalette() {
+	if (time >= nextPaletteChangeTime) {
+		nextPaletteChangeTime += (paletteDebuggerOn ? 4 : 16) * measureLength;
+		blinkOpacity = 0.8;
+		var usedPalettes = 0;
+		for (var i in usedPaletteIndices) {
+			usedPalettes += 1;
+		}
+		if (usedPalettes == palettes.length - 1) {
+			usedPaletteIndices = {};
+		}
+		usedPaletteIndices[currentPaletteIndex] = true;
+		while (true) {
+			var index = Math.floor(Math.random() * palettes.length);
+			if (!usedPaletteIndices[index]) {
+				setPalette(index);
+				break;
+			}
+		}
+	}
+}
+ 
+function updateRotation() {
+	if (Math.random() < deltaTime * rotationReversalsPerSecond) {
+		rotationsPerSecond *= -1;
+	}
+	rotationAngle += deltaTime * 2 * Math.PI * rotationsPerSecond;
+	var speedup = deltaTime / 200;
+	speedup *= (time - startTime + 20) / (time - startTime + 5);
+	rotationsPerSecond += speedup * (rotationsPerSecond > 0 ? 1 : -1) * 1.2;
+	zoomSpeed += speedup;
+	rotationReversalsPerSecond += speedup;
+}
+
+function updatePath() {
+	pathStart -= zoomSpeed * deltaTime;
+	pathEnd -= zoomSpeed * deltaTime;
+	while (pathEnd < 2) {
+		var n = path.length;
+		var delta = n >= 2 ? path[n - 1] - path[n - 2] : 0;
+		if (n >= 6 &&
+			path[n - 2] - path[n - 3] == delta &&
+			path[n - 3] - path[n - 4] == delta &&
+			path[n - 4] - path[n - 5] == delta &&
+			path[n - 5] - path[n - 6] == delta) {
+				path.push(path[n - 1]);
+		} else {
+			var r = Math.random() < 0.5;
+			var nextDelta = delta == 0 ?
+				Math.random() < 0.5 ? -1 : 1 :
+				Math.random() < 0.6 ? delta : 0;
+	        path.push(path[n - 1] + nextDelta);
+			
+		}
+		if (path[n - 1] == path[n - 2]) {
+			pathEnd += stepLength;
+		}
+	}
+	while (pathStart < 0) {
+		if (pathIndex == 0) {
+			gameOver();
+			return;
+		}
+		if (path[0] == path[1]) {
+			pathStart += stepLength;
+		}
+		path.shift();
+		pathIndex -= 1;
+		interpIndex -= 1;
+	}
+	var factor = zoomSpeed * 50 * deltaTime;
+	interpIndex = (factor * pathIndex + interpIndex) / (factor + 1);
+}
+
+function drawPathSegment(n, color, thickness) {
+	if (n == 0) {
+		return;
+	}
+	
+	var radial = pathStart;
+	var angular = path[0];
+	var index = 0;
+	
+	function advance(d) {
+		var factor = (index - n) * (index + d - n) < 0 ? n % 1 : 1;
+		if (path[index + d] == path[index]) {
+			radial += factor * d * stepLength;
+		}
+		angular += factor * (path[index + d] - path[index]);
+		index += d;
+	}
+	
+	ctx.fillStyle = color;
+	ctx.beginPath();
+	var began = false;
+
+	function addPoint(radial, angular) {
+		if (!began) {
+			radialMoveTo(radial, angular);
+			began = true;
+		} else {
+			radialLineTo(radial, angular);
+		}
+	}
+	
+	function addCurrentPoint(dx, dy) {
+		addPoint(radial + thickness * dy, angular + 3 * thickness * dx);
+	}
+
+	function addLineCap(d) {
+		var delta = path[index + d] - path[index];
+		if (delta == 0) {
+			addCurrentPoint(d, 0);
+			addCurrentPoint(0, 1);
+			addCurrentPoint(-d, 0);
+		} else if (delta == 1) {
+			addCurrentPoint(0, -d);
+			addCurrentPoint(0, d);
+		} else {
+			addCurrentPoint(0, d);
+			addCurrentPoint(0, -d);
+		}
+		advance(d);
+	}
+
+	function addCorner(d) {
+		var d1 = path[index] - path[index - 1];
+		var d2 = path[index + 1] - path[index];
+		if (d1 == d2) {
+			addCurrentPoint(0, d * (d1 > 0 ? 1 : -1));
+		} else {
+			addCurrentPoint(-d, d * (d1 + d2));
+		}
+		advance(d);
+	}
+	
+	addLineCap(1);
+	for (var i = 0; i < Math.ceil(n) - 1; i++) {
+		addCorner(1);
+	}
+	addLineCap(-1);
+	for (var i = 0; i < Math.ceil(n) - 1; i++) {
+		addCorner(-1);
+	}
+
+	ctx.fill();
+}
+
+function drawPath() {
+	drawPathSegment(path.length - 1, pathColor, 0.03);
+	drawPathSegment(interpIndex, trailColor, 0.015);
+}
+
+function drawBlink() {
+	if (blinkOpacity > 0) {
+		ctx.fillStyle = "rgba(255,255,255," + blinkOpacity + ")";
+		ctx.fillRect(0, 0, canvas.width, canvas.height);
+		blinkOpacity -= 0.05;
+	}
+}
+
+function repaint() {
+	if (!isGameRunning) {
+		return;
+	}
+	
+	updateTime();
+	updatePalette();
+	updateRotation();
+	updatePath();
+
+	drawBackground();
+	drawPath();
+	drawBlink();
+
+	requestAnimationFrame(repaint);
+};
+
+function resizeCanvas() {
+	canvas.width = window.innerWidth;
+	canvas.height = window.innerHeight;
+	centerX = canvas.width / 2;
+	centerY = canvas.height / 2;
+	maxRadius = Math.sqrt(centerX * centerX + centerY * centerY);
+	window.focus();
+}
+
+function setPalette(index) {
+	if (paletteDebuggerOn) {
+		document.getElementById("palette").innerHTML = "" + index;
+	}
+	currentPaletteIndex = index;
+	var palette = palettes[index];
+	backgroundColor = palette[0];
+	pathColor = palette[1];
+	trailColor = palette[2];
+	document.documentElement.style.backgroundColor = backgroundColor;
+	document.getElementById("cover").style.backgroundColor = backgroundColor;
+	document.getElementById("overlay").style.color = trailColor;
+	document.getElementById("loading").style.color = trailColor;
+}
+
+function startGame() {
+	document.getElementById("overlay").style.display = "none";
+	isGameRunning = true;
+	rotationsPerSecond = 0.25;
+	rotationReversalsPerSecond = 0.35;
+	zoomSpeed = 0.15;
+	path = [0, 0];
+	pathStart = 0.5;
+	pathEnd = pathStart;
+	pathIndex = 1;
+	interpIndex = 1;
+	time = new Date().getTime() / 1000;
+	startTime = time;
+	rotationAngle = Math.PI;
+	audio.currentTime = 0;
+	audio.play();
+	if (rewindInterval) {
+		clearInterval(rewindInterval);
+	}
+	rewindInterval = setInterval(function() {
+		audio.currentTime = 0;
+	}, musicLength);
+	usedPaletteIndices = {};
+	nextPaletteChangeTime = startTime + (paletteDebuggerOn ? 4 : 24) * measureLength;
+	setPalette(0);
+	blinkOpacity = 0;
+	repaint();
+}
+
+function gameOver() {
+	if (!isGameRunning) {
+		return;
+	}
+	document.getElementById("overlay").style.display = "block";
+	var seconds = Math.floor(time - startTime);
+	document.getElementById("help").innerHTML =
+	    "left to zig" +
+	    "<br><br>" +
+	    "right to zag" +
+	    "<br><br>" +
+		"space to restart" +
+	    "<br><br>" +
+		"you lasted " + seconds + " second" + (seconds != 1 ? "s" : "");
+	isGameRunning = false;
+	audio.pause();
+	clearInterval(rewindInterval);
+}
+
+function handleKey(event) {
+	if (!isLoaded) {
+		return;
+	}
+	if (!isGameRunning && event.keyCode == 32) {
+		startGame();
+		event.preventDefault();
+	} else if (isGameRunning) {
+		var value;
+		if (event.keyCode == 37) {
+			value = 1;
+			event.preventDefault();
+		} else if (event.keyCode == 39) {
+			value = -1;
+			event.preventDefault();
+		} else {
+			return;
+		}
+		if (path[pathIndex + 1] - path[pathIndex] == value) {
+			while (path[pathIndex + 1] - path[pathIndex] == value) {
+				pathIndex += 1;
+			}
+			pathIndex += 1;
+		} else {
+			gameOver();
+		}
+	}
+}
+
+function init() {
+	audio = new Audio("hybrid.mp3");
+	audio.addEventListener("canplaythrough", function() {
+		if (!isLoaded) {
+			isLoaded = true;
+			document.getElementById("overlay").style.display = "block";
+			document.getElementById("loading").style.display = "none";
+		}
+	});
+	canvas = document.getElementById("canvas");
+	ctx = canvas.getContext("2d");
+	window.addEventListener('resize', resizeCanvas, false);
+	setPalette(0);
+	resizeCanvas();
+}
+
+</script>
+<style>
+
+body, canvas {
+	padding: 0;
+	border: 0;
+	margin: 0;
+}
+
+* {
+	font-family: sans-serif;
+}
+
+#loading, #pregame {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	font-family: sans-serif;	
+}
+
+#loading {
+	font-size: 18px;
+}
+
+#overlay, #cover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#overlay {
+	display: none;
+}
+
+#cover {
+	opacity: 0.7;
+}
+
+#title {
+	font-weight: bold;
+	font-size: 50px;
+	margin-bottom: 20px;
+}
+
+#help {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 14px;
+}
+
+</style>
+</head>
+<body onload="init()" onblur="gameOver()" onkeydown="handleKey(event)">
+<canvas id="canvas" width="960" height="600"></canvas>
+<div id="loading" style="color: rgb(212, 231, 158); display: none;">loading</div>
+<div id="overlay" style="color: rgb(212, 231, 158); display: block;">
+	<div id="cover" style="background-color: rgb(60, 27, 67);"></div>
+	<div id="pregame">
+		<div id="title">ZIGZAG</div>
+		<div id="help">left to zig<br><br>right to zag<br><br>space to start</div>
+	</div>
+</div>
+<div id="palette" style="position:absolute;top:20px;left:20px;color:white;font-family:sans-serif;font-size:20px;"></div>
+
+</body></html>

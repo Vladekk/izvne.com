@@ -7,7 +7,7 @@ export DOTNET_ROOT=/opt/buildhome/.dotnet
 dotnet tool install -g Wyam.Tool	
 
 cd Izvne.com
-wyam build config.wyam -o ../wwwroot
+wyam build config.wyam --use-local-packages -o ../wwwroot
 
 
 if [ $? -ne 0 ]; then

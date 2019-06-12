@@ -4,7 +4,7 @@ chmod +x ./dotnet-install.sh
 export PATH="$PATH:/opt/buildhome/.dotnet/tools"
 export PATH="$PATH:/opt/buildhome/.dotnet"
 export DOTNET_ROOT=/opt/buildhome/.dotnet
-dotnet tool install -g Wyam.Tool	--version 2.2.2
+dotnet tool install -g Wyam.Tool	--version 2.2.1
 
 cd Izvne.com
 wyam build config.wyam  -o ../wwwroot

@@ -1,0 +1,158 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Wyam.Razor</name>
+    </assembly>
+    <members>
+        <member name="T:Wyam.Razor.CompilerCacheKey">
+            <summary>
+            Used as a key for the Razor compiler cache to persist page compilations from one generation to the next.
+            A composite of layout location, view start location, and file hash. Note that file path is not included
+            so that documents with the same content (or not content) and with the same layout and view start can
+            use the same cached compilation.
+            </summary>
+        </member>
+        <member name="T:Wyam.Razor.FileSystemFileProvider">
+            <summary>
+            Looks up files using the Wyam virtual file system.
+            </summary>
+        </member>
+        <member name="T:Wyam.Razor.Razor">
+            <summary>
+            Parses, compiles, and renders Razor templates.
+            </summary>
+            <remarks>
+            <para>
+            Razor is the template language used by ASP.NET MVC. This module can parse and compile Razor
+            templates and then render them to HTML. While a bit
+            outdated, <a href="http://haacked.com/archive/2011/01/06/razor-syntax-quick-reference.aspx/">this guide</a>
+            is a good quick reference for the Razor language syntax. This module uses the Razor engine from ASP.NET Core.
+            </para>
+            <para>
+            Whenever possible, the same conventions as the Razor engine in ASP.NET MVC were used. It's
+            important to keep in mind however, that this is <em>not</em> ASP.NET MVC. Many features you may
+            be used to will not work (like most of the <c>HtmlHelper</c> extensions) and others just don't
+            make sense (like the concept of <em>actions</em> and <em>controllers</em>). Also, while property names and
+            classes in the two engines have similar names(such as <c>HtmlHelper</c>) they are not the same,
+            and code intended to extend the capabilities of Razor in ASP.NET MVC probably won't work.
+            That said, a lot of functionality does function the same as it does in ASP.NET MVC.
+            </para>
+            </remarks>
+            <metadata cref="F:Wyam.Common.Meta.Keys.SourceFileName" usage="Input">
+            <metadata cref="F:Wyam.Common.Meta.Keys.RelativeFilePath" usage="Input" />
+            Used to determine if the source file name contains the ignore prefix.
+            </metadata>
+            <category>Templates</category>
+        </member>
+        <member name="M:Wyam.Razor.Razor.#ctor(System.Type)">
+            <summary>
+            Parses Razor templates in each input document and outputs documents with rendered HTML content.
+            If <c>basePageType</c> is specified, it will be used as the base type for Razor pages. The new base
+            type must derive from <c>WyamRazorPage&lt;TModel&gt;</c>.
+            </summary>
+            <param name="basePageType">Type of the base Razor page class, or <c>null</c> for the default base class.</param>
+        </member>
+        <member name="M:Wyam.Razor.Razor.WithViewStart(Wyam.Common.IO.FilePath)">
+            <summary>
+            Specifies an alternate ViewStart file to use for all Razor pages processed by this module.
+            </summary>
+            <param name="path">The path to the alternate ViewStart file.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Razor.Razor.WithViewStart(Wyam.Common.Configuration.DocumentConfig)">
+            <summary>
+            Specifies an alternate ViewStart file to use for all Razor pages processed by this module. This
+            lets you specify a different ViewStart file for each document. For example, you could return a
+            ViewStart based on document location or document metadata. Returning <c>null</c> from the
+            function reverts back to the default ViewStart search behavior for that document.
+            </summary>
+            <param name="path">A delegate that should return the ViewStart path as a <c>FilePath</c>,
+            or <c>null</c> for the default ViewStart search behavior.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Razor.Razor.WithLayout(Wyam.Common.IO.FilePath)">
+            <summary>
+            Specifies a layout file to use for all Razor pages processed by this module.
+            </summary>
+            <param name="path">The path to the layout file.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Razor.Razor.WithLayout(Wyam.Common.Configuration.DocumentConfig)">
+            <summary>
+            Specifies a layout file to use for all Razor pages processed by this module. This
+            lets you specify a different layout file for each document.
+            </summary>
+            <param name="path">A delegate that should return the layout path as a <c>FilePath</c>.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Razor.Razor.WithModel(System.Object)">
+            <summary>
+            Specifies a model to use for each page.
+            </summary>
+            <param name="model">The model.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Razor.Razor.WithModel(Wyam.Common.Configuration.DocumentConfig)">
+            <summary>
+            Specifies a model to use for each page based on the current input
+            document and context.
+            </summary>
+            <param name="model">A delegate that returns the model.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Razor.Razor.IgnorePrefix(System.String)">
+            <summary>
+            Specifies a file prefix to ignore. If a document has a metadata value for <c>SourceFileName</c> and
+            that metadata value starts with the specified prefix, that document will not be processed or
+            output by the module. By default, the Razor module ignores all documents prefixed with
+            an underscore (_). Specifying <c>null</c> will result in no documents being ignored.
+            </summary>
+            <param name="prefix">The file prefix to ignore.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Razor.Razor.Execute(System.Collections.Generic.IReadOnlyList{Wyam.Common.Documents.IDocument},Wyam.Common.Execution.IExecutionContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Wyam.Razor.RazorCompiler">
+            <summary>
+            Holds references to Razor objects based on the compilation parameters. This ensures the compilation cache and other
+            service objects are persisted from one generation to the next, given the same compilation parameters.
+            </summary>
+        </member>
+        <member name="M:Wyam.Razor.RazorCompiler.GetViewFromStream(System.IServiceProvider,Wyam.Razor.RenderRequest,Microsoft.AspNetCore.Mvc.Razor.IRazorPage)">
+            <summary>
+            Gets the view for an input document (which is different than the view for a layout, partial, or
+            other indirect view because it's not necessarily on disk or in the file system).
+            </summary>
+        </member>
+        <member name="M:Wyam.Razor.RazorCompiler.GetPageFromStream(System.IServiceProvider,Wyam.Razor.RenderRequest)">
+            <summary>
+            Gets the Razor page for an input document stream. This is roughly modeled on
+            DefaultRazorPageFactory and CompilerCache. Note that we don't actually bother
+            with caching the page if it's from a live stream.
+            </summary>
+        </member>
+        <member name="T:Wyam.Razor.RazorService">
+            <summary>
+            Razor compiler should be shared so that pages are only compiled once.
+            </summary>
+        </member>
+        <member name="T:Wyam.Razor.RenderRequest">
+            <summary>
+            All the required parameters to render a Razor view.
+            </summary>
+        </member>
+        <member name="T:Wyam.Razor.WyamRazorProjectFileSystem">
+            <summary>
+            A RazorProjectFileSystem that lets us use the Wyam file provider while
+            allowing replacement of the stream with document content.
+            </summary>
+        </member>
+        <member name="T:Wyam.Razor.WyamRazorViewCompilerProvider">
+            <summary>
+            This is copied from <see cref="T:Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompilerProvider"/> and exists entirely to provide
+            <see cref="T:Wyam.Razor.WyamRazorViewCompiler"/> instead of <see cref="T:Microsoft.AspNetCore.Mvc.Razor.Internal.RazorViewCompiler"/>.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Wyam.Minification</name>
+    </assembly>
+    <members>
+        <member name="T:Wyam.Minification.MinifyCss">
+            <summary>
+            Minifies the CSS content.
+            </summary>
+            <remarks>
+            This module takes the CSS content and uses minification to reduce the output.
+            </remarks>
+            <example>
+            <code>
+            Pipelines.Add("CSS",
+                ReadFiles("*.css"),
+                MinifyCss(),
+                WriteFiles(".css")
+            );
+            </code>
+            </example>
+            <category>Content</category>
+        </member>
+        <member name="M:Wyam.Minification.MinifyCss.#ctor(System.Boolean)">
+            <summary>
+            Minifies the CSS content.
+            </summary>
+            <param name="isInlineCode">
+            Boolean to specify whether the content has inline CSS code. Default value is <c>false</c>.
+            </param>
+        </member>
+        <member name="M:Wyam.Minification.MinifyCss.IsInlineCode(System.Boolean)">
+            <summary>
+            Flag for whether the content has inline CSS code.
+            </summary>
+            <param name="isInlineCode">Default value is <c>true</c>.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Minification.MinifyCss.Execute(System.Collections.Generic.IReadOnlyList{Wyam.Common.Documents.IDocument},Wyam.Common.Execution.IExecutionContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Wyam.Minification.MinifyHtml">
+            <summary>
+            Minifies the HTML content.
+            </summary>
+            <remarks>
+            This module takes the HTML content and uses minification to reduce the output.
+            </remarks>
+            <example>
+            <code>
+            Pipelines.Add("Content",
+                ReadFiles("*.md"),
+                FrontMatter(Yaml()),
+                Markdown(),
+                Razor(),
+                MinifyHtml(),
+                WriteFiles(".html")
+            );
+            </code>
+            </example>
+            <category>Content</category>
+        </member>
+        <member name="M:Wyam.Minification.MinifyHtml.#ctor(System.Boolean)">
+            <summary>
+            Minifies the HTML content.
+            </summary>
+            <param name="useEmptyMinificationSettings">
+            Boolean to specify whether to use empty minification settings.
+            Default value is <c>false</c>, this will use commonly accepted settings.
+            </param>
+        </member>
+        <member name="M:Wyam.Minification.MinifyHtml.EmptyTagRenderMode(WebMarkupMin.Core.HtmlEmptyTagRenderMode)">
+            <summary>
+            Render mode of HTML empty tag. Can take the following values:
+            <list type="bullets">
+            <item><description><c>NoSlash</c>.Without slash(for example, <c>&lt;br&gt;</c>).</description></item>
+            <item><description><c>Slash</c>.With slash(for example, <c>&lt;br/&gt;</c>).</description></item>
+            <item><description><c>SpaceAndSlash</c>.With space and slash(for example, <c>&lt;br /&gt;</c>).</description></item>
+            </list>
+            </summary>
+            <param name="emptyTagRenderMode">Enum type <see cref="T:WebMarkupMin.Core.HtmlEmptyTagRenderMode"/>; default value is <c>HtmlEmptyTagRenderMode.NoSlash</c></param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Minification.MinifyHtml.RemoveHtmlComments(System.Boolean)">
+            <summary>
+            Flag for whether to remove all HTML comments, except conditional, noindex, KnockoutJS containerless comments and AngularJS comment directives.
+            </summary>
+            <param name="removeHtmlComments">Default value is <c>true</c>.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Minification.MinifyHtml.RemoveTagsWithoutContent(System.Boolean)">
+            <summary>
+            Flag for whether to remove tags without content, except for <c>textarea</c>, <c>tr</c>, <c>th</c> and <c>td</c> tags, and tags with <c>class</c>, <c>id</c>, <c>name</c>, <c>role</c>, <c>src</c> and <c>data-*</c> attributes.
+            </summary>
+            <param name="removeTagsWithoutContent">Default value is <c>false</c>.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Minification.MinifyHtml.RemoveOptionalEndTags(System.Boolean)">
+            <summary>
+            Flag for whether to remove optional end tags (<c>html</c>, <c>head</c>, <c>body</c>, <c>p</c>, <c>li</c>, <c>dt</c>, <c>dd</c>, <c>rt</c>, <c>rp</c>, <c>optgroup</c>, <c>option</c>, <c>colgroup</c>, <c>thead</c>, <c>tfoot</c>, <c>tbody</c>, <c>tr</c>, <c>th</c> and <c>td</c>).
+            </summary>
+            <param name="removeOptionalEndTags">Default value is <c>true</c>.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Minification.MinifyHtml.WithSettings(System.Action{WebMarkupMin.Core.HtmlMinificationSettings})">
+            <summary>
+            Updates the minification settings.
+            </summary>
+            <param name="action">A function to update the minification settings with.</param>
+            <returns>The current instance.</returns>
+            <example>
+            <code>
+            MinifyHtml()
+                .WithSettings(settings =>
+                {
+                    settings.CollapseBooleanAttributes = false;
+                    settings.AttributeQuotesRemovalMode = HtmlAttributeQuotesRemovalMode.KeepQuotes;
+                })
+            </code>
+            </example>
+        </member>
+        <member name="M:Wyam.Minification.MinifyHtml.Execute(System.Collections.Generic.IReadOnlyList{Wyam.Common.Documents.IDocument},Wyam.Common.Execution.IExecutionContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Wyam.Minification.MinifyJs">
+            <summary>
+            Minifies the JS content.
+            </summary>
+            <remarks>
+            This module takes the JS content and uses minification to reduce the output.
+            </remarks>
+            <example>
+            <code>
+            Pipelines.Add("JS",
+                ReadFiles("*.js"),
+                MinifyJs(),
+                WriteFiles(".js")
+            );
+            </code>
+            </example>
+            <category>Content</category>
+        </member>
+        <member name="M:Wyam.Minification.MinifyJs.#ctor(System.Boolean)">
+            <summary>
+            Minifies the JS content.
+            </summary>
+            <param name="isInlineCode">
+            Boolean to specify whether the content has inline JS code. Default value is <c>false</c>.
+            </param>
+        </member>
+        <member name="M:Wyam.Minification.MinifyJs.IsInlineCode(System.Boolean)">
+            <summary>
+            Flag for whether the content has inline JS code.
+            </summary>
+            <param name="isInlineCode">Default value is <c>true</c>.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Minification.MinifyJs.Execute(System.Collections.Generic.IReadOnlyList{Wyam.Common.Documents.IDocument},Wyam.Common.Execution.IExecutionContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Wyam.Minification.MinifyXhtml">
+            <summary>
+            Minifies the XHTML content.
+            </summary>
+            <remarks>
+            This module takes the XHTML content and uses minification to reduce the output.
+            </remarks>
+            <example>
+            <code>
+            Pipelines.Add("Content",
+                ReadFiles("*.md"),
+                FrontMatter(Yaml()),
+                Markdown(),
+                Razor(),
+                MinifyXhtml(),
+                WriteFiles(".html")
+            );
+            </code>
+            </example>
+            <category>Content</category>
+        </member>
+        <member name="M:Wyam.Minification.MinifyXhtml.#ctor(System.Boolean)">
+            <summary>
+            Minifies the XHTML content.
+            </summary>
+            <param name="useEmptyMinificationSettings">
+            Boolean to specify whether to use empty minification settings.
+            Default value is <c>false</c>, this will use commonly accepted settings.
+            </param>
+        </member>
+        <member name="M:Wyam.Minification.MinifyXhtml.RemoveHtmlComments(System.Boolean)">
+            <summary>
+            Flag for whether to remove all HTML comments, except conditional, noindex, KnockoutJS containerless comments and AngularJS comment directives.
+            </summary>
+            <param name="removeHtmlComments">Default value is <c>true</c>.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Minification.MinifyXhtml.RemoveTagsWithoutContent(System.Boolean)">
+            <summary>
+            Flag for whether to remove tags without content, except for <c>textarea</c>, <c>tr</c>, <c>th</c> and <c>td</c> tags, and tags with <c>class</c>, <c>id</c>, <c>name</c>, <c>role</c>, <c>src</c> and <c>data-*</c> attributes.
+            </summary>
+            <param name="removeTagsWithoutContent">Default value is <c>false</c>.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Minification.MinifyXhtml.RenderEmptyTagsWithSpace(System.Boolean)">
+            <summary>
+            Flag for whether to allow the inserting space before slash in empty tags (for example, <c>true</c> - <c><br /></c>; <c>false</c> - <c><br/></c>).
+            </summary>
+            <param name="renderEmptyTagsWithSpace">Default value is <c>true</c>.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Minification.MinifyXhtml.WithSettings(System.Action{WebMarkupMin.Core.XhtmlMinificationSettings})">
+            <summary>
+            Updates the minification settings.
+            </summary>
+            <param name="action">A function to update the minification settings with.</param>
+            <returns>The current instance.</returns>
+            <example>
+            <code>
+            MinifyXhtml()
+                .WithSettings(settings => settings.RemoveHtmlComments = false)
+            </code>
+            </example>
+        </member>
+        <member name="M:Wyam.Minification.MinifyXhtml.Execute(System.Collections.Generic.IReadOnlyList{Wyam.Common.Documents.IDocument},Wyam.Common.Execution.IExecutionContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Wyam.Minification.MinifyXml">
+            <summary>
+            Minifies the XML content.
+            </summary>
+            <remarks>
+            This module takes the XML content and uses minification to reduce the output.
+            </remarks>
+            <example>
+            <code>
+            Pipelines.Add("Blog posts",
+                ReadFiles("posts/*.md"),
+                FrontMatter(Yaml()),
+                Markdown(),
+                WriteFiles(".html"),
+                Rss(siteUri: "http://example.org",
+                    rssPath: new FilePath("posts/feed.rss"),
+                    feedTitle: "My awesome blog",
+                    feedDescription: "Blog about something"
+                ),
+                MinifyXml(),
+                WriteFiles()
+            );
+            </code>
+            </example>
+            <category>Content</category>
+        </member>
+        <member name="M:Wyam.Minification.MinifyXml.#ctor(System.Boolean)">
+            <summary>
+            Minifies the XML content.
+            </summary>
+            <param name="useEmptyMinificationSettings">
+            Boolean to specify whether to use empty minification settings.
+            Default value is <c>false</c>, this will use commonly accepted settings.
+            </param>
+        </member>
+        <member name="M:Wyam.Minification.MinifyXml.RemoveXmlComments(System.Boolean)">
+            <summary>
+            Flag for whether to remove all XML comments.
+            </summary>
+            <param name="removeXmlComments">Default value is <c>true</c>.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Minification.MinifyXml.WithSettings(System.Action{WebMarkupMin.Core.XmlMinificationSettings})">
+            <summary>
+            Updates the minification settings.
+            </summary>
+            <param name="action">A function to update the minification settings with.</param>
+            <returns>The current instance.</returns>
+            <example>
+            <code>
+            MinifyXml()
+                .WithSettings(settings => settings.RemoveXmlComments = false)
+            </code>
+            </example>
+        </member>
+        <member name="M:Wyam.Minification.MinifyXml.Execute(System.Collections.Generic.IReadOnlyList{Wyam.Common.Documents.IDocument},Wyam.Common.Execution.IExecutionContext)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

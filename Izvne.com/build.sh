@@ -4,10 +4,10 @@ chmod +x ./dotnet-install.sh
 export PATH="$PATH:/opt/buildhome/.dotnet/tools"
 export PATH="$PATH:/opt/buildhome/.dotnet"
 export DOTNET_ROOT=/opt/buildhome/.dotnet
-dotnet tool install -g Wyam.Tool	
+#dotnet tool install -g Wyam.Tool	
 
 cd Izvne.com
-wyam build config.wyam --use-local-packages -o ../wwwroot
+dotnet ./lib/Wyam.dll build config.wyam --use-local-packages -o ../wwwroot
 
 
 if [ $? -ne 0 ]; then

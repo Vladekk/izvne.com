@@ -39,7 +39,8 @@ var filesPath = Path.GetDirectoryName(Directory.GetCurrentDirectory())+"/files";
 //throw new Exception(filesPath);
               
 
-var travelNames = new[] {"Иордания", "Кипр", "Исландия", "США", "Германия", "Крит", "Черногория", "Крым", "Вьетнам", "Амстердам", "Путешествие в Турцию", "Израиль","Цифровой скиталец"};
+var travelNames = new[] {"Иордания", "Кипр", "Исландия", "США", "Германия", "Крит", "Черногория", "Крым", "Вьетнам", "Амстердам", 
+"Путешествие в Турцию", "Израиль","Цифровой скиталец","Португалия"};
 
 Pipelines.Add ("Yarn",
  CopyFiles ("node_modules/**")

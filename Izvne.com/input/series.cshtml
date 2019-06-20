@@ -15,13 +15,13 @@
     foreach (var travelGroup in travelGroups)
     {
         <h2>
-            <a href="#@travelGroup.Key">@travelGroup.Key</a>
+            <a href="#@travelGroup.Key">@travelGroup.Key.Replace(" —","")</a>
         </h2>
     }
     foreach (var travelGroup in travelGroups)
     {
         <h3 class="text-center">
-            <a id="@travelGroup.Key">@travelGroup.Key</a>
+            <a id="@travelGroup.Key">@travelGroup.Key.Replace(" —","")</a>
         </h3>
         foreach (var doc in travelGroup)
         {

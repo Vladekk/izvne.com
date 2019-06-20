@@ -1,6 +1,6 @@
 @{
 
-    var travelNames = new[] {"Иордания", "Кипр", "Исландия", "США", "Германия", "Крит", "Черногория", "Крым", "Вьетнам", "Амстерадам", "Турция", "Израиль"};
+    var travelNames = new[] {"Иордания —", "Кипр —", "Исландия —", "США —", "Германия —", "Крит —", "Черногория —", "Крым —", "Вьетнам —", "Амстерадам —", "Турция —", "Израиль —"};
     var allTravels = ((IEnumerable<IDocument>) Documents["Posts"].Where(_ => travelNames.Any(t => _["Title"].ToString().Contains(t))).OrderBy(_ => (DateTime) _["Date"]).ToList());
     var travelGroups = allTravels.GroupBy(_ => travelNames.First(t => _["Title"].ToString().Contains(t))).OrderBy(_ => _.Key).ToList();
     foreach (var travelGroup in travelGroups)

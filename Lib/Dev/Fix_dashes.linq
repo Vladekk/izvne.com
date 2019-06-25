@@ -1,9 +1,9 @@
 <Query Kind="Statements" />
 
-var term = "Черногория";
+var term = "Путешествие в Турцию";
 var posts = Directory.GetFiles(@"C:\STONE\Docs\Source\izvne.com\Izvne.com\input\post", $"*{term}*.*", SearchOption.AllDirectories);
-var was = $@"{term} — (\d+) —"; 
-var @new = $"{term} — $1,";
+var was = $@"{term} —"; 
+var @new = $"Турция —";
 	//1 - Дорога к Лапсеке 
 	posts.Dump();
 	foreach(var file in posts){

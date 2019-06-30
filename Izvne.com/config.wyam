@@ -133,8 +133,8 @@ Pipelines.Add ("Posts",
               )
        
        ),
-            Replace("<img src=\"","<img data-src=\"")
-            ),
+            Replace("<img src=\"","<img data-src=\""),
+            Replace(".jpeg",".jpg")),
             Replace("\\[more( text=(?<text>[^\\]]*))*\\]","").IsRegex(),     
             Razor ().WithLayout("/_layout.cshtml"),
             //WithLayout ("/_layout.cshtml"),         
@@ -146,8 +146,8 @@ Pipelines.Add ("Posts",
  
 
  Pipelines.Add ("NewPostsImageThumbs",
-    ReadFiles ( "post/**.jpg","post/**.jpeg"),
-    Meta("DestFileName",@doc["SourceFileName"].ToString().Replace(".jpg",".jpeg")),
+    ReadFiles ( "post/**.JPG","post/**.jpg","post/**.jpeg","post/**.JPEG"),
+    Meta("DestFileName",@doc["SourceFileName"].ToString().Replace(".jpeg",".jpg")),
     Meta("ImagePath",
                                          Path.Combine(
                                              Path.Combine(
@@ -178,7 +178,7 @@ Pipelines.Add ("Posts",
 
 Pipelines.Add ("NewPostsImages",
     ReadFiles ( "post/**.JPG","post/**.jpg","post/**.jpeg","post/**.JPEG"),
-    Meta("DestFileName",@doc["SourceFileName"].ToString().Replace(".jpg",".jpeg")),
+    Meta("DestFileName",@doc["SourceFileName"].ToString().Replace(".jpeg",".jpg")),
     Meta("ImagePath",
                                      Path.Combine(                                      
                                              ToBase64(Path.GetFileName(@doc["SourceFileDir"].ToString()))

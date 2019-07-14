@@ -69,4 +69,19 @@
   <ItemGroup>
     <None Remove="files\**" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="input\post\Португалия  — 3 — П значит Победа" />
+    <Folder Include="input\post\Португалия  — 4" />
+    <Folder Include="input\post\Португалия  — 9" />
+    <Folder Include="input\post\Португалия -1 - Не всё идёт по плану" />
+    <Folder Include="input\post\Португалия — 10 — Острова Баррета и Кулатра" />
+    <Folder Include="input\post\Португалия — 11 — Часовня костей" />
+    <Folder Include="input\post\Португалия — 12 — прибытие на Friday Happiness Pizza Party" />
+    <Folder Include="input\post\Португалия — 13" />
+    <Folder Include="input\post\Португалия — 2 — Борьба с людьми и роботами" />
+    <Folder Include="input\post\Цифровой скиталец - 1 утренняя прогулка по исландскому бризу" />
+    <Folder Include="input\post\Цифровой скиталец - 2 - Всё с начала" />
+    <Folder Include="input\post\Цифровой скиталец - 3 - Прибытие в США (Чикаго)" />
+    <Folder Include="input\post\Цифровой скиталец - 4 - Ницца" />
+  </ItemGroup>
 </Project>

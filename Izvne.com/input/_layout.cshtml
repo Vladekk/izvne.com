@@ -215,9 +215,26 @@
     $(function() {
         $('img').each(function(i,el)
             {
+            var resize="";
             var src=$(this).attr('data-src');
-            $(this).attr('data-src',src+"?nf_resize=fit&w=725");
-            $(this).attr('data-src-retina',src);
+	    var width= Math.max(document.documentElement.clientWidth, window.innerWidth || 0)* window.devicePixelRatio;
+//window.screen.width * window.devicePixelRatio;
+	    if (width <240){
+		width=240;
+	    } else if (width <480){
+		width=480;
+	    } else
+    	    if (width < 800) 
+	    {
+		width=725;		
+            } else {
+		width=1920;
+	    }
+	    if (width!==1920){
+		resize="?nf_resize=fit&w="+(width).toString();
+	    }	
+            $(this).attr('data-src',src+resize);
+//            $(this).attr('data-src-retina',src+"?nf_resize=fit&w="+width);
         });
         $('img[data-src]').unveil(0);
     });

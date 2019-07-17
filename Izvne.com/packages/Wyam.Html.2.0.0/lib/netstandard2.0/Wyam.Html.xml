@@ -1,0 +1,546 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Wyam.Html</name>
+    </assembly>
+    <members>
+        <member name="T:Wyam.Html.AutoLink">
+            <summary>
+            Replaces occurrences of specified strings with HTML links.
+            </summary>
+            <remarks>
+            This module is smart enough to only look in specified HTML
+            elements (p by default). You can supply an alternate query selector to
+            narrow the search scope to different container elements or to those elements that contain
+            (or don't contain) a CSS class, etc. It also won't generate an HTML link if the replacement
+            text is already found in another link.
+            </remarks>
+            <category>Content</category>
+        </member>
+        <member name="M:Wyam.Html.AutoLink.#ctor">
+            <summary>
+            Creates the module without any initial mappings. Use <c>AddLink(...)</c> to add mappings with fluent methods.
+            </summary>
+        </member>
+        <member name="M:Wyam.Html.AutoLink.#ctor(System.Collections.Generic.IDictionary{System.String,System.String})">
+            <summary>
+            Specifies a dictionary of link mappings. The keys specify strings to search for in the HTML content
+            and the values specify what should be placed in the <c>href</c> attribute. This uses the same
+            link mappings for all input documents.
+            </summary>
+            <param name="links">A dictionary of link mappings.</param>
+        </member>
+        <member name="M:Wyam.Html.AutoLink.#ctor(Wyam.Common.Configuration.ContextConfig)">
+            <summary>
+            Specifies a dictionary of link mappings given an <see cref="T:Wyam.Common.Execution.IExecutionContext"/>. The return value is expected
+            to be a <c>IDictionary&lt;string, string&gt;</c>. The keys specify strings to search for in the HTML content
+            and the values specify what should be placed in the <c>href</c> attribute. This uses the same
+            link mappings for all input documents.
+            </summary>
+            <param name="links">A delegate that returns a dictionary of link mappings.</param>
+        </member>
+        <member name="M:Wyam.Html.AutoLink.#ctor(Wyam.Common.Configuration.DocumentConfig)">
+            <summary>
+            Specifies a dictionary of link mappings given an <see cref="T:AngleSharp.Dom.IDocument"/> and <see cref="T:Wyam.Common.Execution.IExecutionContext"/>. The return
+            value is expected to be a <c>IDictionary&lt;string, string&gt;</c>. The keys specify strings to search for in the
+            HTML content and the values specify what should be placed in the <c>href</c> attribute. This allows you
+            to specify a different mapping for each input document.
+            </summary>
+            <param name="links">A delegate that returns a dictionary of link mappings.</param>
+        </member>
+        <member name="M:Wyam.Html.AutoLink.WithQuerySelector(System.String)">
+            <summary>
+            Allows you to specify an alternate query selector.
+            </summary>
+            <param name="querySelector">The query selector to use.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.AutoLink.WithLink(System.String,System.String)">
+            <summary>
+            Adds an additional link to the mapping. This can be used whether or not you specify a mapping in the constructor.
+            </summary>
+            <param name="text">The text to search for.</param>
+            <param name="link">The link to insert.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.AutoLink.WithMatchOnlyWholeWord(System.Boolean)">
+            <summary>
+            Forces the string search to only consider whole words (it will not add a link in the middle of a word).
+            By default whole words are determined by testing for white space.
+            </summary>
+            <param name="matchOnlyWholeWord">If set to <c>true</c> the module will only insert links at word boundaries.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.AutoLink.WithWordSeparators(System.Char[])">
+            <summary>
+            Adds additional word separator characters when limiting matches to whole words only.
+            These additional characters are in addition to the default of splitting words at white space.
+            </summary>
+            <param name="wordSeparators">Additional word separators that should be considered for the start and end of a word.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.AutoLink.WithStartWordSeparators(System.Char[])">
+            <summary>
+            Adds additional start word separator characters when limiting matches to whole words only.
+            These additional characters are in addition to the default of splitting words at white space.
+            </summary>
+            <param name="startWordSeparators">Additional word separators that should be considered for the start of a word.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.AutoLink.WithEndWordSeparators(System.Char[])">
+            <summary>
+            Adds additional end word separator characters when limiting matches to whole words only.
+            These additional characters are in addition to the default of splitting words at white space.
+            </summary>
+            <param name="endWordSeparators">Additional word separators that should be considered for the end of a word.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.AutoLink.Execute(System.Collections.Generic.IReadOnlyList{Wyam.Common.Documents.IDocument},Wyam.Common.Execution.IExecutionContext)">
+            <inheritdoc />
+        </member>
+        <member name="M:Wyam.Html.DocumentExtensions.ParseHtml(Wyam.Common.Documents.IDocument)">
+            <summary>
+            Gets an <see cref="T:AngleSharp.Dom.Html.IHtmlDocument"/> by parsing the content of an <see cref="T:Wyam.Common.Documents.IDocument"/>.
+            </summary>
+            <param name="document">The document to parse.</param>
+            <returns>The parsed HTML document.</returns>
+        </member>
+        <member name="M:Wyam.Html.DocumentExtensions.ParseHtml(Wyam.Common.Documents.IDocument,AngleSharp.Parser.Html.HtmlParser)">
+            <summary>
+            Gets an <see cref="T:AngleSharp.Dom.Html.IHtmlDocument"/> by parsing the content of an <see cref="T:Wyam.Common.Documents.IDocument"/>.
+            </summary>
+            <param name="document">The document to parse.</param>
+            <param name="parser">A parser instance.</param>
+            <returns>The parsed HTML document.</returns>
+        </member>
+        <member name="T:Wyam.Html.Excerpt">
+            <summary>
+            Finds the first occurrence of a specified HTML comment or element and stores it's contents as metadata.
+            </summary>
+            <remarks>
+            This module is useful for situations like displaying the first paragraph of your most recent
+            blog posts or generating RSS and Atom feeds.
+            This module looks for the first occurrence of an excerpt separator (default of <c>more</c> or <c>excerpt</c>)
+            contained within an HTML comment (<c>&lt;!--more--&gt;</c>). If a separator comment isn't found, the module
+            will fallback to looking for the first occurrence of a specific HTML element (<c>p</c> paragraph elements by default)
+            and will use the outer HTML content. In both cases, the excerpt is placed in metadata with a key of <c>Excerpt</c>.
+            The content of the original input document is left unchanged.
+            </remarks>
+            <metadata cref="F:Wyam.Html.HtmlKeys.Excerpt" usage="Output"/>
+            <category>Metadata</category>
+        </member>
+        <member name="M:Wyam.Html.Excerpt.#ctor">
+            <summary>
+            Creates the module with the default query selector of <c>p</c>.
+            </summary>
+        </member>
+        <member name="M:Wyam.Html.Excerpt.#ctor(System.String[])">
+            <summary>
+            Specifies alternate separators to be used in an HTML comment.
+            Setting this to <c>null</c> will disable looking for separators
+            and rely only on the query selector.
+            </summary>
+            <param name="separators">The excerpt separators.</param>
+        </member>
+        <member name="M:Wyam.Html.Excerpt.#ctor(System.String)">
+            <summary>
+            Specifies an alternate query selector for the content.
+            </summary>
+            <param name="querySelector">The query selector to use.</param>
+        </member>
+        <member name="M:Wyam.Html.Excerpt.WithMetadataKey(System.String)">
+            <summary>
+            Allows you to specify an alternate metadata key.
+            </summary>
+            <param name="metadataKey">The metadata key to store the excerpt in.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.Excerpt.WithSeparators(System.String[])">
+            <summary>
+            Specifies alternate separators to be used in an HTML comment.
+            Setting this to <c>null</c> will disable looking for separators
+            and rely only on the query selector.
+            </summary>
+            <param name="separators">The excerpt separators.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.Excerpt.WithQuerySelector(System.String)">
+            <summary>
+            Allows you to specify an alternate query selector. If a separator
+            comment was found then the query selector will be used to determine which
+            elements prior to the separator the excerpt should be taken from.
+            </summary>
+            <param name="querySelector">The query selector to use.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.Excerpt.WithOuterHtml(System.Boolean)">
+            <summary>
+            Controls whether the inner HTML (not including the containing element's HTML) or
+            outer HTML (including the containing element's HTML) of the first result from
+            the query selector is added to metadata. The default is true, which gets the outer 
+            HTML content. This setting has no effect if a separator comment is found.
+            </summary>
+            <param name="outerHtml">If set to <c>true</c>, outer HTML will be stored.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.Excerpt.Execute(System.Collections.Generic.IReadOnlyList{Wyam.Common.Documents.IDocument},Wyam.Common.Execution.IExecutionContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Wyam.Html.Headings">
+            <summary>
+            Queries HTML content of the input documents and adds a metadata value that contains it's headings.
+            </summary>
+            <remarks>
+            A new document is created for each heading, all of which are placed into a <c>IReadOnlyList&lt;IDocument&gt;</c>
+            in the metadata of each input document. The new heading documents contain metadata with the level of the heading,
+            the children of the heading (the following headings with one deeper level) and optionally the heading content, which
+            is also set as the content of each document. The output of this module is the input documents with the additional
+            metadata value containing the documents that present each heading.
+            </remarks>
+            <metadata cref="F:Wyam.Html.HtmlKeys.Headings" usage="Output"/>
+            <metadata cref="F:Wyam.Html.HtmlKeys.Level" usage="Output"/>
+            <metadata cref="F:Wyam.Html.HtmlKeys.Id" usage="Output"/>
+            <metadata cref="F:Wyam.Common.Meta.Keys.Children" usage="Output">
+            The child heading documents of the current heading document.
+            </metadata>
+            <metadata cref="F:Wyam.Common.Meta.Keys.Parent" usage="Output">
+            The parent heading document of the current heading document.
+            </metadata>
+            <category>Metadata</category>
+        </member>
+        <member name="M:Wyam.Html.Headings.WithLevel(System.Int32)">
+            <summary>
+            Sets the deepest heading level to get. The default is to
+            only query for top-level headings (level 1).
+            </summary>
+            <param name="level">The deepest heading level to get.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.Headings.WithLevelKey(System.String)">
+            <summary>
+            Sets the key to use in the heading documents to store the level.
+            </summary>
+            <param name="levelKey">The key to use for the level.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.Headings.WithIdKey(System.String)">
+            <summary>
+            Sets the key to use in the heading documents to store the heading
+            <c>id</c> attribute (if it has one).
+            </summary>
+            <param name="idKey">The key to use for the <c>id</c>.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.Headings.WithChildrenKey(System.String)">
+            <summary>
+            Sets the key to use in the heading documents to store the children
+            of a given heading. In other words, the metadata for this key will
+            contain all the headings following the one in the document with a
+            level one deeper than the current heading.
+            </summary>
+            <param name="childrenKey">The key to use for children.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.Headings.WithParentKey(System.String)">
+            <summary>
+            Sets the key to use in the heading documents to store the parent
+            of a given heading.
+            </summary>
+            <param name="parentKey">The key to use for the parent.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.Headings.WithHeadingKey(System.String)">
+            <summary>
+            Sets the key to use for storing the heading content in the heading documents.
+            The default is <c>null</c> which means only store the heading content in the
+            content of the heading document. Setting this can be useful when you want
+            to use the heading documents in downstream modules, setting their content
+            to something else while maintaining the heading content in metadata.
+            </summary>
+            <param name="headingKey">The key to use for the heading content.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.Headings.WithNesting(System.Boolean)">
+            <summary>
+            Controls whether the heading documents are nested. If nesting is
+            used, only the level 1 headings will be in the root set of documents.
+            The rest of the heading documents will only be accessible via the
+            metadata of the root heading documents.
+            </summary>
+            <param name="nesting"><c>true</c> to turn on nesting</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.Headings.WithMetadataKey(System.String)">
+            <summary>
+            Allows you to specify an alternate metadata key for the heading documents.
+            </summary>
+            <param name="metadataKey">The metadata key to store the heading documents in.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.Headings.Execute(System.Collections.Generic.IReadOnlyList{Wyam.Common.Documents.IDocument},Wyam.Common.Execution.IExecutionContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Wyam.Html.HtmlEscape">
+            <summary>
+            Automatically escapes HTML content.
+            </summary>
+            <category>Content</category>
+        </member>
+        <member name="M:Wyam.Html.HtmlEscape.#ctor">
+            <summary>
+            Escapes HTML content with predefined escape sequences.
+            </summary>
+        </member>
+        <member name="M:Wyam.Html.HtmlEscape.WithDefaultStandard">
+            <summary>
+            Defines a standard set of characters as 0-9, a-z, A-Z, newlines, and space. Use with
+            the <c>EscapeAllNonstandard()</c> method to whitelist this default set of characters.
+            </summary>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.HtmlEscape.WithStandard(System.Char[])">
+            <summary>
+            Defines a custom set of standard characters to use with the <c>EscapeAllNonstandard()</c> method.
+            </summary>
+            <param name="standard">The standard set of characters to use.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.HtmlEscape.EscapeAllNonstandard">
+            <summary>
+            Escapes all nonstandard characters (standard characters are defined with the <c>WithDefaultStandard()</c>
+            or <c>WithStandard()</c> methods).
+            </summary>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.HtmlEscape.WithEscapedChar(System.Char[])">
+            <summary>
+            Defines additional characters to escape.
+            </summary>
+            <param name="toEscape">The additional characters to escape.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.HtmlEscape.Execute(System.Collections.Generic.IReadOnlyList{Wyam.Common.Documents.IDocument},Wyam.Common.Execution.IExecutionContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Wyam.Html.HtmlInsert">
+            <summary>
+            Queries HTML content of the input documents and inserts new content into the elements that
+            match a query selector.
+            </summary>
+            <category>Content</category>
+        </member>
+        <member name="M:Wyam.Html.HtmlInsert.#ctor(System.String,System.String)">
+            <summary>
+            Creates the module with the specified query selector.
+            </summary>
+            <param name="querySelector">The query selector to use.</param>
+            <param name="content">The content to insert.</param>
+        </member>
+        <member name="M:Wyam.Html.HtmlInsert.#ctor(System.String,Wyam.Common.Configuration.DocumentConfig)">
+            <summary>
+            Creates the module with the specified query selector.
+            </summary>
+            <param name="querySelector">The query selector to use.</param>
+            <param name="content">The content to insert as a delegate that should return a <c>string</c>.</param>
+        </member>
+        <member name="M:Wyam.Html.HtmlInsert.First(System.Boolean)">
+            <summary>
+            Specifies that only the first query result should be processed (the default is <c>false</c>).
+            </summary>
+            <param name="first">If set to <c>true</c>, only the first result is processed.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.HtmlInsert.AtPosition(AngleSharp.Dom.AdjacentPosition)">
+            <summary>
+            Specifies where in matching elements the new content should be inserted.
+            </summary>
+            <param name="position">A <see cref="T:AngleSharp.Dom.AdjacentPosition"/> indicating where the new content should be inserted.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.HtmlInsert.Execute(System.Collections.Generic.IReadOnlyList{Wyam.Common.Documents.IDocument},Wyam.Common.Execution.IExecutionContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Wyam.Html.HtmlKeys">
+            <summary>
+            Metadata keys for use with the various HTML processing modules.
+            </summary>
+        </member>
+        <member name="F:Wyam.Html.HtmlKeys.Excerpt">
+            <summary>
+            Contains the content of the first result from the query
+            selector (unless an alternate metadata key is specified).
+            </summary>
+            <type><see cref="T:System.String"/></type>
+        </member>
+        <member name="F:Wyam.Html.HtmlKeys.OuterHtml">
+            <summary>
+            Contains the outer HTML of the query result (unless an alternate metadata key is specified).
+            </summary>
+            <type><see cref="T:System.String"/></type>
+        </member>
+        <member name="F:Wyam.Html.HtmlKeys.InnerHtml">
+            <summary>
+            Contains the inner HTML of the query result (unless an alternate metadata key is specified).
+            </summary>
+            <type><see cref="T:System.String"/></type>
+        </member>
+        <member name="F:Wyam.Html.HtmlKeys.TextContent">
+            <summary>
+            Contains the text content of the query result (unless an alternate metadata key is specified).
+            </summary>
+            <type><see cref="T:System.String"/></type>
+        </member>
+        <member name="F:Wyam.Html.HtmlKeys.Headings">
+            <summary>
+            Documents that represent the headings in each input document.
+            </summary>
+            <type><c>IReadOnlyList&lt;IDocument&gt;</c></type>
+        </member>
+        <member name="F:Wyam.Html.HtmlKeys.Id">
+            <summary>
+            The value of the <c>id</c> attribute of the current heading document
+            if the heading contains one.
+            </summary>
+            <type><see cref="T:System.String"/></type>
+        </member>
+        <member name="F:Wyam.Html.HtmlKeys.Level">
+            <summary>
+            The level of the heading of the current heading document.
+            </summary>
+            <type><see cref="T:System.Int32"/></type>
+        </member>
+        <member name="T:Wyam.Html.HtmlQuery">
+            <summary>
+            Queries HTML content of the input documents and creates new documents with content and metadata from the results.
+            </summary>
+            <remarks>
+            Once you provide a DOM query selector, the module creates new output documents
+            for each query result and allows you to set the new document content and/or set new
+            metadata based on the query result.
+            </remarks>
+            <metadata cref="F:Wyam.Html.HtmlKeys.OuterHtml" usage="Output"/>
+            <metadata cref="F:Wyam.Html.HtmlKeys.InnerHtml" usage="Output"/>
+            <metadata cref="F:Wyam.Html.HtmlKeys.TextContent" usage="Output"/>
+            <category>Metadata</category>
+        </member>
+        <member name="M:Wyam.Html.HtmlQuery.#ctor(System.String)">
+            <summary>
+            Creates the module with the specified query selector.
+            </summary>
+            <param name="querySelector">The query selector to use.</param>
+        </member>
+        <member name="M:Wyam.Html.HtmlQuery.First(System.Boolean)">
+            <summary>
+            Specifies that only the first query result should be processed (the default is <c>false</c>).
+            </summary>
+            <param name="first">If set to <c>true</c>, only the first result is processed.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.HtmlQuery.SetContent(System.Nullable{System.Boolean})">
+            <summary>
+            Sets the content of the result document(s) to the content of the corresponding query result,
+            optionally specifying whether inner or outer HTML content should be used. The default is
+            <c>null</c>, which does not add any content to the result documents (only metadata).
+            </summary>
+            <param name="outerHtml">
+            If set to <c>true</c>, outer HTML content is used for the document content.
+            If set to <c>false</c>, inner HTML content is used for the document content.
+            If <c>null</c>, no document content is set.
+            </param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.HtmlQuery.GetOuterHtml(System.String)">
+            <summary>
+            Gets the outer HTML of each query result and sets it in the metadata of the
+            corresponding result document(s) with the specified key.
+            </summary>
+            <param name="metadataKey">The metadata key in which to place the outer HTML.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.HtmlQuery.GetInnerHtml(System.String)">
+            <summary>
+            Gets the inner HTML of each query result and sets it in the metadata of the
+            corresponding result document(s) with the specified key.
+            </summary>
+            <param name="metadataKey">The metadata key in which to place the inner HTML.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.HtmlQuery.GetTextContent(System.String)">
+            <summary>
+            Gets the text content of each query result and sets it in the metadata of
+            the corresponding result document(s) with the specified key.
+            </summary>
+            <param name="metadataKey">The metadata key in which to place the text content.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.HtmlQuery.GetAttributeValue(System.String,System.String)">
+            <summary>
+            Gets the specified attribute value of each query result and sets it in the metadata
+            of the corresponding result document(s). If the attribute is not found for a given
+            query result, no metadata is set. If <c>metadataKey</c> is <c>null</c>, the attribute name will
+            be used as the metadata key, otherwise the specified metadata key will be used.
+            </summary>
+            <param name="attributeName">Name of the attribute to get.</param>
+            <param name="metadataKey">The metadata key in which to place the attribute value.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.HtmlQuery.GetAttributeValues">
+            <summary>
+            Gets the values for all attributes of each query result and sets them in the
+            metadata of the corresponding result document(s) with keys names equal to the attribute local name.
+            </summary>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.HtmlQuery.GetAll">
+            <summary>
+            Gets all information for each query result and sets the metadata of the corresponding result
+            document(s). This is equivalent to calling <c>GetOuterHtml()</c>, <c>GetInnerHtml()</c>,
+            <c>GetTextContent()</c>, and <c>GetAttributeValues()</c> with default arguments.
+            </summary>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.HtmlQuery.Execute(System.Collections.Generic.IReadOnlyList{Wyam.Common.Documents.IDocument},Wyam.Common.Execution.IExecutionContext)">
+            <inheritdoc />
+        </member>
+        <member name="T:Wyam.Html.ValidateLinks">
+            <summary>
+            Performs link validation for HTML elements such as anchors, images, and other resources.
+            </summary>
+            <remarks>
+            Both relative and absolute links can be validated, though only relative links are checked
+            by default due to the time it takes to check absolute links.
+            </remarks>
+            <category>Input/Output</category>
+        </member>
+        <member name="M:Wyam.Html.ValidateLinks.ValidateAbsoluteLinks(System.Boolean)">
+            <summary>
+            Validates absolute (often external) links. This may add a significant delay to your
+            generation process so it's recommended absolute links are only checked periodically.
+            The default behavior is not to check absolute links. Also note that false positive
+            failures are common when validating external links so any links that fail the check
+            should be subsequently checked manually.
+            </summary>
+            <param name="validateAbsoluteLinks"><c>true</c> to validate absolute links.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.ValidateLinks.ValidateRelativeLinks(System.Boolean)">
+            <summary>
+            Validates relative links, which is activated by default.
+            </summary>
+            <param name="validateRelativeLinks"><c>true</c> to validate relative links.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.ValidateLinks.AsError(System.Boolean)">
+            <summary>
+            When the validation process is complete, all the validation failures will
+            be output as warnings. This method can be used to report all of the failures
+            as errors instead (possibly breaking the generation).
+            </summary>
+            <param name="asError"><c>true</c> to report failures as an error.</param>
+            <returns>The current module instance.</returns>
+        </member>
+        <member name="M:Wyam.Html.ValidateLinks.Execute(System.Collections.Generic.IReadOnlyList{Wyam.Common.Documents.IDocument},Wyam.Common.Execution.IExecutionContext)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

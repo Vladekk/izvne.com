@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Wyam.Less</name>
+    </assembly>
+    <members>
+        <member name="T:Wyam.Less.Less">
+            <summary>
+            Compiles Less CSS files to CSS stylesheets.
+            </summary>
+            <remarks>
+            The content of the input document is compiled to CSS and the content of the output document contains the compiled CSS stylesheet.
+            </remarks>
+            <example>
+            This is a pipeline that compiles two Less CSS files, one for Bootstrap (which contains a lot of includes) and a second for custom CSS.
+            <code>
+            Pipelines.Add("Less",
+                ReadFiles("master.less"),
+                Concat(ReadFiles("bootstrap.less")),
+                Less(),
+                WriteFiles(".css")
+            );
+            </code>
+            </example>
+            <metadata cref="F:Wyam.Common.Meta.Keys.RelativeFilePath" usage="Input" />
+            <metadata cref="F:Wyam.Common.Meta.Keys.RelativeFilePath" usage="Output">Relative path to the output CSS (or map) file.</metadata>
+            <metadata cref="F:Wyam.Common.Meta.Keys.WritePath" usage="Output" />
+            <category>Templates</category>
+        </member>
+        <member name="M:Wyam.Less.Less.WithInputPath(Wyam.Common.Configuration.DocumentConfig)">
+            <summary>
+            Specifies a delegate that should be used to get the input path for each
+            input document. This allows the Sass processor to search the right
+            file system and paths for include files. By default, the <see cref="F:Wyam.Common.Meta.Keys.RelativeFilePath"/>
+            metadata value is used for the input document path.
+            </summary>
+            <param name="inputPath">A delegate that should return a <see cref="T:Wyam.Common.IO.FilePath"/>.</param>
+            <returns>The current instance.</returns>
+        </member>
+        <member name="M:Wyam.Less.Less.Execute(System.Collections.Generic.IReadOnlyList{Wyam.Common.Documents.IDocument},Wyam.Common.Execution.IExecutionContext)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

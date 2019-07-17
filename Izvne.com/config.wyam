@@ -104,7 +104,7 @@ public string ToBase64(string src){
 
 Pipelines.Add ("Posts",
             ReadFiles (
-            "post/*.cshtml", // uncomment to regenerate old posts 
+            "post/Legacy/*.cshtml", // uncomment to regenerate old posts 
             "post/**.md"),            
             FrontMatter (Yaml ()),                                    
             Meta ("Published",@doc.Get("Published")??System.IO.File.GetCreationTime(@doc["SourceFilePath"].ToString().Replace("file:///","")).ToString("yyyy-MM-dd")),

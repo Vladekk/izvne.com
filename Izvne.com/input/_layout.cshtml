@@ -213,10 +213,12 @@
 <script src="/js/jplayer/run.js"></script>
 <script>
     $(function() {
-        $('img').each(function(i,el)
+
+       $('img').each(function(i,el)
             {
             var resize="";
             var src=$(this).attr('data-src');
+
 	    var width= Math.max(document.documentElement.clientWidth, window.innerWidth || 0)* window.devicePixelRatio;
 //window.screen.width * window.devicePixelRatio;
 	    if (width <240){
@@ -230,12 +232,22 @@
             } else {
 		width=1920;
 	    }
-	    if (width!==1920){
-		resize="?nf_resize=fit&w="+(width).toString();
-	    }	
+	
+	        if (src.indexOf("googleusercontent")!==-1){
+                   resize="=s"+(width).toString();
+	        } else {
+		    if (width!==1920 ){
+		      resize="?nf_resize=fit&w="+(width).toString();
+		    }	
+
+	        }
+	    console.debug(resize);
             $(this).attr('data-src',src+resize);
+	    
 //            $(this).attr('data-src-retina',src+"?nf_resize=fit&w="+width);
         });
+
+
         $('img[data-src]').unveil(0);
     });
     $(document).keydown(function (e){

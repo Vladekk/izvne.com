@@ -120,9 +120,12 @@ Pipelines.Add ("Posts",
         
             Meta ("ImagesSubfolder","/files/"+ToBase64(Path.GetFileName(@doc["SourceFileDir"].ToString()))),
             If((c,d)=>c["SourceFileExt"].ToString()==".md",
-                Replace(@"!\[[^\]]*\]\(([^)]+)\)" ,
+                Replace(@"!\[[^\]]*\]\((?!https)([^)]+)\)" ,
                         $"[![]({@doc["ImagesSubfolder"].ToString()}/1920x1440/$1)]({@doc["ImagesSubfolder"].ToString()}/$1)")
                 .IsRegex(), // for fixing markdown image urls
+                Replace(@"!\[[^\]]*\]\((?=https)([^)]+)\)" ,
+                        $@"[![]($1)]($1\=s10000)")
+                .IsRegex(), // for fixing markdown google image urls
             Markdown(),
        Meta ("PreviewImage",
       
@@ -138,7 +141,10 @@ Pipelines.Add ("Posts",
             Replace("\\[more( text=(?<text>[^\\]]*))*\\]","").IsRegex(),     
             Razor ().WithLayout("/_layout.cshtml"),
             //WithLayout ("/_layout.cshtml"),         
-            WriteFiles ((doc,context)=>@doc["Url"].ToString().TrimStart('/')+".html"),                               
+//            If((c,d)=>c["SourceFileExt"].ToString()==".md",
+            WriteFiles ((doc,context)=>@doc["Url"].ToString().TrimStart('/')+".html")
+//)
+,                               
             
             OrderBy((DateTime)@doc ["Date"]).Descending()
 

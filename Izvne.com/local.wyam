@@ -120,9 +120,12 @@ Pipelines.Add ("Posts",
         
             Meta ("ImagesSubfolder","/files/"+ToBase64(Path.GetFileName(@doc["SourceFileDir"].ToString()))),
             If((c,d)=>c["SourceFileExt"].ToString()==".md",
-                Replace(@"!\[[^\]]*\]\(([^)]+)\)" ,
+                Replace(@"!\[[^\]]*\]\((?!https)([^)]+)\)" ,
                         $"[![]({@doc["ImagesSubfolder"].ToString()}/1920x1440/$1)]({@doc["ImagesSubfolder"].ToString()}/$1)")
                 .IsRegex(), // for fixing markdown image urls
+                Replace(@"!\[[^\]]*\]\((?=https)([^)]+)\)" ,
+                        $@"[![]($1)]($1\=s10000)")
+                .IsRegex(), // for fixing markdown google image urls
             Markdown(),
        Meta ("PreviewImage",
       

@@ -219,26 +219,33 @@
             var resize="";
             var src=$(this).attr('data-src');
 
-	    var width= Math.max(document.documentElement.clientWidth, window.innerWidth || 0)* window.devicePixelRatio;
+	    var width= Math.max(document.documentElement.clientWidth, window.innerWidth || 0);		
+		width=width*0.75;
+		if (width > 725){
+		  width=725;
+		}
+		width = Math.round(width * window.devicePixelRatio);
 //window.screen.width * window.devicePixelRatio;
-	    if (width <240){
-		width=240;
-	    } else if (width <480){
-		width=480;
-	    } else
-    	    if (width < 800) 
-	    {
-		width=725;		
-            } else if (width < 1000) {
-		width=960;
-	    } else {
-		width=1920;
-	    }
+	    <!-- if (width <240){ -->
+			<!-- width=240; -->
+	    <!-- } else if (width <480){ -->
+			<!-- width=480; -->
+	    <!-- } else -->
+    	    <!-- if (width < 800)  -->
+	    <!-- { -->
+		<!-- width=725;		 -->
+            <!-- }  -->
+		<!-- else if (width < 1000) { -->
+			<!-- width=960; -->
+	    <!-- } else { -->
+			<!-- width=1920; -->
+	    <!-- } -->
 	
 	        if (src.indexOf("googleusercontent")!==-1){
                    resize="=s"+(width).toString();
 	        } else {
-		    if (width!==1920 ){
+//		    if (width!==1920 )
+			{
 		      resize="?nf_resize=fit&w="+(width).toString();
 		    }	
 

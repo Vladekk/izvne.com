@@ -15,9 +15,18 @@
     <meta name="description" content="Горящий человек - Мы живём, пока мы летаем">
     <meta name="keywords" content="private,twitter crosspost,Вылазки,Еда,Жизнь и байки,Коротко,Культура,Наука и техника,Общество,Спорт и здоровье">
     <meta name="author" content="Vladekk">
-     @if (Document.Get("PreviewImage")!=null) 
+     @{var previewImageUrl=Document.Get("PreviewImage") as string;}
+     @if (previewImageUrl!=null) 
      { 
-            <meta property="og:image" content='https://izvne.com/@Document.Get("PreviewImage").ToString().TrimStart('/')' /> 
+
+         @if (!previewImageUrl.StartsWith("https://")) {
+             previewImageUrl="https://izvne.com/"+previewImageUrl.TrimStart('/')+"?nf_resize=fit&w=1000";
+	 } else {
+	     previewImageUrl=previewImageUrl+"=s1000";
+	 }
+         <meta property="og:image" content='@previewImageUrl' /> 
+         <meta property="og:image:width" content='1000' /> 
+
      } 
     
     @*    <link type="text/css" href="./index.chtml_files/prettyPhoto.css" rel="stylesheet"><script type="text/javascript" src="./index.chtml_files/jquery-migrate-1.0.0.js.download"></script><script type="text/javascript" src="./index.chtml_files/jquery.prettyPhoto.js.download"></script><script type="text/javascript" src="./index.chtml_files/PrettyPhotoStarter.js.download"></script>*@

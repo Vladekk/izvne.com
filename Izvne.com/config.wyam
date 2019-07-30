@@ -151,7 +151,7 @@ Pipelines.Add ("Posts",
 );
  
 
- Pipelines.Add ("NewPostsImageThumbs",
+/* Pipelines.Add ("NewPostsImageThumbs",
     ReadFiles ( "post/**.JPG","post/**.jpg","post/**.jpeg","post/**.JPEG"),
     Meta("DestFileName",@doc["SourceFileName"].ToString().Replace(".jpeg",".jpg")),
     Meta("ImagePath",
@@ -180,6 +180,7 @@ Pipelines.Add ("Posts",
     .UseWriteMetadata(false))
     
 );
+*/
 
 
 Pipelines.Add ("NewPostsImages",

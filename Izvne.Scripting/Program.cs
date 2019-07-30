@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.IO;
 using System.Linq;
@@ -78,7 +79,10 @@ namespace Izvne.Scripting
                         if (matches.Success)
                         {
                             var val = matches.Groups[1].Value;
-                            result.Add(val);
+                            if (!val.Contains("http"))
+                            {
+                                result.Add(val);
+                            }
                         }
                     }
 
@@ -120,7 +124,7 @@ namespace Izvne.Scripting
 
             foreach (var onePostPath in allPosts)
             {
-                ProcessOnePost(onePostPath, _uploadPhotos, service, accessToken);
+                ProcessOnePost(onePostPath,  service, accessToken);
             }
         }
 
@@ -161,26 +165,33 @@ namespace Izvne.Scripting
         {
             var postPathName = Path.GetFileNameWithoutExtension(postPath);
             var imageFilenames = GetImagesInFile(postPath);
-            if (_uploadPhotos)
+            if (imageFilenames.Any())
             {
-                UploadPhotos(postPath, photosService, accessToken, postPathName, imageFilenames);
-            }
+                if (_uploadPhotos)
+                {
+                    UploadPhotos(postPath, photosService, accessToken, postPathName, imageFilenames);
+                }
 
-            if (_getFinalUrls)
-            {
-                var finalUrls = GetFinalUrls(postPathName);
+                if (_getFinalUrls)
+                {
+                    var finalUrls = GetFinalUrls(postPathName);
 //                var i = 0;
 //              
 
-                if (changePostUrls)
-                {
-                    var i = 0;
-                    foreach (var imageFilename in imageFilenames)
+                    if (changePostUrls)
                     {
+                        var i = 0;
+                        if (imageFilenames.Length != finalUrls.Length)
+                        {
+                            throw new Exception("Image count mismatch");
+                        }
                         var postText = File.ReadAllText(postPath);
-                        postText = postText.Replace(imageFilename, finalUrls[i]);
-                        File.WriteAllText(postPath,postText);
-                        i++;
+                        foreach (var imageFilename in imageFilenames)
+                        {
+                            postText = postText.Replace(imageFilename, finalUrls[i]);
+                            i++;
+                        }
+                        File.WriteAllText(postPath, postText);
                     }
                 }
             }

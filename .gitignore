@@ -323,3 +323,4 @@ Izvne.com/input/post/files/**
 /packages/Newtonsoft.Json.10.0.2/lib/portable-net45+win8+wpa81+wp8/Newtonsoft.Json.xml
 /packages/LINQPad5.5.10.1/.signature.p7s
 /packages/LINQPad5.5.10.1/lib/net46/LINQPad.exe
+/Izvne.Scripting/App.config

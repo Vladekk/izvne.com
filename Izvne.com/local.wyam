@@ -179,7 +179,7 @@ Pipelines.Add ("Posts",
 );
 */
 
-
+/*
 Pipelines.Add ("NewPostsImages",
     ReadFiles ( "post/**.JPG","post/**.jpg","post/**.jpeg","post/**.JPEG,post/**.webm"),
     Meta("DestFileName",@doc["SourceFileName"].ToString().Replace(".jpeg",".jpg")),
@@ -196,6 +196,7 @@ Pipelines.Add ("NewPostsImages",
     
         
 );
+*/
 
 
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
+using System.Configuration;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -24,13 +25,12 @@ namespace Izvne.Scripting
         private static bool changePostUrls = true;
         private const string AaUrl = "https://get.google.com/albumarchive/101096522944241604628";
 
-        private const string AuthCookie =
-            "CONSENT=YES+LV.ru+20160410-02-0; S=billing-ui-v3=QWBYsxsPARdklJOhGWMbcxbZMr06-zUJ:billing-ui-v3-efe=QWBYsxsPARdklJOhGWMbcxbZMr06-zUJ; OTZ=5018887_44_48_123900_44_436380; SID=mgdAedstvVNuVCUPVRtSn1JpsfPNWz4oA_8ib-1oYh-bKtG3nhqaIGNAPGYNg5WW5_dAtA.; HSID=AIdPjjStOEoCL2EGL; SSID=A5tQLZmaHBfKhhaSA; APISID=H2tFYZEXFPocDCQP/A5zAu3Bri3ehTJ3Kk; SAPISID=wAVJ8HmKDqRlSzB8/Ah9TTFkt3MmQthi9F; SEARCH_SAMESITE=CgQIu40B; NID=188=QMb-ljHqfwvoVRpUZhdHSufGbWUeJChj3mUq4ZDeUXiR6LfFoWqRE-dnAA5QfCM-qQIxrT9E_VZMoI-B7uSdWMxaxm81t1pUI6slnV9cvEh7aAFxlWtDNJKiu-Vqdv-ot5gb3GDsElmePGL_SFr7b7Btjn_ftWk7XZw3GM218atRtxoLPZM5zK-x8o-SzNIAQ5mWpftd_vi88idN9l0bTGnU4K79Sn5_hWufBLjA_875f9gyxX6P7FyIccQ8kiWI1rrP7bRzHOTGFvzK2hpt2oRHcLmKuNtEQghEiX7COSX5HpG-pxP2QSYNsrZKBYTs0qC0ksJ-kECGCH5-BMPNqW5DbD8cMw; SIDCC=AN0-TYtRLH15NGRsV4AZKWzFtcer-hfPCxLxZCHkRcvSpAG5DNzAA7NrDxaaru_ibvwOZwbLMWg; 1P_JAR=2019-7-31-8";
+        private static string AuthCookie = "";
 
         private const string AuthorizationEndpoint = "https://accounts.google.com/o/oauth2/v2/auth";
 
-        private const string ClientId = "276048709422-3ov23ibvjjlv28v4f9hmsrbnb4l4igl7.apps.googleusercontent.com";
-        private const string ClientSecret = "KKBt9jn6cqBQxqCOF2dTKXkl";
+        private static string ClientId = "276048709422-3ov23ibvjjlv28v4f9hmsrbnb4l4igl7.apps.googleusercontent.com";
+        private static string ClientSecret = "KKBt9jn6cqBQxqCOF2dTKXkl";
         private const string TokenEndpoint = "https://www.googleapis.com/oauth2/v4/token";
         private const string UserInfoEndpoint = "https://www.googleapis.com/oauth2/v3/userinfo";
 
@@ -113,6 +113,9 @@ namespace Izvne.Scripting
 
         public static void Main(string[] args)
         {
+            ClientId = ConfigurationManager.AppSettings["GoogleClientId"].ToString();
+            ClientSecret = ConfigurationManager.AppSettings["GoogleClientSecret"].ToString();
+            AuthCookie = ConfigurationManager.AppSettings["GoogleAuthCookie"].ToString();
             var (service, accessToken) = PrepareService();
 
             //config
@@ -129,31 +132,31 @@ namespace Izvne.Scripting
             foreach (var onePostPath in allPosts)
             {
                 onePostPath.Dump("Processing file");
-                ProcessOnePost(onePostPath,  service, accessToken);
+                ProcessOnePost(onePostPath, service, accessToken);
             }
         }
 
         private static (PhotosLibraryService, string) PrepareService()
         {
-            UserCredential credential= GoogleWebAuthorizationBroker.AuthorizeAsync(
-                                                               new ClientSecrets
-                                                               {
-                                                                   ClientId = ClientId,
-                                                                   ClientSecret = ClientSecret
-                                                               },
-                                                               new[]
-                                                               {
-                                                                   PhotosLibraryService
-                                                                       .Scope.Photoslibrary,
-                                                                   PhotosLibraryService.Scope
-                                                                                       .PhotoslibrarySharing
-                                                               },
-                                                               "user",
-                                                               CancellationToken.None,
-                                                               new
-                                                                   FileDataStore("BlogUploader.PhotosLibraryService"))
-                                               .Result;
-            
+            UserCredential credential = GoogleWebAuthorizationBroker.AuthorizeAsync(
+                                                                                    new ClientSecrets
+                                                                                    {
+                                                                                        ClientId = ClientId,
+                                                                                        ClientSecret = ClientSecret
+                                                                                    },
+                                                                                    new[]
+                                                                                    {
+                                                                                        PhotosLibraryService
+                                                                                            .Scope.Photoslibrary,
+                                                                                        PhotosLibraryService.Scope
+                                                                                                            .PhotoslibrarySharing
+                                                                                    },
+                                                                                    "user",
+                                                                                    CancellationToken.None,
+                                                                                    new
+                                                                                        FileDataStore("BlogUploader.PhotosLibraryService"))
+                                                                    .Result;
+
 //            UserCredential credential =
 //                Util.Cache(() =>
 //                           {
@@ -172,7 +175,7 @@ namespace Izvne.Scripting
         {
             var postPathName = Path.GetFileNameWithoutExtension(postPath);
             var imageFilenames = GetImagesInFile(postPath);
-       
+
             if (imageFilenames.Any())
             {
                 imageFilenames.Length.Dump("Found images to process ");
@@ -185,7 +188,7 @@ namespace Izvne.Scripting
                 if (_getFinalUrls)
                 {
                     var finalUrls = GetFinalUrls(postPathName);
-                    
+
                     if (changePostUrls)
                     {
                         var i = 0;
@@ -193,12 +196,14 @@ namespace Izvne.Scripting
                         {
                             throw new Exception("Image count mismatch");
                         }
+
                         var postText = File.ReadAllText(postPath);
                         foreach (var imageFilename in imageFilenames)
                         {
                             postText = postText.Replace(imageFilename, finalUrls[i]);
                             i++;
                         }
+
                         File.WriteAllText(postPath, postText);
                     }
                 }
@@ -208,17 +213,16 @@ namespace Izvne.Scripting
         private static void UploadPhotos(string postPath, PhotosLibraryService photosService, string accessToken,
                                          string postPathName, string[] imageFilenames)
         {
-
             var albums = photosService.Albums.List().Execute();
             if (albums.Albums.Any(a => a.Title == postPathName && a.MediaItemsCount == imageFilenames.Length))
             {
                 "Found existing album with same photo count, skipping".Dump();
                 return;
             }
+
             var albumRq = new CreateAlbumRequest {Album = new Album {Title = postPathName}};
-            
+
             var response = photosService.Albums.Create(albumRq).Execute().Dump("Created album");
-            
 
 
             var photosRq = new BatchCreateMediaItemsRequest

@@ -25,7 +25,7 @@ namespace Izvne.Scripting
         private const string AaUrl = "https://get.google.com/albumarchive/101096522944241604628";
 
         private const string AuthCookie =
-            "CONSENT=YES+LV.ru+20160410-02-0; S=billing-ui-v3=QWBYsxsPARdklJOhGWMbcxbZMr06-zUJ:billing-ui-v3-efe=QWBYsxsPARdklJOhGWMbcxbZMr06-zUJ; OTZ=5018887_44_48_123900_44_436380; SID=mgdAedstvVNuVCUPVRtSn1JpsfPNWz4oA_8ib-1oYh-bKtG3nhqaIGNAPGYNg5WW5_dAtA.; HSID=AIdPjjStOEoCL2EGL; SSID=A5tQLZmaHBfKhhaSA; APISID=H2tFYZEXFPocDCQP/A5zAu3Bri3ehTJ3Kk; SAPISID=wAVJ8HmKDqRlSzB8/Ah9TTFkt3MmQthi9F; SEARCH_SAMESITE=CgQIu40B; 1P_JAR=2019-7-30-15; NID=188=SjnoUPTJVg6mfp7YPt9_qUcIL6Ef5DK74qF0Q4n-8gb2Vz4maBTypmMCh7sVi4sWsu26s25kTIZFLGqGUbwEQByjhXMl4HRfo_vZcv_jzH53R5uK-4ccHsfvi9C6XpnyK-q96P_P6xvFfWeVAlhkq1snlSFVONnr1pnVLq__idmzCwIyZWsyeNBPD3bsNMPtXLx-kl_wUDtpOUsNq-RBjOjRouzBGOjkZcY1PAW8jU1LnQTc62A8Z9Fc12cP2pIt4eLHvUgWqXHSW6w5iMk6t5n79QxPn7ce5OMG34vsJvl1cpDwycR_52Lm8MNRmdXTybdtl5MM7Gpw2cByhnUF2-oYpo8JGQ; SIDCC=AN0-TYsvt11riFowOC9ifjxslSsjZFNF2o0kx6MSLrNxN4gSC1NIFfezMc_Od7SJocv2FZNdpRM";
+            "CONSENT=YES+LV.ru+20160410-02-0; S=billing-ui-v3=QWBYsxsPARdklJOhGWMbcxbZMr06-zUJ:billing-ui-v3-efe=QWBYsxsPARdklJOhGWMbcxbZMr06-zUJ; OTZ=5018887_44_48_123900_44_436380; SID=mgdAedstvVNuVCUPVRtSn1JpsfPNWz4oA_8ib-1oYh-bKtG3nhqaIGNAPGYNg5WW5_dAtA.; HSID=AIdPjjStOEoCL2EGL; SSID=A5tQLZmaHBfKhhaSA; APISID=H2tFYZEXFPocDCQP/A5zAu3Bri3ehTJ3Kk; SAPISID=wAVJ8HmKDqRlSzB8/Ah9TTFkt3MmQthi9F; SEARCH_SAMESITE=CgQIu40B; NID=188=QMb-ljHqfwvoVRpUZhdHSufGbWUeJChj3mUq4ZDeUXiR6LfFoWqRE-dnAA5QfCM-qQIxrT9E_VZMoI-B7uSdWMxaxm81t1pUI6slnV9cvEh7aAFxlWtDNJKiu-Vqdv-ot5gb3GDsElmePGL_SFr7b7Btjn_ftWk7XZw3GM218atRtxoLPZM5zK-x8o-SzNIAQ5mWpftd_vi88idN9l0bTGnU4K79Sn5_hWufBLjA_875f9gyxX6P7FyIccQ8kiWI1rrP7bRzHOTGFvzK2hpt2oRHcLmKuNtEQghEiX7COSX5HpG-pxP2QSYNsrZKBYTs0qC0ksJ-kECGCH5-BMPNqW5DbD8cMw; SIDCC=AN0-TYtRLH15NGRsV4AZKWzFtcer-hfPCxLxZCHkRcvSpAG5DNzAA7NrDxaaru_ibvwOZwbLMWg; 1P_JAR=2019-7-31-8";
 
         private const string AuthorizationEndpoint = "https://accounts.google.com/o/oauth2/v2/auth";
 
@@ -37,25 +37,29 @@ namespace Izvne.Scripting
 
         private static string[] GetFinalUrls(string albumname)
         {
-            string res;
-            using (var wcForAlbumArc = new WebClient())
+            string oneAlbumPageHtml;
+            using (var webClient = new WebClient())
             {
-                wcForAlbumArc.Headers.Add("Cookie", AuthCookie);
-                res = Encoding.UTF8.GetString(wcForAlbumArc.DownloadData(AaUrl));
+                webClient.Headers.Add("Cookie", AuthCookie);
+                var allAlbumsPageHtml = Encoding.UTF8.GetString(webClient.DownloadData(AaUrl));
 
-                var match = Regex.Split(res, "\n").Where(l => l.Contains($",\"{albumname}\""))
+                var match = Regex.Split(allAlbumsPageHtml, "\n").Where(l => l.Contains($",\"{albumname}\""))
                                  .Select(str => str.Trim(','))
                                  .FirstOrDefault();
 
                 var albumUrl = $"{AaUrl}/album/{match?.Split('"')[5]}";
 
-                res = Encoding.UTF8.GetString(wcForAlbumArc.DownloadData(albumUrl));
+                oneAlbumPageHtml = Encoding.UTF8.GetString(webClient.DownloadData(albumUrl));
             }
 
-            var lines = Regex.Split(res, "\n")
+            var lines = Regex.Split(oneAlbumPageHtml, "\n")
                              .FirstOrDefault(l => l.Contains("googleusercontent") && l.Contains("=w"));
             var results = new List<string>();
-            foreach (Match m in Regex.Matches(lines, @"img src=""([^""=]+)"))
+
+            var imagePattern = @"img src=""([^""=]+)";
+            var matches = Regex.Matches(lines, imagePattern);
+            matches.Count.Dump("Found matches");
+            foreach (Match m in matches)
             {
                 results.Add(m.Groups[1].Value.Dump());
             }
@@ -124,34 +128,37 @@ namespace Izvne.Scripting
 
             foreach (var onePostPath in allPosts)
             {
+                onePostPath.Dump("Processing file");
                 ProcessOnePost(onePostPath,  service, accessToken);
             }
         }
 
         private static (PhotosLibraryService, string) PrepareService()
         {
-            UserCredential credential =
-                Util.Cache(() =>
-                           {
-                               return GoogleWebAuthorizationBroker.AuthorizeAsync(
-                                                                                  new ClientSecrets
-                                                                                  {
-                                                                                      ClientId = ClientId,
-                                                                                      ClientSecret = ClientSecret
-                                                                                  },
-                                                                                  new[]
-                                                                                  {
-                                                                                      PhotosLibraryService
-                                                                                          .Scope.Photoslibrary,
-                                                                                      PhotosLibraryService.Scope
-                                                                                                          .PhotoslibrarySharing
-                                                                                  },
-                                                                                  "user",
-                                                                                  CancellationToken.None,
-                                                                                  new
-                                                                                      FileDataStore("BlogUploader.PhotosLibraryService"))
-                                                                  .Result;
-                           }, nameof(credential));
+            UserCredential credential= GoogleWebAuthorizationBroker.AuthorizeAsync(
+                                                               new ClientSecrets
+                                                               {
+                                                                   ClientId = ClientId,
+                                                                   ClientSecret = ClientSecret
+                                                               },
+                                                               new[]
+                                                               {
+                                                                   PhotosLibraryService
+                                                                       .Scope.Photoslibrary,
+                                                                   PhotosLibraryService.Scope
+                                                                                       .PhotoslibrarySharing
+                                                               },
+                                                               "user",
+                                                               CancellationToken.None,
+                                                               new
+                                                                   FileDataStore("BlogUploader.PhotosLibraryService"))
+                                               .Result;
+            
+//            UserCredential credential =
+//                Util.Cache(() =>
+//                           {
+//                              
+//                           }, nameof(credential));
 
             var serv = new PhotosLibraryService(new BaseClientService.Initializer
                                                 {
@@ -165,19 +172,20 @@ namespace Izvne.Scripting
         {
             var postPathName = Path.GetFileNameWithoutExtension(postPath);
             var imageFilenames = GetImagesInFile(postPath);
+       
             if (imageFilenames.Any())
             {
+                imageFilenames.Length.Dump("Found images to process ");
                 if (_uploadPhotos)
                 {
+                    "Starting upload of the photos".Dump();
                     UploadPhotos(postPath, photosService, accessToken, postPathName, imageFilenames);
                 }
 
                 if (_getFinalUrls)
                 {
                     var finalUrls = GetFinalUrls(postPathName);
-//                var i = 0;
-//              
-
+                    
                     if (changePostUrls)
                     {
                         var i = 0;
@@ -200,9 +208,17 @@ namespace Izvne.Scripting
         private static void UploadPhotos(string postPath, PhotosLibraryService photosService, string accessToken,
                                          string postPathName, string[] imageFilenames)
         {
-            var albumRq = new CreateAlbumRequest {Album = new Album {Title = postPathName}};
 
-            var response = photosService.Albums.Create(albumRq).Execute().Dump();
+            var albums = photosService.Albums.List().Execute();
+            if (albums.Albums.Any(a => a.Title == postPathName && a.MediaItemsCount == imageFilenames.Length))
+            {
+                "Found existing album with same photo count, skipping".Dump();
+                return;
+            }
+            var albumRq = new CreateAlbumRequest {Album = new Album {Title = postPathName}};
+            
+            var response = photosService.Albums.Create(albumRq).Execute().Dump("Created album");
+            
 
 
             var photosRq = new BatchCreateMediaItemsRequest
@@ -218,6 +234,7 @@ namespace Izvne.Scripting
                           };
 
             var shareResp = photosService.Albums.Share(shareRq, photosRq.AlbumId).Execute().Dump();
+            shareResp.Dump("Shared album");
 
 
             foreach (var imageFilename in imageFilenames)
@@ -232,7 +249,7 @@ namespace Izvne.Scripting
             }
 
 
-            var addedPhoto = photosService.MediaItems.BatchCreate(photosRq).Execute().Dump();
+            var addedPhoto = photosService.MediaItems.BatchCreate(photosRq).Execute().Dump("Uploaded photos");
         }
 
         private static string UploadImage(string fullPath, string token)

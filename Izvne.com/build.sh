@@ -1,6 +1,6 @@
 wget https://dot.net/v1/dotnet-install.sh
 chmod +x ./dotnet-install.sh
-./dotnet-install.sh -Channel 3.1
+./dotnet-install.sh -Channel 2.1
 #export PATH="$PATH:$HOME/.dotnet/tools"
 #export PATH="$PATH:$HOME/.dotnet"
 export DOTNET_ROOT=$HOME/.dotnet

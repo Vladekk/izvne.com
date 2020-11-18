@@ -6,14 +6,14 @@ Published: "2018-03-20"
 Теперь тут музей Берберов (они же варвары) и самого Сен-Лорана. Место приятное, хотя и стоит для иностранцев 7 евро.
 
 
-![](P13A4272.jpg)
+![](https://lh3.googleusercontent.com/o6C8Rganz7NLPzEcrBxfX-QgAZlzcC14itlvyksEBsW-NBalVKVqi4vUl0HF8-op7xCqx4_gnp-CxlMLmXw)
 
-![](P13A4274.jpg)
+![](https://lh3.googleusercontent.com/uqr2aQ7h5XbNDMvUHgc9kTWqH3qqJpgAHcvzRF6tjAdeSyNRnGjXQhTys37ZUu1AvbgbQvfOs_SMh38xXIQ)
 
-![](P13A4286.jpg)
+![](https://lh3.googleusercontent.com/oebbmYRtz1CZaPOxCAhZtpyll0_tdr9RaEqoqF0V94NVM2OvyrVit-ObqYZx64dlo1zMWxeervSZu2n9dZg)
 
-![](P13A4287.jpg)
+![](https://lh3.googleusercontent.com/TKjzopzAXlTIPbb3q_TmasOkknZh6rcfd8K2MYBzj9AdEfvgg6qyejUNVplcHUjXzjnD_TgEiaQi3GB5gF4)
 
-![](P13A4289.jpg)
+![](https://lh3.googleusercontent.com/5ddpFtLyfQMbuYUMGL4Gdk1zi3u5naqqeibYFijf9aAXBMaExpdp_8QNreCxwyv1AbiOrq_S4s907FGVyXQ)
 
-![](P13A4292.jpg)
+![](https://lh3.googleusercontent.com/APY2-ENzqCluiNo-nuJ-IS8PL-GG4Mdq8xtPL8apW05e3hxGP6fEZ2euynzpxTWznkE2-AupGfmpCuvlmXM)

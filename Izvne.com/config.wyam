@@ -120,10 +120,10 @@ Pipelines.Add ("Posts",
         
             Meta ("ImagesSubfolder","/files/"+ToBase64(Path.GetFileName(@doc["SourceFileDir"].ToString()))),
             If((c,d)=>c["SourceFileExt"].ToString()==".md",
-                Replace(@"!\[[^\]]*\]\((?!https)([^)]+)\)" ,
+                Replace(@"!\[[^\]]*\]\((?!https)([^=\)]+)[^)]*\)" ,
                         $"[![]({@doc["ImagesSubfolder"].ToString()}/1920x1440/$1)]({@doc["ImagesSubfolder"].ToString()}/$1)")
                 .IsRegex(), // for fixing markdown image urls
-                Replace(@"!\[[^\]]*\]\((?=https)([^)]+)\)" ,
+                Replace(@"!\[[^\]]*\]\((?=https)([^=\)]+)[^)]*\)" ,
                         $@"[![]($1)]($1\=s10000)")
                 .IsRegex(), // for fixing markdown google image urls
             Markdown(),
@@ -151,7 +151,7 @@ Pipelines.Add ("Posts",
 );
  
 
- Pipelines.Add ("NewPostsImageThumbs",
+/* Pipelines.Add ("NewPostsImageThumbs",
     ReadFiles ( "post/**.JPG","post/**.jpg","post/**.jpeg","post/**.JPEG"),
     Meta("DestFileName",@doc["SourceFileName"].ToString().Replace(".jpeg",".jpg")),
     Meta("ImagePath",
@@ -180,6 +180,7 @@ Pipelines.Add ("Posts",
     .UseWriteMetadata(false))
     
 );
+*/
 
 
 Pipelines.Add ("NewPostsImages",

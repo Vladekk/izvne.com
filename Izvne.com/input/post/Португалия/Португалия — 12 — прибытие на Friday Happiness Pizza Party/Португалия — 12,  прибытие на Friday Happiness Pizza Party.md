@@ -10,10 +10,10 @@ Published: "2019-04-03"
 
 У ворот нас ждала вот такая забавная надпись, и даже не одна.
 
-![](IMG_20190223_023616.jpg)
+![](https://lh3.googleusercontent.com/mfDe2oa2M4qzsp5VQJ2FVf_9Yj_YivZoBWZSgcK6T6bGFBDYPHiZ13c2KYcVsOP2Av-XgpLER4GhluM13MI)
 
 
-![](IMG_20190223_023623.jpg)
+![](https://lh3.googleusercontent.com/2pjE-chPYzS8ljGtVgLpkDhjHp-3ArwX1gkDRwAfSiJB1WadgIxjgxbZeUDQ_bqXc5EIeMVFH-ycWma8b4A)
 
 Практически «Пчёлы против мёда». Учитывая, что в Португалии самая полная декриминализация в мире, вдвойне забавно. И да, она работает намного лучше т.н. «Войны с наркотиками», тому полный интернет ссылок и видео про исследования, так что я поленюсь привести.
 

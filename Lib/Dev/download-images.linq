@@ -15,7 +15,7 @@ void Main()
 	{
 		var line = Console.ReadLine();//
 									  //var line="wfwf ![enter image description here](https://lh3.googleusercontent.com/jYdh5LNi5_3UzhCpMfx7NgCa3KeKklwsmmJ9bSPf4Tode4CowiVCjW80IMgSBhYgA4YV721slNUWCA) wfwf";
-		var matches = Regex.Match(line, @"\((https://[^)]+)\)");
+		var matches = Regex.Match(line, @"\((https://[^)]+googleusercontent[^)=]+)[\)=]");
 		using (WebClient wc = new WebClient())
 		{
 			if (matches.Success)
